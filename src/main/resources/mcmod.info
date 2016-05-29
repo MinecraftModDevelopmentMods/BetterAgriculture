@@ -1,0 +1,16 @@
+[
+ {
+   "modid": "nethermetals",
+   "name": "Nether Metals",
+   "description": "Nether Metals is an Addon for the mod Base Metals, it expands it to bring its ores to the Nether dimension.",
+   "version": "${version}",
+   "mcversion": "${mcversion}",
+   "url": "http://nfinit-gaming.com/",
+   "updateUrl": "",
+   "authorList": ["Knoxhack"],
+   "credits": "The Forge and FML guys, for making this example",
+   "logoFile": "",
+   "screenshots": [],
+   "dependencies": []
+ }
+]

@@ -1,0 +1,22 @@
+Internal code refactor
+Base Metals is no longer required (But if not installed only Vanilla Nether Ores will generate)
+Added a configuration file (inside the orespawn folder) to manage ore spawning
+Added support for Modern Metals (http://minecraft.curseforge.com/projects/modern-metals)
+Added missing ores:
+Added Nether Emerald Ore
+Added Nether Mercury Ore (Will spawn only if Base Metals is installed)
+Added Nether Platinum Ore (Will spawn only if Base Metals is installed)
+Added Nether Aluminum Ore (Will spawn only if Modern Metals is installed)
+Added Nether Cadmium Ore (Will spawn only if Modern Metals is installed)
+Added Nether Chromium Ore (Will spawn only if Modern Metals is installed)
+Added Nether Iridium Ore (Will spawn only if Modern Metals is installed)
+Added Nether Magnesium Ore (Will spawn only if Modern Metals is installed)
+Added Nether Manganese Ore (Will spawn only if Modern Metals is installed)
+Added Nether Osmium Ore (Will spawn only if Modern Metals is installed)
+Added Nether Plutonium Ore (Will spawn only if Modern Metals is installed)
+Added Nether Rutile Ore (Will spawn only if Modern Metals is installed)
+Added Nether Tantalum Ore (Will spawn only if Modern Metals is installed)
+Added Nether Titanium Ore (Will spawn only if Modern Metals is installed)
+Added Nether Tungsten Ore (Will spawn only if Modern Metals is installed)
+Added Nether Uranium Ore (Will spawn only if Modern Metals is installed)
+Added Nether Zirconium Ore (Will spawn only if Modern Metals is installed)

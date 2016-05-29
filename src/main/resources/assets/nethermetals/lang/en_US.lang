@@ -1,0 +1,44 @@
+tile.nether_coal_ore.name=Nether Coal Ore
+tile.nether_diamond_ore.name=Nether Diamond Ore
+tile.nether_emerald_ore.name=Nether Emerald Ore
+tile.nether_gold_ore.name=Nether Gold Ore
+tile.nether_iron_ore.name=Nether Iron Ore
+tile.nether_lapis_ore.name=Nether Lapis Ore
+tile.nether_redstone_ore.name=Nether Redstone Ore
+
+tile.nether_antimony_ore.name=Nether Antimony Ore
+tile.nether_bismuth_ore.name=Nether Bismuth Ore
+tile.nether_copper_ore.name=Nether Copper Ore
+tile.nether_lead_ore.name=Nether Lead Ore
+tile.nether_mercury_ore.name=Nether Mercury Ore
+tile.nether_nickel_ore.name=Nether Nickel Ore
+tile.nether_platinum_ore.name=Nether Platinum Ore
+tile.nether_silver_ore.name=Nether Silver Ore
+tile.nether_tin_ore.name=Nether Tin Ore
+tile.nether_zinc_ore.name=Nether Zinc Ore
+
+tile.nether_aluminum_ore.name=Nether Aluminum Ore
+tile.nether_cadmium_ore.name=Nether Cadmium Ore
+tile.nether_chromium_ore.name=Nether Chromium Ore
+tile.nether_iridium_ore.name=Nether Iridium Ore
+tile.nether_magnesium_ore.name=Nether Magnesium Ore
+tile.nether_manganese_ore.name=Nether Manganese Ore
+tile.nether_osmium_ore.name=Nether Osmium Ore
+tile.nether_plutonium_ore.name=Nether Plutonium Ore
+tile.nether_rutile_ore.name=Nether Rutile Ore
+tile.nether_tantalum_ore.name=Nether Tantalum Ore
+tile.nether_titanium_ore.name=Nether Titanium Ore
+tile.nether_tungsten_ore.name=Nether Tungsten Ore
+tile.nether_uranium_ore.name=Nether Uranium Ore
+tile.nether_zirconium_ore.name=Nether Zirconium Ore
+
+item.nether_sword.name=Nether Sword
+item.nether_pickaxe.name=Nether Pickaxe
+item.nether_axe.name=Nether Axe
+item.nether_hoe.name=Nether Hoe
+item.nether_spade.name=Nether Shovel
+
+item.nether_helmet.name=Nether Helmet
+item.nether_chestplate.name=Nether Chestplate
+item.nether_leggings.name=Nether Leggings
+item.nether_boots.name=Nether Boots
