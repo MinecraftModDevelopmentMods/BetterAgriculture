@@ -1,4 +1,4 @@
-package com.knoxhack.nethermetals;
+package com.knoxhack.netherexpansion;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;

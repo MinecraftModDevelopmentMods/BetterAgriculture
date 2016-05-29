@@ -1,4 +1,4 @@
-package com.knoxhack.nethermetals.blocks;
+package com.knoxhack.netherexpansion.blocks;
 
 import java.util.Random;
 

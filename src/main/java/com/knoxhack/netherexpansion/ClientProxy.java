@@ -1,6 +1,6 @@
-package com.knoxhack.nethermetals;
+package com.knoxhack.netherexpansion;
 
-import com.knoxhack.nethermetals.client.render.blocks.BlockRenderRegister;
+import com.knoxhack.netherexpansion.client.render.blocks.BlockRenderRegister;
 
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;

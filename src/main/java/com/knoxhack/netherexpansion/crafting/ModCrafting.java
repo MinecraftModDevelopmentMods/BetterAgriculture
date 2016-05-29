@@ -1,6 +1,6 @@
-package com.knoxhack.nethermetals.crafting;
+package com.knoxhack.netherexpansion.crafting;
 
-import com.knoxhack.nethermetals.blocks.ModBlocks;
+import com.knoxhack.netherexpansion.blocks.ModBlocks;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;

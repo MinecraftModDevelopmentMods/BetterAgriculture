@@ -1,8 +1,8 @@
-package com.knoxhack.nethermetals.world;
+package com.knoxhack.netherexpansion.world;
 
 import java.util.Random;
 
-import com.knoxhack.nethermetals.blocks.ModBlocks;
+import com.knoxhack.netherexpansion.blocks.ModBlocks;
 
 import net.minecraft.block.state.pattern.BlockMatcher;
 import net.minecraft.init.Blocks;

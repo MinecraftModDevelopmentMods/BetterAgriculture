@@ -1,4 +1,4 @@
-package com.knoxhack.nethermetals;
+package com.knoxhack.netherexpansion;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.knoxhack.nethermetals.data.DataConstants;
+import com.knoxhack.netherexpansion.data.DataConstants;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.FMLLog;
 import net.minecraftforge.fml.common.Loader;
@@ -25,18 +25,18 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 		modid = Main.MODID,
 		name = Main.MODNAME,
 		version = Main.VERSION,
-		dependencies = "required-after:Forge;after:basemetals;after:modernmetals",
+		dependencies = "required-after:Forge",
 		acceptedMinecraftVersions = "1.8.9,)",
-		updateJSON = "https://raw.githubusercontent.com/nfinit-gaming/Nether-Metals/master/update.json")
+		updateJSON = "https://raw.githubusercontent.com/nfinit-gaming/Nether-Expansion/master/update.json")
 
 public class Main {
 
 	@Instance
 	public static Main INSTANCE = null;
 
-	public static final String MODID = "nethermetals";
-	public static final String MODNAME = "Nether Metals";
-	public static final String VERSION = "1.1.0";
+	public static final String MODID = "netherexpansion";
+	public static final String MODNAME = "Nether Expansion";
+	public static final String VERSION = "0.1";
 
 	/** All ore-spawn files discovered in the ore-spawn folder */
 	public static final List<Path> oreSpawnConfigFiles = new LinkedList<>();
@@ -93,6 +93,6 @@ public class Main {
 		Main.proxy.postInit(event);
 	}
 
-	@SidedProxy(clientSide="com.knoxhack.nethermetals.ClientProxy", serverSide="com.knoxhack.nethermetals.ServerProxy")
+	@SidedProxy(clientSide="com.knoxhack.netherexpansion.ClientProxy", serverSide="com.knoxhack.netherexpansion.ServerProxy")
 	public static CommonProxy proxy;
 }

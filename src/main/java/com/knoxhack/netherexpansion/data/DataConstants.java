@@ -1,4 +1,4 @@
-package com.knoxhack.nethermetals.data;
+package com.knoxhack.netherexpansion.data;
 
 public class DataConstants {
 	public static final String bmOreSpawnJSON = "{"

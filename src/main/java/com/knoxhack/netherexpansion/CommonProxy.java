@@ -1,9 +1,9 @@
-package com.knoxhack.nethermetals;
+package com.knoxhack.netherexpansion;
 
-import com.knoxhack.nethermetals.blocks.ModBlocks;
-import com.knoxhack.nethermetals.crafting.ModCrafting;
+import com.knoxhack.netherexpansion.blocks.ModBlocks;
+import com.knoxhack.netherexpansion.crafting.ModCrafting;
 
-import com.knoxhack.nethermetals.world.WorldGen;
+import com.knoxhack.netherexpansion.world.WorldGen;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;

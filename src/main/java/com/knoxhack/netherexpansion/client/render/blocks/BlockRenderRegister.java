@@ -1,7 +1,7 @@
-package com.knoxhack.nethermetals.client.render.blocks;
+package com.knoxhack.netherexpansion.client.render.blocks;
 
-import com.knoxhack.nethermetals.Main;
-import com.knoxhack.nethermetals.blocks.ModBlocks;
+import com.knoxhack.netherexpansion.Main;
+import com.knoxhack.netherexpansion.blocks.ModBlocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;

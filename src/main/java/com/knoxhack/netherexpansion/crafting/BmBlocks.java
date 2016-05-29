@@ -1,4 +1,4 @@
-package com.knoxhack.nethermetals.crafting;
+package com.knoxhack.netherexpansion.crafting;
 
 import cyano.basemetals.init.Blocks;
 
