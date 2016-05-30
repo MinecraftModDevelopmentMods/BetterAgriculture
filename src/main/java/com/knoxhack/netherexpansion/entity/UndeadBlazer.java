@@ -27,7 +27,7 @@ import net.minecraft.world.EnumDifficulty;
 import net.minecraft.world.World;
 import net.minecraft.world.storage.loot.LootTableList;
 
-public class UndeadGhastly extends EntityPigZombie
+public class UndeadBlazer extends EntityPigZombie
 {
     private static final UUID ATTACK_SPEED_BOOST_MODIFIER_UUID = UUID.fromString("49455A49-7EC5-45BA-B886-3B90B23A1718");
     private static final AttributeModifier ATTACK_SPEED_BOOST_MODIFIER = (new AttributeModifier(ATTACK_SPEED_BOOST_MODIFIER_UUID, "Attacking speed boost", 0.05D, 0)).setSaved(false);
@@ -40,7 +40,7 @@ public class UndeadGhastly extends EntityPigZombie
     private int randomSoundDelay;
     private UUID angerTargetUUID;
 
-    public UndeadGhastly(World worldIn)
+    public UndeadBlazer(World worldIn)
     {
         super(worldIn);
         this.isImmuneToFire = true;
@@ -58,8 +58,8 @@ public class UndeadGhastly extends EntityPigZombie
 
     protected void applyEntityAI()
     {
-        this.targetTasks.addTask(1, new UndeadGhastly.AIHurtByAggressor(this));
-        this.targetTasks.addTask(2, new UndeadGhastly.AITargetAggressor(this));
+        this.targetTasks.addTask(1, new UndeadBlazer.AIHurtByAggressor(this));
+        this.targetTasks.addTask(2, new UndeadBlazer.AITargetAggressor(this));
     }
 
     protected void applyEntityAttributes()
@@ -258,7 +258,7 @@ public class UndeadGhastly extends EntityPigZombie
 
     static class AIHurtByAggressor extends EntityAIHurtByTarget
         {
-            public AIHurtByAggressor(UndeadGhastly p_i45828_1_)
+            public AIHurtByAggressor(UndeadBlazer p_i45828_1_)
             {
                 super(p_i45828_1_, true, new Class[0]);
             }
@@ -267,16 +267,16 @@ public class UndeadGhastly extends EntityPigZombie
             {
                 super.setEntityAttackTarget(creatureIn, entityLivingBaseIn);
 
-                if (creatureIn instanceof UndeadGhastly)
+                if (creatureIn instanceof UndeadBlazer)
                 {
-                    ((UndeadGhastly)creatureIn).becomeAngryAt(entityLivingBaseIn);
+                    ((UndeadBlazer)creatureIn).becomeAngryAt(entityLivingBaseIn);
                 }
             }
         }
 
     static class AITargetAggressor extends EntityAINearestAttackableTarget<EntityPlayer>
         {
-            public AITargetAggressor(UndeadGhastly p_i45829_1_)
+            public AITargetAggressor(UndeadBlazer p_i45829_1_)
             {
                 super(p_i45829_1_, EntityPlayer.class, true);
             }
@@ -286,7 +286,7 @@ public class UndeadGhastly extends EntityPigZombie
              */
             public boolean shouldExecute()
             {
-                return ((UndeadGhastly)this.taskOwner).isAngry() && super.shouldExecute();
+                return ((UndeadBlazer)this.taskOwner).isAngry() && super.shouldExecute();
             }
         }
 }

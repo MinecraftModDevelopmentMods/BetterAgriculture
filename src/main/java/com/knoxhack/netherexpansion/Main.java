@@ -78,4 +78,8 @@ public class Main {
 
 	@SidedProxy(clientSide="com.knoxhack.netherexpansion.ClientProxy", serverSide="com.knoxhack.netherexpansion.ServerProxy")
 	public static CommonProxy proxy;
+
+
+
+	
 }
