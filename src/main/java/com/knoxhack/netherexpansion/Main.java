@@ -39,7 +39,7 @@ public class Main {
 	public static final String VERSION = "0.1";
 
 	/** All ore-spawn files discovered in the ore-spawn folder */
-	public static final List<Path> oreSpawnConfigFiles = new LinkedList<>();
+	public static final List<Path> oreSpawnConfigFiles = new LinkedList<Path>();
 
 	/** location of ore-spawn files */
 	public static Path oreSpawnFolder = null;
