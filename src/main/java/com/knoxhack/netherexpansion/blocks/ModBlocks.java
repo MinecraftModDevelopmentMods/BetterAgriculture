@@ -1,6 +1,6 @@
 package com.knoxhack.netherexpansion.blocks;
 
-import com.knoxhack.netherexpansion.Main;
+
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -42,6 +42,7 @@ public final class ModBlocks {
 	public static Block netheruraniumOre;
 	public static Block netherzirconiumOre;
 
+	@SuppressWarnings("deprecation")
 	public static void createBlocks() {
 
 		// Vanilla

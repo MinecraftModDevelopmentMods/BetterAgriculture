@@ -1,18 +1,11 @@
 package com.knoxhack.netherexpansion;
 
-import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.knoxhack.netherexpansion.data.DataConstants;
 import net.minecraftforge.common.config.Configuration;
-import net.minecraftforge.fml.common.FMLLog;
-import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -39,10 +32,10 @@ public class Main {
 	public static final String VERSION = "0.1";
 
 	/** All ore-spawn files discovered in the ore-spawn folder */
-	public static final List<Path> oreSpawnConfigFiles = new LinkedList<Path>();
+	public static final List<Path> NetherExpansionConfigFiles = new LinkedList<Path>();
 
 	/** location of ore-spawn files */
-	public static Path oreSpawnFolder = null;
+	public static Path NetherExpansionFolder = null;
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
@@ -52,45 +45,35 @@ public class Main {
 		Configuration config = new Configuration(event.getSuggestedConfigurationFile());
 		config.load();
 
-		oreSpawnFolder = Paths.get(event.getSuggestedConfigurationFile().toPath().getParent().toString(),"orespawn");
-		// Base Metals
-		if(Loader.isModLoaded("basemetals")) {
-			Path bmoreSpawnFile = Paths.get(oreSpawnFolder.toString(),MODID+"-bmores"+".json");
-			if(Files.exists(bmoreSpawnFile) == false){
-				try {
-					Files.createDirectories(bmoreSpawnFile.getParent());
-					Files.write(bmoreSpawnFile, Arrays.asList(DataConstants.bmOreSpawnJSON.split("\n")), Charset.forName("UTF-8"));
-				} catch (IOException e) {
-					FMLLog.severe(MODID+": Error: Failed to write file "+bmoreSpawnFile);
-				}
-			}
-		}
+		NetherExpansionFolder = Paths.get(event.getSuggestedConfigurationFile().toPath().getParent().toString(),"NetherExpansion");
 
-		// Modern Metals
-		if(Loader.isModLoaded("modernmetals")) {
-			Path mmoreSpawnFile = Paths.get(oreSpawnFolder.toString(),MODID+"-mmores"+".json");
-			if(Files.exists(mmoreSpawnFile) == false){
-				try {
-					Files.createDirectories(mmoreSpawnFile.getParent());
-					Files.write(mmoreSpawnFile, Arrays.asList(DataConstants.mmOreSpawnJSON.split("\n")), Charset.forName("UTF-8"));
-				} catch (IOException e) {
-					FMLLog.severe(MODID+": Error: Failed to write file "+mmoreSpawnFile);
-				}
-			}
-		}
+
 		config.save();
 
 		Main.proxy.preInit(event);
+		
+		
 	}
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		Main.proxy.init(event);
+		
+	
+	
 	}
 
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		Main.proxy.postInit(event);
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 	@SidedProxy(clientSide="com.knoxhack.netherexpansion.ClientProxy", serverSide="com.knoxhack.netherexpansion.ServerProxy")

@@ -10,14 +10,12 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class ModBlockOre3 extends Block {
 
-	private Block drop;
 	private int meta;
 	private int least_quantity;
 	private int most_quantity;
 
 	protected ModBlockOre3(String unlocalizedName, Material mat, Block nethernickelOre, int meta, int least_quantity, int most_quantity) {
 		super(mat);
-		this.drop = nethernickelOre;
 		this.meta = meta;
 		this.least_quantity = least_quantity;
 		this.most_quantity = most_quantity;
