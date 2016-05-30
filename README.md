@@ -1,6 +1,7 @@
 ###Nether Expansion)
 
 #### ( Info ) :
+(The Master branch is based on Minecraft Forge 1.9.4)
 
 Nether Expansion offers unique, new content across the Nether. The Wither became a truly challenging boss with a great reward, but the adventure doesn't end there. The Nether is no longer just an the boring hell. Go find unique ores, battle new mobs, travel to new biomes.
 
