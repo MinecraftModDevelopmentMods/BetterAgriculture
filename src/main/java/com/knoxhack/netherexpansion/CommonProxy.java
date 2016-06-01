@@ -2,28 +2,22 @@ package com.knoxhack.netherexpansion;
 
 import com.knoxhack.netherexpansion.blocks.ModBlocks;
 import com.knoxhack.netherexpansion.crafting.ModCrafting;
-import com.knoxhack.netherexpansion.entity.MobEntityRegistry;
 import com.knoxhack.netherexpansion.structures.TutorialWorldGenerator;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-
+import net.minecraftforge.fml.common.FMLLog;
+import org.apache.logging.log4j.Logger;
 public class CommonProxy {
 
-  protected MobEntityRegistry            entityRegistry;
 
 
 	public void preInit(FMLPreInitializationEvent event) {
 		ModBlocks.createBlocks();
-  entityRegistry.register();
 		
 		
- // registerEntity(UndeadGhastly.class, UNDEAD_GHASTLY, EntityLiving.SpawnPlacementType.ON_GROUND, true);
-//  EntityRegistry.addSpawn(UndeadGhastly.class, 10, 1, 5, EnumCreatureType.CREATURE); //change the values to vary the spawn rarity, biome, etc. 
 
-		
-		
 	}
 
 	public void init(FMLInitializationEvent event) {
@@ -37,9 +31,23 @@ public class CommonProxy {
 
 	
 		
+	private static final Logger logger = FMLLog.getLogger();
 	
 
 	public void postInit(FMLPostInitializationEvent event) {
 
 	}
+
+	public void info(String s)
+
+	{
+		logger.info(s);	
+	}
+
+	public void error(String s)
+	{
+		logger.error(s);
+	}
+
+
 }

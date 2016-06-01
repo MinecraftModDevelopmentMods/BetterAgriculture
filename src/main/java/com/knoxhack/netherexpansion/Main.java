@@ -1,19 +1,25 @@
 package com.knoxhack.netherexpansion;
 
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.LinkedList;
-import java.util.List;
 
-import net.minecraftforge.common.config.Configuration;
+import com.knoxhack.netherexpansion.entity.UndeadGhastly;
+
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.*;
 
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EnumCreatureType;
+import net.minecraft.world.biome.*;
+import net.minecraftforge.common.BiomeDictionary;
+import net.minecraftforge.common.BiomeDictionary.Type;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.Mod.Instance;
 @Mod(
 		modid = Main.MODID,
 		name = Main.MODNAME,
@@ -30,35 +36,43 @@ public class Main {
 	public static final String MODID = "netherexpansion";
 	public static final String MODNAME = "Nether Expansion";
 	public static final String VERSION = "0.1";
+	private static int entityID = 0;
 
-	/** All ore-spawn files discovered in the ore-spawn folder */
-	public static final List<Path> NetherExpansionConfigFiles = new LinkedList<Path>();
-
-	/** location of ore-spawn files */
-	public static Path NetherExpansionFolder = null;
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		INSTANCE = this;
 
 		// load config
-		Configuration config = new Configuration(event.getSuggestedConfigurationFile());
-		config.load();
+        ConfigHandler.startConfig(event);
 
-		NetherExpansionFolder = Paths.get(event.getSuggestedConfigurationFile().toPath().getParent().toString(),"NetherExpansion");
+		
+		
+		//Bobregistry test
+        registerEntity(UndeadGhastly.class, "UndeadGhastly", 0x006400, 0x98FB98);
 
 
-		config.save();
 
 		Main.proxy.preInit(event);
 		
 		
 	}
 
+		
+	
+
+    private void registerEntity(Class<? extends Entity> entityClass, String entityName, int bkEggColor, int fgEggColor) {
+        EntityRegistry.registerModEntity(entityClass, entityName, entityID++, Main.INSTANCE, 80, 3, true, bkEggColor, fgEggColor);
+    }
+
+
+
+
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		Main.proxy.init(event);
-		
+        MinecraftForge.EVENT_BUS.register(Main.INSTANCE);
+
 	
 	
 	}
@@ -66,10 +80,40 @@ public class Main {
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		Main.proxy.postInit(event);
+		  proxy.info("*** Checking for monitor biomes");
+	        Biome[] forestBiomes = getBiomes(Type.FOREST, Type.BEACH, Type.SWAMP, Type.PLAINS);
+
+        addSpawn(UndeadGhastly.class, ConfigHandler.getGhastlySpawnProb(), 4, 4, forestBiomes);
+	}
 		
-		
-		
-		
+        private Biome[] getBiomes(Type... types) {
+            LinkedList<Biome> list = new LinkedList<Biome>();
+            for (Type t : types) {
+                Biome[] biomes = BiomeDictionary.getBiomesForType(t);
+                for (Biome bgb : biomes) {
+                    if (BiomeDictionary.isBiomeOfType(bgb, Type.END) || BiomeDictionary.isBiomeOfType(bgb, Type.NETHER)) {
+                        continue;
+                    }
+                    if (BiomeDictionary.isBiomeOfType(bgb, Type.SNOWY) || bgb.getTemperature() < 0.32F) { // exclude cold climates
+//    					proxy.info("  <<< Excluding " + bgb.biomeName + " for spawning");
+                        continue;
+                    }
+                    if (BiomeDictionary.isBiomeOfType(bgb, Type.WATER)) { // exclude ocean biomes
+//    					proxy.info("  <<< Excluding " + bgb.biomeName + " for spawning");
+                        continue;
+                    }
+                    if (!list.contains(bgb)) {
+                        list.add(bgb);
+                        proxy.info("  >>> Adding " + bgb.getBiomeName() + " for spawning");
+                    }
+                }
+            }
+            return list.toArray(new Biome[0]);
+        }
+        private void addSpawn(Class<? extends EntityLiving> entityClass, int spawnProb, int min, int max, Biome[] biomes) {
+            if (spawnProb > 0) {
+                EntityRegistry.addSpawn(entityClass, spawnProb, min, max, EnumCreatureType.CREATURE, biomes);
+            }
 		
 		
 		
