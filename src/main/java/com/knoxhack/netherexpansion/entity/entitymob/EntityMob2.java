@@ -1,4 +1,4 @@
-package com.knoxhack.netherexpansion.entity;
+package com.knoxhack.netherexpansion.entity.entitymob;
 
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.*;
@@ -8,9 +8,9 @@ import net.minecraft.world.World;
 
 
 
-public class UndeadGhastly extends EntityMob {
+public class EntityMob2 extends EntityMob {
 
-	public UndeadGhastly(World worldIn)
+	public EntityMob2(World worldIn)
 	{
 		super(worldIn);
 

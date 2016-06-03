@@ -2,7 +2,7 @@ package com.knoxhack.netherexpansion;
 
 import java.util.LinkedList;
 
-import com.knoxhack.netherexpansion.entity.UndeadGhastly;
+import com.knoxhack.netherexpansion.entity.entitymob.UndeadGhastly;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;

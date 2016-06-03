@@ -11,7 +11,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 
 
-public class ModelExoZombie extends ModelBase
+public class ModelEntityBoss2 extends ModelBase
 {
 
 	public ModelRenderer Head;
@@ -36,7 +36,7 @@ public class ModelExoZombie extends ModelBase
 	public ModelRenderer Back8;
 	public ModelRenderer Back9;
 
-	public ModelExoZombie()
+	public ModelEntityBoss2()
 	{
 		textureWidth = 64;
 		textureHeight = 32;
