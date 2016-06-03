@@ -1,13 +1,13 @@
-###Nether Expansion)
+###Better Agriculture)
 
 #### ( Info ) :
 (The Master branch is based on Minecraft Forge 1.9.4)
 
-Nether Expansion offers unique, new content across the Nether. The Wither became a truly challenging boss with a great reward, but the adventure doesn't end there. The Nether is no longer just an the boring hell. Go find unique ores, battle new mobs, travel to new biomes.
+TBE
 
 #### ( Mobs):
 
--Enhanced Wither Boss (Enhanced?)
+
 
 
 #### ( Biomes ):
@@ -22,7 +22,7 @@ Nether Expansion offers unique, new content across the Nether. The Wither became
 
 
 #### ( Github ):
-Check us on Github: https://github.com/nfinit-gaming/Nether-Expansion
+
 
 #### ( Discord ):
 We have a Discord server!  You can join with the following invite link: https://discord.gg/0eXbwPGyRiqemwip
