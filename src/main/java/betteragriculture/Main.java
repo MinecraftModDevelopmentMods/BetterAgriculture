@@ -2,8 +2,7 @@ package betteragriculture;
 
 import java.util.LinkedList;
 
-import betteragriculture.entity.entitymob.UndeadGhastly;
-
+import betteragriculture.entity.entitymob.EntityMobCow1;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -49,7 +48,7 @@ public class Main {
 		
 		
 		//Bobregistry test
-        registerEntity(UndeadGhastly.class, "UndeadGhastly", 0x006400, 0x98FB98);
+        registerEntity(EntityMobCow1.class, "UndeadGhastly", 0x006400, 0x98FB98);
 
 
 
@@ -83,7 +82,29 @@ public class Main {
 		  proxy.info("*** Checking for monitor biomes");
 	        Biome[] forestBiomes = getBiomes(Type.FOREST, Type.BEACH, Type.SWAMP, Type.PLAINS);
 
-        addSpawn(UndeadGhastly.class, ConfigHandler.getGhastlySpawnProb(), 4, 4, forestBiomes);
+        addSpawn(EntityMobCow1.class, ConfigHandler.getGhastlySpawnProb(), 4, 4, forestBiomes);
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 	}
 		
         private Biome[] getBiomes(Type... types) {
