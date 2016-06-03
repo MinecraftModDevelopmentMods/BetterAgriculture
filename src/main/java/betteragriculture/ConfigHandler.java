@@ -17,6 +17,7 @@ public class ConfigHandler {
 	private static final String despawnComment = "Set to false to not despawn. default is true.";
 	private static final String followOwnerComment = "Set to false to have tamed not follow owner, default is true.";
 	private static final String spawnProbComment = "Spawn Probability\nSet to zero to disable spawning of this entity";
+	private static  int EntityMobCow1SpawnProb = 0;
 
 
 
@@ -33,7 +34,27 @@ public class ConfigHandler {
 			config.addCustomCategoryComment(Configuration.CATEGORY_GENERAL, comments);
 
 			GhastlySpawnProb = config.get(Configuration.CATEGORY_GENERAL, "GhastlySpawnProb", 10, spawnProbComment).getInt();
-		
+			EntityMobCow1SpawnProb = config.get(Configuration.CATEGORY_GENERAL, "EntityMobCow1SpawnProb", 10, spawnProbComment).getInt();
+
+			
+			
+			
+			
+			
+			
+			
+			
+			config.get(Configuration.CATEGORY_GENERAL, "EnityMobCow1SpawnProb", 10, spawnProbComment).getInt();
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			randomScale = config.get(Configuration.CATEGORY_GENERAL, "randomScale", true, randomScaleComment).getBoolean(true);
 			despawn = config.get(Configuration.CATEGORY_GENERAL, "despawn", true, despawnComment).getBoolean(true);
 			followOwner = config.get(Configuration.CATEGORY_GENERAL, "followOwner", true, followOwnerComment).getBoolean(true);
@@ -64,16 +85,15 @@ public class ConfigHandler {
 	public static int getGhastlySpawnProb()
 	{
 		return GhastlySpawnProb;
+		
 	}
 
 
-
-
-
-
-
-
-
+	public static int getEntityMobCow1SpawnProb()
+	{
+		return EntityMobCow1SpawnProb;
+		
+	}
 
 
 

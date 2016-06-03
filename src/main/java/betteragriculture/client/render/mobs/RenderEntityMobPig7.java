@@ -1,29 +1,26 @@
 package betteragriculture.client.render.mobs;
 
-import betteragriculture.client.model.ModelEntityBoss1;
-import betteragriculture.client.model.ModelUndeadGhastly;
-import betteragriculture.entity.entityboss.EntityBoss1;
-import betteragriculture.entity.entitymob.UndeadGhastly;
-
+import betteragriculture.entity.entitymob.EntityMobPig7;
+import net.minecraft.client.model.ModelPig;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.client.renderer.entity.layers.LayerHeldItem;
 import net.minecraft.util.ResourceLocation;
 
-public class RenderEntityMobPig7 extends RenderLiving<EntityBoss1>
+public class RenderEntityMobPig7 extends RenderLiving<EntityMobPig7>
 {
-	private final ResourceLocation textures = new ResourceLocation("netherexpansion:textures/models/UndeadGhastly.png");
+	private final ResourceLocation textures = new ResourceLocation("betteragriculture:textures/models/pig2.png");
 
 	public RenderEntityMobPig7(RenderManager renderManager)
 	{
-		super(renderManager, new ModelEntityBoss1(), 0);
+		super(renderManager, new ModelPig(), 0);
 		this.addLayer(new LayerHeldItem(this));
 	}
 
 	
 
 	@Override
-	protected ResourceLocation getEntityTexture(EntityBoss1 entity)
+	protected ResourceLocation getEntityTexture(EntityMobPig7 entity)
 	{
 		return textures;
 	}

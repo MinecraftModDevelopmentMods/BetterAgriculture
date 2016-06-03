@@ -1,29 +1,29 @@
 package betteragriculture.client.render.mobs;
 
-import betteragriculture.client.model.ModelEntityBoss1;
-import betteragriculture.client.model.ModelUndeadGhastly;
-import betteragriculture.entity.entityboss.EntityBoss1;
-import betteragriculture.entity.entitymob.UndeadGhastly;
-
+import betteragriculture.entity.entitymob.EntityMobSheep2;
+import net.minecraft.client.model.ModelSheep1;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.client.renderer.entity.layers.LayerHeldItem;
 import net.minecraft.util.ResourceLocation;
 
-public class RenderEntityMobSheep2 extends RenderLiving<EntityBoss1>
+public class RenderEntityMobSheep2 extends RenderLiving<EntityMobSheep2>
 {
 	private final ResourceLocation textures = new ResourceLocation("netherexpansion:textures/models/UndeadGhastly.png");
 
 	public RenderEntityMobSheep2(RenderManager renderManager)
 	{
-		super(renderManager, new ModelEntityBoss1(), 0);
+		
+		
+		//Model Registry   "ModelSheep1= Vanilla Minecraft Sheep 1 model"
+		super(renderManager, new ModelSheep1(), 0);
 		this.addLayer(new LayerHeldItem(this));
 	}
 
 	
 
 	@Override
-	protected ResourceLocation getEntityTexture(EntityBoss1 entity)
+	protected ResourceLocation getEntityTexture(EntityMobSheep2 entity)
 	{
 		return textures;
 	}

@@ -1,29 +1,26 @@
 package betteragriculture.client.render.mobs;
 
-import betteragriculture.client.model.ModelEntityBoss1;
-import betteragriculture.client.model.ModelUndeadGhastly;
-import betteragriculture.entity.entityboss.EntityBoss1;
-import betteragriculture.entity.entitymob.UndeadGhastly;
-
+import betteragriculture.entity.entitymob.EntityMobCow3;
+import net.minecraft.client.model.ModelCow;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.client.renderer.entity.layers.LayerHeldItem;
 import net.minecraft.util.ResourceLocation;
 
-public class RenderEntityMobCow3 extends RenderLiving<EntityBoss1>
+public class RenderEntityMobCow3 extends RenderLiving<EntityMobCow3>
 {
 	private final ResourceLocation textures = new ResourceLocation("netherexpansion:textures/models/UndeadGhastly.png");
 
 	public RenderEntityMobCow3(RenderManager renderManager)
 	{
-		super(renderManager, new ModelEntityBoss1(), 0);
+		super(renderManager, new ModelCow(), 0);
 		this.addLayer(new LayerHeldItem(this));
 	}
 
 	
 
 	@Override
-	protected ResourceLocation getEntityTexture(EntityBoss1 entity)
+	protected ResourceLocation getEntityTexture(EntityMobCow3 entity)
 	{
 		return textures;
 	}

@@ -61,10 +61,6 @@ import betteragriculture.entity.entitymob.EntityMobCow6;
 import betteragriculture.entity.entitymob.EntityMobCow7;
 import betteragriculture.entity.entitymob.EntityMobCow8;
 import betteragriculture.entity.entitymob.EntityMobCow9;
-import betteragriculture.entity.entitymob.EntityMobDuck1;
-import betteragriculture.entity.entitymob.EntityMobDuck2;
-import betteragriculture.entity.entitymob.EntityMobDuck3;
-import betteragriculture.entity.entitymob.EntityMobDuck4;
 import betteragriculture.entity.entitymob.EntityMobPig1;
 import betteragriculture.entity.entitymob.EntityMobPig10;
 import betteragriculture.entity.entitymob.EntityMobPig2;
@@ -101,10 +97,10 @@ public class ClientProxy extends CommonProxy {
 	public void preInit(FMLPreInitializationEvent event) {
 		super.preInit(event);
 //Render mobs
-		@SuppressWarnings("unused")
 		
 		
 		// Render Manager
+		@SuppressWarnings("unused")
 		RenderManager rm = Minecraft.getMinecraft().getRenderManager();
 		
 		
@@ -153,10 +149,10 @@ public class ClientProxy extends CommonProxy {
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobChicken9.class, RenderEntityMobChicken9::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobChicken10.class, RenderEntityMobChicken10::new);
 
-		RenderingRegistry.registerEntityRenderingHandler(EntityMobDuck1.class, RenderEntityMobDuck1::new);
-		RenderingRegistry.registerEntityRenderingHandler(EntityMobDuck2.class, RenderEntityMobDuck2::new);
-		RenderingRegistry.registerEntityRenderingHandler(EntityMobDuck3.class, RenderEntityMobDuck3::new);
-		RenderingRegistry.registerEntityRenderingHandler(EntityMobDuck4.class, RenderEntityMobDuck4::new);
+		//RenderingRegistry.registerEntityRenderingHandler(EntityMobDuck1.class, RenderEntityMobDuck1::new);
+	//	RenderingRegistry.registerEntityRenderingHandler(EntityMobDuck2.class, RenderEntityMobDuck2::new);
+	//	RenderingRegistry.registerEntityRenderingHandler(EntityMobDuck3.class, RenderEntityMobDuck3::new);
+	//.registerEntityRenderingHandler(EntityMobDuck4.class, RenderEntityMobDuck4::new);
 
 		
 		
