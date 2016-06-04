@@ -11,7 +11,7 @@ public class ConfigHandler {
 	static private boolean randomScale;
 	static private boolean followOwner;
 
-	private static final String comments = Main.MODNAME + " Config\n Nether Expansion (Knoxhack)\n"
+	private static final String comments = Main.MODNAME + " Config\n Better Agriculture \n"
 			+ " For Nether Expansion " + Main.VERSION;
 	private static final String randomScaleComment = "Set to false to disable random scaling, default is true.";
 	private static final String despawnComment = "Set to false to not despawn. default is true.";
@@ -61,6 +61,8 @@ public class ConfigHandler {
 	private static  int EntityMobSheep9SpawnProb = 0;
 	private static  int EntityMobSheep10SpawnProb = 0;
 
+	private static  int EntityMobNpcFemale1SpawnProb = 0;
+	private static  int EntityMobNpcMale1SpawnProb = 0;
 
 
 	public static void startConfig(FMLPreInitializationEvent event)
@@ -121,7 +123,9 @@ public class ConfigHandler {
 			EntityMobSheep10SpawnProb = config.get(Configuration.CATEGORY_GENERAL, "EntityMobSheep10SpawnProb", 10, spawnProbComment).getInt();
 			
 			
-			
+			EntityMobNpcFemale1SpawnProb = config.get(Configuration.CATEGORY_GENERAL, "EntityMobNpcFemale1SpawnProb", 10, spawnProbComment).getInt();
+			EntityMobNpcMale1SpawnProb = config.get(Configuration.CATEGORY_GENERAL, "EntityMobNpcMale1SpawnProb", 10, spawnProbComment).getInt();
+
 			
 			
 			
@@ -232,7 +236,9 @@ public class ConfigHandler {
 			config.get(Configuration.CATEGORY_GENERAL, "EnityMobPig9SpawnProb", 10, spawnProbComment).getInt();
 			config.get(Configuration.CATEGORY_GENERAL, "EnityMobPig10SpawnProb", 10, spawnProbComment).getInt();
 
-			
+			config.get(Configuration.CATEGORY_GENERAL, "EnityMobNpcFemale1SpawnProb", 10, spawnProbComment).getInt();
+			config.get(Configuration.CATEGORY_GENERAL, "EnityMobNpcMale1SpawnProb", 10, spawnProbComment).getInt();
+
 			
 			
 			
@@ -504,7 +510,17 @@ public class ConfigHandler {
 	}
 
 	
-	
+	public static int getEntityMobNpcFemale1SpawnProb()
+	{
+		return EntityMobNpcFemale1SpawnProb;
+		
+	}
+	public static int getEntityMobNpcMale1SpawnProb()
+	{
+		return EntityMobNpcMale1SpawnProb;
+		
+	}
+
 	
 	
 	

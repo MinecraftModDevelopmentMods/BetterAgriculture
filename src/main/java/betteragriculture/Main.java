@@ -66,7 +66,7 @@ import net.minecraftforge.fml.common.Mod.Instance;
 		version = Main.VERSION,
 		dependencies = "required-after:Forge",
 		acceptedMinecraftVersions = "1.8.9,)",
-		updateJSON = "https://raw.githubusercontent.com/nfinit-gaming/Nether-Expansion/master/update.json")
+		updateJSON = "https://raw.githubusercontent.com/nfinit-gaming/BetterAgriculture/master/update.json")
 
 public class Main {
 
@@ -193,10 +193,10 @@ public class Main {
 	public void postInit(FMLPostInitializationEvent event) {
 		Main.proxy.postInit(event);
 		  proxy.info("*** Checking for monitor biomes");
-	        Biome[] sheepBiomes = getBiomes(Type.HILLS);
-	        Biome[] chickenBiomes = getBiomes(Type.JUNGLE);
-	        Biome[] cowBiomes = getBiomes(Type.PLAINS);
-	        Biome[] pigBiomes = getBiomes(Type.SWAMP);
+	        Biome[] sheepBiomes = getBiomes(Type.HILLS,Type.FOREST);
+	        Biome[] chickenBiomes = getBiomes(Type.JUNGLE,Type.FOREST);
+	        Biome[] cowBiomes = getBiomes(Type.PLAINS,Type.SAVANNA,Type.FOREST);
+	        Biome[] pigBiomes = getBiomes(Type.SWAMP,Type.FOREST);
 
 	        
 	        
@@ -254,7 +254,9 @@ public class Main {
         addSpawn(EntityMobSheep10.class, ConfigHandler.getEntityMobSheep10SpawnProb(), 4, 4, sheepBiomes);
 
         
-        
+        addSpawn(EntityMobNpcFemale1.class, ConfigHandler.getEntityMobNpcFemale1SpawnProb(), 4, 4, sheepBiomes);
+        addSpawn(EntityMobNpcMale1.class, ConfigHandler.getEntityMobNpcMale1SpawnProb(), 4, 4, sheepBiomes);
+
         
         
         
