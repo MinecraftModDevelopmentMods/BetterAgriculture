@@ -21,6 +21,8 @@ import betteragriculture.client.render.mobs.RenderEntityMobCow6;
 import betteragriculture.client.render.mobs.RenderEntityMobCow7;
 import betteragriculture.client.render.mobs.RenderEntityMobCow8;
 import betteragriculture.client.render.mobs.RenderEntityMobCow9;
+import betteragriculture.client.render.mobs.RenderEntityMobNpcFemale1;
+import betteragriculture.client.render.mobs.RenderEntityMobNpcMale1;
 import betteragriculture.client.render.mobs.RenderEntityMobPig1;
 import betteragriculture.client.render.mobs.RenderEntityMobPig10;
 import betteragriculture.client.render.mobs.RenderEntityMobPig2;
@@ -61,6 +63,8 @@ import betteragriculture.entity.entitymob.EntityMobCow6;
 import betteragriculture.entity.entitymob.EntityMobCow7;
 import betteragriculture.entity.entitymob.EntityMobCow8;
 import betteragriculture.entity.entitymob.EntityMobCow9;
+import betteragriculture.entity.entitymob.EntityMobNpcFemale1;
+import betteragriculture.entity.entitymob.EntityMobNpcMale1;
 import betteragriculture.entity.entitymob.EntityMobPig1;
 import betteragriculture.entity.entitymob.EntityMobPig10;
 import betteragriculture.entity.entitymob.EntityMobPig2;
@@ -149,6 +153,28 @@ public class ClientProxy extends CommonProxy {
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobChicken9.class, RenderEntityMobChicken9::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobChicken10.class, RenderEntityMobChicken10::new);
 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		RenderingRegistry.registerEntityRenderingHandler(EntityMobNpcFemale1.class, RenderEntityMobNpcFemale1::new);
+		RenderingRegistry.registerEntityRenderingHandler(EntityMobNpcMale1.class, RenderEntityMobNpcMale1::new);
+
+		
+		
+		
+		
+		
+		
+		
+		
 		//RenderingRegistry.registerEntityRenderingHandler(EntityMobDuck1.class, RenderEntityMobDuck1::new);
 	//	RenderingRegistry.registerEntityRenderingHandler(EntityMobDuck2.class, RenderEntityMobDuck2::new);
 	//	RenderingRegistry.registerEntityRenderingHandler(EntityMobDuck3.class, RenderEntityMobDuck3::new);

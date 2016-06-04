@@ -2,13 +2,13 @@ package betteragriculture.entity.entitymob;
 
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.*;
-import net.minecraft.entity.passive.EntitySheep;
+import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 
 
 
-public class EntityMobSheep1 extends EntitySheep {
+public class EntityMobSheep1 extends EntityMob {
 
 	public EntityMobSheep1(World worldIn)
 	{

@@ -1,6 +1,5 @@
 package betteragriculture.client.render.mobs;
 
-import betteragriculture.entity.entityboss.EntityBoss1;
 import betteragriculture.entity.entitymob.EntityMobCow2;
 import net.minecraft.client.model.ModelCow;
 import net.minecraft.client.renderer.entity.RenderLiving;
@@ -10,7 +9,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class RenderEntityMobCow2 extends RenderLiving<EntityMobCow2>
 {
-	private final ResourceLocation textures = new ResourceLocation("netherexpansion:textures/models/UndeadGhastly.png");
+	private final ResourceLocation textures = new ResourceLocation("betteragriculture:textures/models/cow2.png");
 
 	public RenderEntityMobCow2(RenderManager renderManager)
 	{

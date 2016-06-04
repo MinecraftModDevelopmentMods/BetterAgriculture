@@ -9,7 +9,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class RenderEntityMobSheep10 extends RenderLiving<EntityMobSheep10>
 {
-	private final ResourceLocation textures = new ResourceLocation("netherexpansion:textures/models/UndeadGhastly.png");
+	private final ResourceLocation textures = new ResourceLocation("betteragriculture:textures/models/sheep10.png");
 
 	public RenderEntityMobSheep10(RenderManager renderManager)
 	{

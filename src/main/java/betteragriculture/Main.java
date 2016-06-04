@@ -22,6 +22,8 @@ import betteragriculture.entity.entitymob.EntityMobCow6;
 import betteragriculture.entity.entitymob.EntityMobCow7;
 import betteragriculture.entity.entitymob.EntityMobCow8;
 import betteragriculture.entity.entitymob.EntityMobCow9;
+import betteragriculture.entity.entitymob.EntityMobNpcFemale1;
+import betteragriculture.entity.entitymob.EntityMobNpcMale1;
 import betteragriculture.entity.entitymob.EntityMobPig1;
 import betteragriculture.entity.entitymob.EntityMobPig10;
 import betteragriculture.entity.entitymob.EntityMobPig2;
@@ -98,6 +100,15 @@ public class Main {
         registerEntity(EntityMobCow9.class, "EntityMobCow9", 0x006400, 0x98FB98);
         registerEntity(EntityMobCow10.class, "EntityMobCow10", 0x006400, 0x98FB98);
 
+        
+        
+        registerEntity(EntityMobNpcFemale1.class, "EntityMobNpcFemale1", 0x006460, 0x98FB98);
+        registerEntity(EntityMobNpcMale1.class, "EntityMobNpcMale1", 0x006460, 0x98FB98);
+
+        
+        
+        
+        
         registerEntity(EntityMobSheep1.class, "EntityMobSheep1", 0x008500, 0x98FB98);
         registerEntity(EntityMobSheep2.class, "EntityMobSheep2", 0x008500, 0x98FB98);
         registerEntity(EntityMobSheep3.class, "EntityMobSheep3", 0x008500, 0x98FB98);
@@ -122,16 +133,16 @@ public class Main {
         registerEntity(EntityMobPig10.class, "EntityMobPig10", 0x008500, 0x98FB98);
 
         
-        registerEntity(EntityMobChicken1.class, "EntityMobChucken1", 0x008500, 0x98FB98);
-        registerEntity(EntityMobChicken2.class, "EntityMobChucken2", 0x008500, 0x98FB98);
-        registerEntity(EntityMobChicken3.class, "EntityMobChucken3", 0x006500, 0x98FB98);
-        registerEntity(EntityMobChicken4.class, "EntityMobChucken4", 0x008500, 0x98FB98);
-        registerEntity(EntityMobChicken5.class, "EntityMobChucken5", 0x007500, 0x98FB98);
-        registerEntity(EntityMobChicken6.class, "EntityMobChucken6", 0x008500, 0x98FB98);
-        registerEntity(EntityMobChicken7.class, "EntityMobChucken7", 0x007500, 0x98FB98);
-        registerEntity(EntityMobChicken8.class, "EntityMobChucken8", 0x008500, 0x98FB98);
-        registerEntity(EntityMobChicken9.class, "EntityMobChucken9", 0x008500, 0x98FB98);
-        registerEntity(EntityMobChicken10.class, "EntityMobChucken10", 0x008500, 0x98FB98);
+        registerEntity(EntityMobChicken1.class, "EntityMobChicken1", 0x008500, 0x98FB98);
+        registerEntity(EntityMobChicken2.class, "EntityMobChicken2", 0x008500, 0x98FB98);
+        registerEntity(EntityMobChicken3.class, "EntityMobChicken3", 0x006500, 0x98FB98);
+        registerEntity(EntityMobChicken4.class, "EntityMobChicken4", 0x008500, 0x98FB98);
+        registerEntity(EntityMobChicken5.class, "EntityMobChicken5", 0x007500, 0x98FB98);
+        registerEntity(EntityMobChicken6.class, "EntityMobChicken6", 0x008500, 0x98FB98);
+        registerEntity(EntityMobChicken7.class, "EntityMobChicken7", 0x007500, 0x98FB98);
+        registerEntity(EntityMobChicken8.class, "EntityMobChicken8", 0x008500, 0x98FB98);
+        registerEntity(EntityMobChicken9.class, "EntityMobChicken9", 0x008500, 0x98FB98);
+        registerEntity(EntityMobChicken10.class, "EntityMobChicken10", 0x008500, 0x98FB98);
 
         
         
@@ -182,13 +193,66 @@ public class Main {
 	public void postInit(FMLPostInitializationEvent event) {
 		Main.proxy.postInit(event);
 		  proxy.info("*** Checking for monitor biomes");
-	        Biome[] forestBiomes = getBiomes(Type.FOREST, Type.BEACH, Type.SWAMP, Type.PLAINS);
+	        Biome[] sheepBiomes = getBiomes(Type.HILLS);
+	        Biome[] chickenBiomes = getBiomes(Type.JUNGLE);
+	        Biome[] cowBiomes = getBiomes(Type.PLAINS);
+	        Biome[] pigBiomes = getBiomes(Type.SWAMP);
 
-        addSpawn(EntityMobCow1.class, ConfigHandler.getGhastlySpawnProb(), 4, 4, forestBiomes);
-        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
 
-        
-        
+        addSpawn(EntityMobCow1.class, ConfigHandler.getEntityMobCow1SpawnProb(), 4, 4, cowBiomes);
+        addSpawn(EntityMobCow2.class, ConfigHandler.getEntityMobCow2SpawnProb(), 4, 4, cowBiomes);
+        addSpawn(EntityMobCow3.class, ConfigHandler.getEntityMobCow3SpawnProb(), 4, 4, cowBiomes);
+        addSpawn(EntityMobCow4.class, ConfigHandler.getEntityMobCow4SpawnProb(), 4, 4, cowBiomes);
+        addSpawn(EntityMobCow5.class, ConfigHandler.getEntityMobCow5SpawnProb(), 4, 4, cowBiomes);
+        addSpawn(EntityMobCow6.class, ConfigHandler.getEntityMobCow6SpawnProb(), 4, 4, cowBiomes);
+        addSpawn(EntityMobCow7.class, ConfigHandler.getEntityMobCow7SpawnProb(), 4, 4, cowBiomes);
+        addSpawn(EntityMobCow8.class, ConfigHandler.getEntityMobCow8SpawnProb(), 4, 4, cowBiomes);
+        addSpawn(EntityMobCow9.class, ConfigHandler.getEntityMobCow9SpawnProb(), 4, 4, cowBiomes);
+        addSpawn(EntityMobCow10.class, ConfigHandler.getEntityMobCow10SpawnProb(), 4, 4, cowBiomes);
+
+        addSpawn(EntityMobChicken1.class, ConfigHandler.getEntityMobChicken1SpawnProb(), 4, 4, chickenBiomes);
+        addSpawn(EntityMobChicken2.class, ConfigHandler.getEntityMobChicken2SpawnProb(), 4, 4, chickenBiomes);
+        addSpawn(EntityMobChicken3.class, ConfigHandler.getEntityMobChicken3SpawnProb(), 4, 4, chickenBiomes);
+        addSpawn(EntityMobChicken4.class, ConfigHandler.getEntityMobChicken4SpawnProb(), 4, 4, chickenBiomes);
+        addSpawn(EntityMobChicken5.class, ConfigHandler.getEntityMobChicken5SpawnProb(), 4, 4, chickenBiomes);
+        addSpawn(EntityMobChicken6.class, ConfigHandler.getEntityMobChicken6SpawnProb(), 4, 4, chickenBiomes);
+        addSpawn(EntityMobChicken7.class, ConfigHandler.getEntityMobChicken7SpawnProb(), 4, 4, chickenBiomes);
+        addSpawn(EntityMobChicken8.class, ConfigHandler.getEntityMobChicken8SpawnProb(), 4, 4, chickenBiomes);
+        addSpawn(EntityMobChicken9.class, ConfigHandler.getEntityMobChicken9SpawnProb(), 4, 4, chickenBiomes);
+        addSpawn(EntityMobChicken10.class, ConfigHandler.getEntityMobChicken10SpawnProb(), 4, 4, chickenBiomes);
+
+        addSpawn(EntityMobPig1.class, ConfigHandler.getEntityMobPig1SpawnProb(), 4, 4, pigBiomes);
+        addSpawn(EntityMobPig2.class, ConfigHandler.getEntityMobPig2SpawnProb(), 4, 4, pigBiomes);
+        addSpawn(EntityMobPig3.class, ConfigHandler.getEntityMobPig3SpawnProb(), 4, 4, pigBiomes);
+        addSpawn(EntityMobPig4.class, ConfigHandler.getEntityMobPig4SpawnProb(), 4, 4, pigBiomes);
+        addSpawn(EntityMobPig5.class, ConfigHandler.getEntityMobPig5SpawnProb(), 4, 4, pigBiomes);
+        addSpawn(EntityMobPig6.class, ConfigHandler.getEntityMobPig6SpawnProb(), 4, 4, pigBiomes);
+        addSpawn(EntityMobPig7.class, ConfigHandler.getEntityMobPig7SpawnProb(), 4, 4, pigBiomes);
+        addSpawn(EntityMobPig8.class, ConfigHandler.getEntityMobPig8SpawnProb(), 4, 4, pigBiomes);
+        addSpawn(EntityMobPig9.class, ConfigHandler.getEntityMobPig9SpawnProb(), 4, 4, pigBiomes);
+        addSpawn(EntityMobPig10.class, ConfigHandler.getEntityMobPig10SpawnProb(), 4, 4, pigBiomes);
+
+        addSpawn(EntityMobSheep1.class, ConfigHandler.getEntityMobSheep1SpawnProb(), 4, 4, sheepBiomes);
+        addSpawn(EntityMobSheep2.class, ConfigHandler.getEntityMobSheep2SpawnProb(), 4, 4, sheepBiomes);
+        addSpawn(EntityMobSheep3.class, ConfigHandler.getEntityMobSheep3SpawnProb(), 4, 4, sheepBiomes);
+        addSpawn(EntityMobSheep4.class, ConfigHandler.getEntityMobSheep4SpawnProb(), 4, 4, sheepBiomes);
+        addSpawn(EntityMobSheep5.class, ConfigHandler.getEntityMobSheep5SpawnProb(), 4, 4, sheepBiomes);
+        addSpawn(EntityMobSheep6.class, ConfigHandler.getEntityMobSheep6SpawnProb(), 4, 4, sheepBiomes);
+        addSpawn(EntityMobSheep7.class, ConfigHandler.getEntityMobSheep7SpawnProb(), 4, 4, sheepBiomes);
+        addSpawn(EntityMobSheep8.class, ConfigHandler.getEntityMobSheep8SpawnProb(), 4, 4, sheepBiomes);
+        addSpawn(EntityMobSheep9.class, ConfigHandler.getEntityMobSheep9SpawnProb(), 4, 4, sheepBiomes);
+        addSpawn(EntityMobSheep10.class, ConfigHandler.getEntityMobSheep10SpawnProb(), 4, 4, sheepBiomes);
+
         
         
         
