@@ -1,8 +1,6 @@
 package betteragriculture.client.model;
 
 import betteragriculture.entity.entitymob.EntityMobSheep10;
-
-
 import net.minecraft.client.model.ModelQuadruped;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
@@ -34,16 +32,7 @@ public class ModelEntityMobSheep10Model2 extends ModelQuadruped
     {
         super.setLivingAnimations(entitylivingbaseIn, p_78086_2_, p_78086_3_, partialTickTime);
         this.head.rotationPointY = 6.0F + ((EntityMobSheep10)entitylivingbaseIn).getHeadRotationPointY(partialTickTime) * 9.0F;
-
-        
-        
         this.headRotationAngleX = ((EntityMobSheep10)entitylivingbaseIn).getHeadRotationAngleX(partialTickTime);
-
-        
-        
-        
-        
-        
     }
 
     /**

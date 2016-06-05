@@ -2,7 +2,6 @@ package betteragriculture.entity.entitymob;
 
 import com.google.common.collect.Maps;
 import java.util.Map;
-import java.util.Random;
 import javax.annotation.Nullable;
 import net.minecraft.block.Block;
 import net.minecraft.entity.EntityAgeable;
@@ -320,14 +319,7 @@ public class EntityMobSheep3 extends EntityAnimal implements net.minecraftforge.
         }
     }
 
-    /**
-     * Chooses a "vanilla" sheep color based on the provided random.
-     */
-    public static EnumDyeColor getRandomSheepColor(Random random)
-    {
-        int i = random.nextInt(100);
-        return i < 5 ? EnumDyeColor.BLACK : (i < 10 ? EnumDyeColor.GRAY : (i < 15 ? EnumDyeColor.SILVER : (i < 18 ? EnumDyeColor.BROWN : (random.nextInt(500) == 0 ? EnumDyeColor.PINK : EnumDyeColor.WHITE))));
-    }
+
 
     public EntityMobSheep3 createChild(EntityAgeable ageable)
     {
@@ -359,7 +351,7 @@ public class EntityMobSheep3 extends EntityAnimal implements net.minecraftforge.
     public IEntityLivingData onInitialSpawn(DifficultyInstance difficulty, @Nullable IEntityLivingData livingdata)
     {
         livingdata = super.onInitialSpawn(difficulty, livingdata);
-        this.setFleeceColor(getRandomSheepColor(this.worldObj.rand));
+
         return livingdata;
     }
 

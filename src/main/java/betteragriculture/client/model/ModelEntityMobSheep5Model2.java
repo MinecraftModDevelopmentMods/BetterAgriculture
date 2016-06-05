@@ -32,16 +32,7 @@ public class ModelEntityMobSheep5Model2 extends ModelQuadruped
     {
         super.setLivingAnimations(entitylivingbaseIn, p_78086_2_, p_78086_3_, partialTickTime);
         this.head.rotationPointY = 6.0F + ((EntityMobSheep5)entitylivingbaseIn).getHeadRotationPointY(partialTickTime) * 9.0F;
-
-        
-        
         this.headRotationAngleX = ((EntityMobSheep5)entitylivingbaseIn).getHeadRotationAngleX(partialTickTime);
-
-        
-        
-        
-        
-        
     }
 
     /**

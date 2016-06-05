@@ -1,17 +1,6 @@
 package betteragriculture.client.model;
 
 import betteragriculture.entity.entitymob.EntityMobSheep1;
-import betteragriculture.entity.entitymob.EntityMobSheep2;
-import betteragriculture.entity.entitymob.EntityMobSheep3;
-import betteragriculture.entity.entitymob.EntityMobSheep4;
-import betteragriculture.entity.entitymob.EntityMobSheep5;
-import betteragriculture.entity.entitymob.EntityMobSheep6;
-import betteragriculture.entity.entitymob.EntityMobSheep7;
-import betteragriculture.entity.entitymob.EntityMobSheep8;
-import betteragriculture.entity.entitymob.EntityMobSheep9;
-import betteragriculture.entity.entitymob.EntityMobSheep10;
-
-
 import net.minecraft.client.model.ModelQuadruped;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
@@ -43,16 +32,7 @@ public class ModelEntityMobSheep1Model2 extends ModelQuadruped
     {
         super.setLivingAnimations(entitylivingbaseIn, p_78086_2_, p_78086_3_, partialTickTime);
         this.head.rotationPointY = 6.0F + ((EntityMobSheep1)entitylivingbaseIn).getHeadRotationPointY(partialTickTime) * 9.0F;
-
-        
-        
         this.headRotationAngleX = ((EntityMobSheep1)entitylivingbaseIn).getHeadRotationAngleX(partialTickTime);
-
-        
-        
-        
-        
-        
     }
 
     /**

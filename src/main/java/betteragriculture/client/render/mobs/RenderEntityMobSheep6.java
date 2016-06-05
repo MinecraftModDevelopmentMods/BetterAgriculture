@@ -1,10 +1,10 @@
 package betteragriculture.client.render.mobs;
 
 import betteragriculture.client.model.ModelEntityMobSheep6Model2;
+import betteragriculture.client.render.mobs.layer.EntityLayerSheepWool6;
 import betteragriculture.entity.entitymob.EntityMobSheep6;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.client.renderer.entity.layers.LayerHeldItem;
 import net.minecraft.util.ResourceLocation;
 
 public class RenderEntityMobSheep6 extends RenderLiving<EntityMobSheep6>
@@ -13,7 +13,7 @@ public class RenderEntityMobSheep6 extends RenderLiving<EntityMobSheep6>
 	public RenderEntityMobSheep6(RenderManager renderManager)
 	{
 		super(renderManager, new ModelEntityMobSheep6Model2(), 0);
-		this.addLayer(new LayerHeldItem(this));
+        this.addLayer(new EntityLayerSheepWool6(this));
 	}
 
 	

@@ -16,7 +16,7 @@ import net.minecraftforge.fml.common.IWorldGenerator;
 
 public class WorldGen implements IWorldGenerator {
 
-	private WorldGenerator gen_nether_coal_ore;			// Generates Coal Ore (used in Nether)
+	private WorldGenerator gen_slate_ore;			// Generates Coal Ore (used in Nether)
 
 
 
@@ -24,7 +24,7 @@ public class WorldGen implements IWorldGenerator {
 	public WorldGen() {
 
 		// Vanilla
-		this.gen_nether_coal_ore = new WorldGenMinable(ModBlocks.nethercoalOre.getDefaultState(), 16, BlockMatcher.forBlock(Blocks.NETHERRACK));
+		this.gen_slate_ore = new WorldGenMinable(ModBlocks.slateOre.getDefaultState(), 16, BlockMatcher.forBlock(Blocks.STONE));
 	    
 	}
 
@@ -33,10 +33,16 @@ public class WorldGen implements IWorldGenerator {
 			IChunkProvider chunkProvider) {
 		switch (world.provider.getDimension()) {
 		case 0: // Overworld
+			
+			this.runGenerator(this.gen_slate_ore, world, random, chunkX, chunkZ, 5, 0, 200);
+
+			
+			
+			
+			
 			break;
 		case -1: // Nether
 			// Vanilla
-			this.runGenerator(this.gen_nether_coal_ore, world, random, chunkX, chunkZ, 5, 0, 200);
 
 
 			

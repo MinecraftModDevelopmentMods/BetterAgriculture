@@ -15,14 +15,9 @@ public final class BlockRenderRegister {
 		// Vanilla
 
 		reg(ModBlocks.concreteBlock);
-		reg(ModBlocks.brickBlock);
-		reg(ModBlocks.barnroofside1Block);
-		reg(ModBlocks.barnroofside2Block);
-		reg(ModBlocks.barnroofside12Block);
-		reg(ModBlocks.barnroofside13Block);
-		reg(ModBlocks.barnrooftopBlock);
-		reg(ModBlocks.barnrooftop2Block);
-		reg(ModBlocks.birchwatertroughBlock);
+		reg(ModBlocks.redsidingBlock);
+		reg(ModBlocks.slateOre);
+		reg(ModBlocks.whitesidingBlock);
 
 	}
 

@@ -1,8 +1,8 @@
 package betteragriculture.client.render.mobs.layer;
 
+import betteragriculture.client.model.ModelEntityMobSheep1Model1;
 import betteragriculture.client.render.mobs.RenderEntityMobSheep1;
 import betteragriculture.entity.entitymob.EntityMobSheep1;
-import net.minecraft.client.model.ModelSheep2;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.entity.layers.LayerRenderer;
 import net.minecraft.item.EnumDyeColor;
@@ -13,13 +13,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 public class EntityLayerSheepWool implements LayerRenderer<EntityMobSheep1>
 {
-    private static final ResourceLocation TEXTURE = new ResourceLocation("textures/entity/sheep/sheep_fur.png");
+    private static final ResourceLocation TEXTURE = new ResourceLocation("betteragriculture:textures/models/sheep_1_fur.png");
     private final RenderEntityMobSheep1 sheepRenderer;
-    private final ModelSheep2 sheepModel = new ModelSheep2();
+    private final ModelEntityMobSheep1Model1 sheepModel = new ModelEntityMobSheep1Model1();
 
-    public EntityLayerSheepWool(RenderEntityMobSheep1 renderEntityMobSheep1)
+    public EntityLayerSheepWool(RenderEntityMobSheep1 sheepRendererIn)
     {
-        this.sheepRenderer = renderEntityMobSheep1;
+        this.sheepRenderer = sheepRendererIn;
     }
 
     public void doRenderLayer(EntityMobSheep1 entitylivingbaseIn, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch, float scale)
@@ -30,8 +30,7 @@ public class EntityLayerSheepWool implements LayerRenderer<EntityMobSheep1>
 
             if (entitylivingbaseIn.hasCustomName() && "jeb_".equals(entitylivingbaseIn.getCustomNameTag()))
             {
-                @SuppressWarnings("unused")
-				int i1 = 25;
+                int i1 = 25;
                 int i = entitylivingbaseIn.ticksExisted / 25 + entitylivingbaseIn.getEntityId();
                 int j = EnumDyeColor.values().length;
                 int k = i % j;
@@ -57,6 +56,4 @@ public class EntityLayerSheepWool implements LayerRenderer<EntityMobSheep1>
     {
         return true;
     }
-
-
 }
