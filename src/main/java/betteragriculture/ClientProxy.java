@@ -1,6 +1,7 @@
 package betteragriculture;
 
 import betteragriculture.client.render.blocks.BlockRenderRegister;
+import betteragriculture.client.render.items.ItemRenderRegister;
 import betteragriculture.client.render.mobs.RenderEntityMobChicken1;
 import betteragriculture.client.render.mobs.RenderEntityMobChicken10;
 import betteragriculture.client.render.mobs.RenderEntityMobChicken2;
@@ -209,7 +210,7 @@ public class ClientProxy extends CommonProxy {
 
 
 		BlockRenderRegister.registerBlockRenderer();
-	  //  ItemRenderRegister.registerItemRenderer();
+	   ItemRenderRegister.registerItemRenderer();
 		
 		
 		

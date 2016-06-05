@@ -1,7 +1,7 @@
 package betteragriculture.crafting;
 
 import betteragriculture.blocks.ModBlocks;
-
+import betteragriculture.items.ModItems;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -18,7 +18,12 @@ public final class ModCrafting {
 		
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.concreteBlock, 6), new Object[] {Blocks.SAND, Blocks.STONE,Items.WATER_BUCKET});
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.wireItem, 6), new Object[] {Items.GOLD_NUGGET});
 
+		
+		
+		
+		
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.redsidingBlock, 8), new Object[] {"###", "#B#", "###", '#', Blocks.PLANKS, 'B', new ItemStack(Items.DYE, 1, 1)});
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.whitesidingBlock, 8), new Object[] {"###", "#B#", "###", '#', Blocks.PLANKS, 'B', new ItemStack(Items.DYE, 1, 15)});
 

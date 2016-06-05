@@ -9,13 +9,15 @@ import org.apache.logging.log4j.Logger;
 
 import betteragriculture.blocks.ModBlocks;
 import betteragriculture.crafting.ModCrafting;
+import betteragriculture.items.ModItems;
 public class CommonProxy {
 
 
 
 	public void preInit(FMLPreInitializationEvent event) {
 		ModBlocks.createBlocks();
-		
+		ModItems.createItems();
+
 		
 
 	}

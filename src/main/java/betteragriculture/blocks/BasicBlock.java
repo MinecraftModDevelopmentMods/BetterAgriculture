@@ -18,7 +18,7 @@ public class BasicBlock extends Block {
 		this(unlocalizedName, Material.ROCK, hardness, resistance);
 	}
 
-	public BasicBlock(String unlocalizedName) {
+	public BasicBlock(String unlocalizedName, Material rock, Block whitesidingBlock, int i, int j) {
 		this(unlocalizedName, 2.0f, 10.0f);
 	}
 }

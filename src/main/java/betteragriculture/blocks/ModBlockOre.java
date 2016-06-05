@@ -7,6 +7,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 
 public class ModBlockOre extends Block {
 
@@ -14,7 +15,7 @@ public class ModBlockOre extends Block {
 	private int least_quantity;
 	private int most_quantity;
 
-	protected ModBlockOre(String unlocalizedName, Material mat, Block nethernickelOre, int meta, int least_quantity, int most_quantity) {
+	protected ModBlockOre(String unlocalizedName, Material mat, Item nethernickelOre, int meta, int least_quantity, int most_quantity) {
 		super(mat);
 		this.meta = meta;
 		this.least_quantity = least_quantity;
@@ -26,11 +27,11 @@ public class ModBlockOre extends Block {
 		this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 	}
 
-	protected ModBlockOre(String unlocalizedName, Material mat, Block nethernickelOre, int least_quantity, int most_quantity) {
+	protected ModBlockOre(String unlocalizedName, Material mat, Item nethernickelOre, int least_quantity, int most_quantity) {
 		this(unlocalizedName, mat, nethernickelOre, 0, least_quantity, most_quantity);
 	}
 
-	protected ModBlockOre(String unlocalizedName, Material mat, Block drop) {
+	protected ModBlockOre(String unlocalizedName, Material mat, Item drop) {
 		this(unlocalizedName, mat, drop, 1, 1);
 	}
 
