@@ -22,7 +22,6 @@ import betteragriculture.client.render.mobs.RenderEntityMobCow7;
 import betteragriculture.client.render.mobs.RenderEntityMobCow8;
 import betteragriculture.client.render.mobs.RenderEntityMobCow9;
 import betteragriculture.client.render.mobs.RenderEntityMobNpcFemale1;
-import betteragriculture.client.render.mobs.RenderEntityMobNpcMale1;
 import betteragriculture.client.render.mobs.RenderEntityMobPig1;
 import betteragriculture.client.render.mobs.RenderEntityMobPig10;
 import betteragriculture.client.render.mobs.RenderEntityMobPig2;
@@ -64,7 +63,6 @@ import betteragriculture.entity.entitymob.EntityMobCow7;
 import betteragriculture.entity.entitymob.EntityMobCow8;
 import betteragriculture.entity.entitymob.EntityMobCow9;
 import betteragriculture.entity.entitymob.EntityMobNpcFemale1;
-import betteragriculture.entity.entitymob.EntityMobNpcMale1;
 import betteragriculture.entity.entitymob.EntityMobPig1;
 import betteragriculture.entity.entitymob.EntityMobPig10;
 import betteragriculture.entity.entitymob.EntityMobPig2;
@@ -128,8 +126,9 @@ public class ClientProxy extends CommonProxy {
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobSheep6.class, RenderEntityMobSheep6::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobSheep7.class, RenderEntityMobSheep7::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobSheep8.class, RenderEntityMobSheep8::new);
-		RenderingRegistry.registerEntityRenderingHandler(EntityMobSheep9.class, RenderEntityMobSheep9::new);
-		RenderingRegistry.registerEntityRenderingHandler(EntityMobSheep10.class, RenderEntityMobSheep10::new);
+ 	    RenderingRegistry.registerEntityRenderingHandler(EntityMobSheep9.class, RenderEntityMobSheep9::new);
+ 	    RenderingRegistry.registerEntityRenderingHandler(EntityMobSheep10.class, RenderEntityMobSheep10::new);
+
 
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobPig1.class, RenderEntityMobPig1::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobPig2.class, RenderEntityMobPig2::new);
@@ -165,7 +164,6 @@ public class ClientProxy extends CommonProxy {
 		
 		
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobNpcFemale1.class, RenderEntityMobNpcFemale1::new);
-		RenderingRegistry.registerEntityRenderingHandler(EntityMobNpcMale1.class, RenderEntityMobNpcMale1::new);
 
 		
 		

@@ -23,7 +23,6 @@ import betteragriculture.entity.entitymob.EntityMobCow7;
 import betteragriculture.entity.entitymob.EntityMobCow8;
 import betteragriculture.entity.entitymob.EntityMobCow9;
 import betteragriculture.entity.entitymob.EntityMobNpcFemale1;
-import betteragriculture.entity.entitymob.EntityMobNpcMale1;
 import betteragriculture.entity.entitymob.EntityMobPig1;
 import betteragriculture.entity.entitymob.EntityMobPig10;
 import betteragriculture.entity.entitymob.EntityMobPig2;
@@ -75,7 +74,7 @@ public class Main {
 
 	public static final String MODID = "betteragriculture";
 	public static final String MODNAME = "Better Agriculture";
-	public static final String VERSION = "0.4";
+	public static final String VERSION = "0.5";
 	private static int entityID = 0;
 
 
@@ -103,7 +102,6 @@ public class Main {
         
         
         registerEntity(EntityMobNpcFemale1.class, "EntityMobNpcFemale1", 0x006460, 0x98FB98);
-        registerEntity(EntityMobNpcMale1.class, "EntityMobNpcMale1", 0x006460, 0x98FB98);
 
         
         
@@ -255,7 +253,6 @@ public class Main {
 
         
         addSpawn(EntityMobNpcFemale1.class, ConfigHandler.getEntityMobNpcFemale1SpawnProb(), 4, 4, sheepBiomes);
-        addSpawn(EntityMobNpcMale1.class, ConfigHandler.getEntityMobNpcMale1SpawnProb(), 4, 4, sheepBiomes);
 
         
         

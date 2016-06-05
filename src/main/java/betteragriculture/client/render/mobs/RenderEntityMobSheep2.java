@@ -1,7 +1,7 @@
 package betteragriculture.client.render.mobs;
 
+import betteragriculture.client.model.ModelEntityMobSheep2Model2;
 import betteragriculture.entity.entitymob.EntityMobSheep2;
-import net.minecraft.client.model.ModelSheep1;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.client.renderer.entity.layers.LayerHeldItem;
@@ -16,7 +16,7 @@ public class RenderEntityMobSheep2 extends RenderLiving<EntityMobSheep2>
 		
 		
 		//Model Registry   "ModelSheep1= Vanilla Minecraft Sheep 1 model"
-		super(renderManager, new ModelSheep1(), 0);
+		super(renderManager, new ModelEntityMobSheep2Model2(), 0);
 		this.addLayer(new LayerHeldItem(this));
 	}
 
