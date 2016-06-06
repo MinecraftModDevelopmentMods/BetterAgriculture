@@ -74,7 +74,7 @@ public class Main {
 
 	public static final String MODID = "betteragriculture";
 	public static final String MODNAME = "Better Agriculture";
-	public static final String VERSION = "0.7";
+	public static final String VERSION = "0.9";
 	private static int entityID = 0;
 
 

@@ -4,12 +4,14 @@ package betteragriculture;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.FMLLog;
 import org.apache.logging.log4j.Logger;
 
 import betteragriculture.blocks.ModBlocks;
 import betteragriculture.crafting.ModCrafting;
 import betteragriculture.items.ModItems;
+import betteragriculture.world.WorldGen;
 public class CommonProxy {
 
 
@@ -25,7 +27,7 @@ public class CommonProxy {
 	public void init(FMLInitializationEvent event) {
 		ModCrafting.initCrafting();
 	
-
+		GameRegistry.registerWorldGenerator(new WorldGen(), 0);
 
 		
 	}
