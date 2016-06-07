@@ -22,7 +22,7 @@ public class WorldGen implements IWorldGenerator {
 	public WorldGen() {
 
 		// Vanilla
-		this.gen_slate_ore = new WorldGenMinable(ModBlocks.slateOre.getDefaultState(), 16);
+		this.gen_slate_ore = new WorldGenMinable(ModBlocks.slateOre.getDefaultState(), 8);
 	    
 	}
 
