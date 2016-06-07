@@ -78,7 +78,7 @@ public class Main {
 
 	public static final String MODID = "betteragriculture";
 	public static final String MODNAME = "Better Agriculture";
-	public static final String VERSION = "0.11";
+	public static final String VERSION = "0.12";
 	private static int entityID = 0;
 
 //	private FarmlandBiome farmlandBiome;

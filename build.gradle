@@ -34,7 +34,7 @@ allprojects {
     targetCompatibility = 1.8
 }
 
-version = "0.11"
+version = "0.12"
 group= "betteragriculture" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "BetterAgriculture_1.9"
 
