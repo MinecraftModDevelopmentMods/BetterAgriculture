@@ -12,11 +12,15 @@ public class ConfigHandler {
 	static private boolean followOwner;
 
 	private static final String comments = Main.MODNAME + " Config\n Better Agriculture \n"
-			+ " For Nether Expansion " + Main.VERSION;
+			+ " For Better Agriculture " + Main.VERSION;
 	private static final String randomScaleComment = "Set to false to disable random scaling, default is true.";
 	private static final String despawnComment = "Set to false to not despawn. default is true.";
 	private static final String followOwnerComment = "Set to false to have tamed not follow owner, default is true.";
 	private static final String spawnProbComment = "Spawn Probability\nSet to zero to disable spawning of this entity";
+	
+	private static final String slateorespawnProbComment = "Spawn Probability\nSet to zero to disable ore spawning of this type";
+
+	
 	private static  int EntityMobCow1SpawnProb = 0;
 	private static  int EntityMobCow2SpawnProb = 0;
 	private static  int EntityMobCow3SpawnProb = 0;
@@ -63,7 +67,9 @@ public class ConfigHandler {
 
 	private static  int EntityMobNpcFemale1SpawnProb = 0;
 	private static  int EntityMobNpcMale1SpawnProb = 0;
-
+	
+	
+	private static  int SlateOreSpawnProb = 0;
 
 	public static void startConfig(FMLPreInitializationEvent event)
 	{
@@ -76,6 +82,12 @@ public class ConfigHandler {
 	{
 		try {
 			config.addCustomCategoryComment(Configuration.CATEGORY_GENERAL, comments);
+			
+	
+
+			
+			
+			
 
 			GhastlySpawnProb = config.get(Configuration.CATEGORY_GENERAL, "GhastlySpawnProb", 10, spawnProbComment).getInt();
 			EntityMobCow1SpawnProb = config.get(Configuration.CATEGORY_GENERAL, "EntityMobCow1SpawnProb", 10, spawnProbComment).getInt();
@@ -126,7 +138,8 @@ public class ConfigHandler {
 			EntityMobNpcFemale1SpawnProb = config.get(Configuration.CATEGORY_GENERAL, "EntityMobNpcFemale1SpawnProb", 10, spawnProbComment).getInt();
 			EntityMobNpcMale1SpawnProb = config.get(Configuration.CATEGORY_GENERAL, "EntityMobNpcMale1SpawnProb", 10, spawnProbComment).getInt();
 
-			
+			SlateOreSpawnProb = config.get(Configuration.CATEGORY_GENERAL, "SlateOreSpawnProb", 10, slateorespawnProbComment).getInt();
+
 			
 			
 			
@@ -239,7 +252,8 @@ public class ConfigHandler {
 			config.get(Configuration.CATEGORY_GENERAL, "EnityMobNpcFemale1SpawnProb", 10, spawnProbComment).getInt();
 			config.get(Configuration.CATEGORY_GENERAL, "EnityMobNpcMale1SpawnProb", 10, spawnProbComment).getInt();
 
-			
+			config.get(Configuration.CATEGORY_GENERAL, "SlateOreSpawnProb", 10, slateorespawnProbComment).getInt();
+
 			
 			
 			
@@ -518,6 +532,11 @@ public class ConfigHandler {
 	public static int getEntityMobNpcMale1SpawnProb()
 	{
 		return EntityMobNpcMale1SpawnProb;
+		
+	}
+	public static int getSlateOreSpawnProb()
+	{
+		return SlateOreSpawnProb;
 		
 	}
 

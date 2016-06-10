@@ -2,6 +2,7 @@ package betteragriculture.world;
 
 import java.util.Random;
 
+import betteragriculture.ConfigHandler;
 import betteragriculture.blocks.ModBlocks;
 
 import net.minecraft.util.math.BlockPos;
@@ -22,7 +23,7 @@ public class WorldGen implements IWorldGenerator {
 	public WorldGen() {
 
 		// Vanilla
-		this.gen_slate_ore = new WorldGenMinable(ModBlocks.slateOre.getDefaultState(), 8);
+		this.gen_slate_ore = new WorldGenMinable(ModBlocks.slateOre.getDefaultState(),ConfigHandler.getSlateOreSpawnProb());
 	    
 	}
 

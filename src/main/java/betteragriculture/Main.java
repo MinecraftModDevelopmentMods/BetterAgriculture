@@ -78,13 +78,18 @@ public class Main {
 
 	public static final String MODID = "betteragriculture";
 	public static final String MODNAME = "Better Agriculture";
-	public static final String VERSION = "0.12";
+	public static final String VERSION = "0.13";
 	private static int entityID = 0;
 
 //	private FarmlandBiome farmlandBiome;
 
+
+	
+	
 	
 
+	
+	
     public static FarmlandBiome farmlandBiome;
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
@@ -106,15 +111,7 @@ public class Main {
         registerEntity(EntityMobCow8.class, "EntityMobCow8", 0x006400, 0x98FB98);
         registerEntity(EntityMobCow9.class, "EntityMobCow9", 0x006400, 0x98FB98);
         registerEntity(EntityMobCow10.class, "EntityMobCow10", 0x006400, 0x98FB98);
-
-        
-        
         registerEntity(EntityMobNpcFemale1.class, "EntityMobNpcFemale1", 0x006460, 0x98FB98);
-
-        
-        
-        
-        
         registerEntity(EntityMobSheep1.class, "EntityMobSheep1", 0x008500, 0x98FB98);
         registerEntity(EntityMobSheep2.class, "EntityMobSheep2", 0x008500, 0x98FB98);
         registerEntity(EntityMobSheep3.class, "EntityMobSheep3", 0x008500, 0x98FB98);
@@ -125,8 +122,6 @@ public class Main {
         registerEntity(EntityMobSheep8.class, "EntityMobSheep8", 0x008500, 0x98FB98);
         registerEntity(EntityMobSheep9.class, "EntityMobSheep9", 0x008500, 0x98FB98);
         registerEntity(EntityMobSheep10.class, "EntityMobSheep10", 0x008500, 0x98FB98);
-
-
         registerEntity(EntityMobPig1.class, "EntityMobPig1", 0x008500, 0x98FB98);
         registerEntity(EntityMobPig2.class, "EntityMobPig2", 0x008500, 0x98FB98);
         registerEntity(EntityMobPig3.class, "EntityMobPig3", 0x008500, 0x98FB98);
@@ -137,8 +132,6 @@ public class Main {
         registerEntity(EntityMobPig8.class, "EntityMobPig8", 0x008500, 0x98FB98);
         registerEntity(EntityMobPig9.class, "EntityMobPig9", 0x008500, 0x98FB98);
         registerEntity(EntityMobPig10.class, "EntityMobPig10", 0x008500, 0x98FB98);
-
-        
         registerEntity(EntityMobChicken1.class, "EntityMobChicken1", 0xac9271, 0x98FB98);
         registerEntity(EntityMobChicken2.class, "EntityMobChicken2", 0xac9271, 0x98FB98);
         registerEntity(EntityMobChicken3.class, "EntityMobChicken3", 0xac9271, 0x98FB98);
@@ -149,24 +142,9 @@ public class Main {
         registerEntity(EntityMobChicken8.class, "EntityMobChicken8", 0xac9271, 0x98FB98);
         registerEntity(EntityMobChicken9.class, "EntityMobChicken9", 0xac9271, 0x98FB98);
         registerEntity(EntityMobChicken10.class, "EntityMobChicken10", 0xac9271, 0x98FB98);
-
- 
-
-		Main.proxy.preInit(event);
-		
-		
+Main.proxy.preInit(event);
+	
 	}
-
-		
-	
-
-  // private void registerBiomeWithTypes(FarmlandBiome farmlandBiome, String string, BiomeType warm, Type forest) {
-
-		
-	
-
-
-
 
 private void registerEntity(Class<? extends Entity> entityClass, String entityName, int bkEggColor, int fgEggColor) {
        EntityRegistry.registerModEntity(entityClass, entityName, entityID++, Main.INSTANCE, 80, 3, true, bkEggColor, fgEggColor);
@@ -175,7 +153,10 @@ private void registerEntity(Class<? extends Entity> entityClass, String entityNa
 
 
   
-        
+     
+
+
+
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		Main.proxy.init(event);
@@ -186,6 +167,8 @@ private void registerEntity(Class<? extends Entity> entityClass, String entityNa
         
         
 	}
+
+
 
 
 
@@ -211,9 +194,9 @@ private void registerEntity(Class<? extends Entity> entityClass, String entityNa
 		  
 	
 	        
-	        
 
-
+	    
+	    
         addSpawn(EntityMobCow1.class, ConfigHandler.getEntityMobCow1SpawnProb(), 2, 4, cowBiomes);
         addSpawn(EntityMobCow2.class, ConfigHandler.getEntityMobCow2SpawnProb(), 2, 4, cowBiomes);
         addSpawn(EntityMobCow3.class, ConfigHandler.getEntityMobCow3SpawnProb(), 2, 4, cowBiomes);
