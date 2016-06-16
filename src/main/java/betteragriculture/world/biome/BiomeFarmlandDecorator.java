@@ -7,9 +7,8 @@ import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeDecorator;
-import net.minecraft.world.gen.feature.WorldGenAbstractTree;
+import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.gen.feature.WorldGenLiquids;
 import net.minecraft.world.gen.feature.WorldGenPumpkin;
 import net.minecraftforge.common.MinecraftForge;
@@ -20,7 +19,7 @@ import net.minecraftforge.event.terraingen.TerrainGen;
 public class BiomeFarmlandDecorator extends BiomeDecorator
 {
 	@Override
-	protected void genDecorations(Biome biome, World world, Random random)
+	protected void genDecorations(BiomeGenBase biome, World world, Random random)
 	{
 		MinecraftForge.EVENT_BUS.post(new DecorateBiomeEvent.Pre(world, random, chunkPos));
 
@@ -77,15 +76,7 @@ public class BiomeFarmlandDecorator extends BiomeDecorator
 			k = nextInt(random, 16) + 8;
 			l = nextInt(random, 16) + 8;
 
-			WorldGenAbstractTree treeGen = biome.genBigTreeChance(random);
 
-			treeGen.setDecorationDefaults();
-			blockpos = world.getHeight(chunkPos.add(k, 0, l));
-
-			if (treeGen.generate(world, random, blockpos))
-			{
-				treeGen.generateSaplings(world, random, blockpos);
-			}
 		}
 
 		int m;

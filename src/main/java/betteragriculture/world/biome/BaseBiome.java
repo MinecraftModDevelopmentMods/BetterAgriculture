@@ -1,8 +1,8 @@
 package betteragriculture.world.biome;
 
-import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.BiomeGenBase;
 
-public class BaseBiome extends Biome{
+public class BaseBiome extends BiomeGenBase{
 
 	public BaseBiome(BiomeProperties properties, String name) {
 		super(properties);

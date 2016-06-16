@@ -81,7 +81,7 @@ public class Main {
 	public static final String VERSION = "0.13";
 	private static int entityID = 0;
 
-//	private FarmlandBiome farmlandBiome;
+
 
 
 	
@@ -184,10 +184,10 @@ private void registerEntity(Class<? extends Entity> entityClass, String entityNa
 
 		
 		  proxy.info("*** Checking for monitor biomes");
-	        Biome[] sheepBiomes = getBiomes(Type.HILLS,Type.FOREST);
-	        Biome[] chickenBiomes = getBiomes(Type.JUNGLE,Type.FOREST);
-	        Biome[] cowBiomes = getBiomes(Type.PLAINS,Type.SAVANNA,Type.FOREST);
-	        Biome[] pigBiomes = getBiomes(Type.SWAMP,Type.FOREST);
+	        BiomeGenBase[] sheepBiomes = getBiomes(Type.HILLS,Type.FOREST);
+	        BiomeGenBase[] chickenBiomes = getBiomes(Type.JUNGLE,Type.FOREST);
+	        BiomeGenBase[] cowBiomes = getBiomes(Type.PLAINS,Type.SAVANNA,Type.FOREST);
+	        BiomeGenBase[] pigBiomes = getBiomes(Type.SWAMP,Type.FOREST);
 
 	        
 	        
@@ -252,11 +252,11 @@ private void registerEntity(Class<? extends Entity> entityClass, String entityNa
 
 
 
-		private Biome[] getBiomes(Type... types) {
-            LinkedList<Biome> list = new LinkedList<Biome>();
+		private BiomeGenBase[] getBiomes(Type... types) {
+            LinkedList<BiomeGenBase> list = new LinkedList<BiomeGenBase>();
             for (Type t : types) {
-                Biome[] biomes = BiomeDictionary.getBiomesForType(t);
-                for (Biome bgb : biomes) {
+                BiomeGenBase[] biomes = BiomeDictionary.getBiomesForType(t);
+                for (BiomeGenBase bgb : biomes) {
                     if (BiomeDictionary.isBiomeOfType(bgb, Type.END) || BiomeDictionary.isBiomeOfType(bgb, Type.NETHER)) {
                         continue;
                     }
@@ -274,9 +274,9 @@ private void registerEntity(Class<? extends Entity> entityClass, String entityNa
                     }
                 }
             }
-            return list.toArray(new Biome[0]);
+            return list.toArray(new BiomeGenBase[0]);
         }
-        private void addSpawn(Class<? extends EntityLiving> entityClass, int spawnProb, int min, int max, Biome[] biomes) {
+        private void addSpawn(Class<? extends EntityLiving> entityClass, int spawnProb, int min, int max, BiomeGenBase[] biomes) {
             if (spawnProb > 0) {
                 EntityRegistry.addSpawn(entityClass, spawnProb, min, max, EnumCreatureType.CREATURE, biomes);
             }
