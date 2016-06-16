@@ -1,8 +1,8 @@
 [
  {
-   "modid": "nethermetals",
-   "name": "Nether Metals",
-   "description": "Nether Metals is an Addon for the mod Base Metals, it expands it to bring its ores to the Nether dimension.",
+   "modid": "betteragriculture",
+   "name": "Better Agriculture",
+   "description": "Better Agriculture is a companion mod of Forestry and Pam's Harvestcraft, it adds 40 new animals to Minecraft, 10 each of cows, pigs, sheep and chickens, all different breeds and colours. Also included is farming based blocks, armor and decor so now you can build your perfect farm!",
    "version": "${version}",
    "mcversion": "${mcversion}",
    "url": "http://nfinit-gaming.com/",
