@@ -18,7 +18,18 @@ public class ConfigHandler {
 	private static final String followOwnerComment = "Set to false to have tamed not follow owner, default is true.";
 	private static final String spawnProbComment = "Spawn Probability\nSet to zero to disable spawning of this entity";
 	
+	private static final String biomeWeightComment = "Spawn Probability\nSet to zero to disable spawning of this entity";
+
+	
+	
+	
 	private static final String slateorespawnProbComment = "Spawn Probability\nSet to zero to disable ore spawning of this type";
+
+	
+	
+	
+	
+	private static  int FarmlandBiomeWeight = 0;
 
 	
 	private static  int EntityMobCow1SpawnProb = 0;
@@ -87,7 +98,8 @@ public class ConfigHandler {
 
 			
 			
-			
+			FarmlandBiomeWeight = config.get(Configuration.CATEGORY_GENERAL, "FarmlandBiomeWeight", 15, biomeWeightComment).getInt();
+
 
 			GhastlySpawnProb = config.get(Configuration.CATEGORY_GENERAL, "GhastlySpawnProb", 10, spawnProbComment).getInt();
 			EntityMobCow1SpawnProb = config.get(Configuration.CATEGORY_GENERAL, "EntityMobCow1SpawnProb", 10, spawnProbComment).getInt();
@@ -190,7 +202,8 @@ public class ConfigHandler {
 			
 			
 			
-			
+			config.get(Configuration.CATEGORY_GENERAL, "FarmlandBiomeWeight", 15, biomeWeightComment).getInt();
+
 			
 			
 			
@@ -540,7 +553,12 @@ public class ConfigHandler {
 		
 	}
 
-	
+		public static int getFarmlandBiomeWeight()
+	{
+		return FarmlandBiomeWeight;
+		
+	}
+
 	
 	
 	

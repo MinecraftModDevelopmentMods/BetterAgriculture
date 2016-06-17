@@ -78,7 +78,7 @@ public class Main {
 
 	public static final String MODID = "betteragriculture";
 	public static final String MODNAME = "Better Agriculture";
-	public static final String VERSION = "0.13a";
+	public static final String VERSION = "0.14";
 	private static int entityID = 0;
 
 //	private FarmlandBiome farmlandBiome;
@@ -291,7 +291,7 @@ private void registerEntity(Class<? extends Entity> entityClass, String entityNa
         ///biome poetinit
         public static void registerBiome(BaseBiome biome, boolean isSpawnBiome){
      	   GameRegistry.register(biome);
-     	   BiomeManager.addBiome(BiomeType.WARM, new BiomeEntry(biome, 50));
+     	   BiomeManager.addBiome(BiomeType.WARM, new BiomeEntry(biome, ConfigHandler.getFarmlandBiomeWeight()));
      	   if (isSpawnBiome)
      	        BiomeManager.addSpawnBiome(biome);
      	   
