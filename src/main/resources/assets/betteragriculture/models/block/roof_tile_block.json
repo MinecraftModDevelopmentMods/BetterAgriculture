@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "betteragriculture:blocks/roof_tile_block",
+        "side": "betteragriculture:blocks/roof_tile_block_side"
+    }
+}

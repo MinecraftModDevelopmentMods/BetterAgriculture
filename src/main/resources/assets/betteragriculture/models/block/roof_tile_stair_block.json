@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "betteragriculture:blocks/roof_tile_stair_top",
+        "top": "betteragriculture:blocks/roof_tile_stair_top",
+        "side": "betteragriculture:blocks/roof_tile_stair_side"
+    }
+}

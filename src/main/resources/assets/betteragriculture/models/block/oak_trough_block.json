@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "betteragriculture:blocks/oak_trough_top",
+        "side": "blocks/planks_oak"
+    }
+}

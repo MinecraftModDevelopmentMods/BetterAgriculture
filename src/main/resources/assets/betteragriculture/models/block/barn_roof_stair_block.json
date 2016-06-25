@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "betteragriculture:blocks/barn_roof_top",
+        "top": "betteragriculture:blocks/barn_roof_top",
+        "side": "betteragriculture:blocks/barn_roof_side_1"
+    }
+}

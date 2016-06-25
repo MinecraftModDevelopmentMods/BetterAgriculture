@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "betteragriculture:blocks/darkoak_trough_top",
+        "side": "blocks/planks_jungle"
+    }
+}

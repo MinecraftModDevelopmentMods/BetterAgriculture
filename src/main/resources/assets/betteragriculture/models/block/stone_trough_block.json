@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "betteragriculture:blocks/stone_trough_top",
+        "side": "blocks/stone"
+    }
+}
