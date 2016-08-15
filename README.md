@@ -7,21 +7,56 @@ Better Agriculture is a companion mod of Forestry and Pam's Harvestcraft, it add
 
 #### ( Mobs):
 Sheep:
-sheep1 (description)
-sheep2,
-sheep3,
-sheep4,
-sheep5,
-sheep6,
-sheep7,
-sheep8,
-sheep9,
-sheep10
-Cows: cow1, cow2, cow3, cow4, cow5, cow6, cow7, cow8, cow9, cow10
-Chickens: cow1, cow2, cow3, cow4, cow5, cow6, cow7, cow8, cow9, cow10
-Pigs: 
-NPCs: 
+Dorper
+Suffolk
+Jacob
+East Friesian
+Black welsh Mountain
+Gotland
+black Jacob
+Soay
+Black Wenslydale
+Balwen
 
+Cows: 
+Holstein Friesian 
+Black Angus   
+Highland
+Guernsey
+Ayrshire
+Belted Galloway
+Charolais
+Hereford
+British white
+Norfolk
+
+Chickens: 
+Light Sussex
+Buff Orpington
+Rhode Island Red
+Black Jersey
+Columbian Black Tail
+Barred Rock
+Wellsummer
+White Wyandotte
+Brahma
+Lavender Pekin
+
+Pigs: 
+Saddleback
+Tamworth
+Gloucestershire 
+Berkshire
+Yorkshire
+KuneKune
+China Poland
+Hampshire
+Mulefoot
+Hereford
+
+NPCs: 
+Female Farmhand 
+Male Farmhand 
 
 
 #### ( Biomes ):
