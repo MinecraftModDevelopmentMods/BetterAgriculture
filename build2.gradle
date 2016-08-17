@@ -20,12 +20,23 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-version = "0.17"
+
+
+
+allprojects {
+    apply plugin: 'java'
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
+
+
+version = "0.16"
 group= "betteragriculture" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "BetterAgriculture_(MC-1.10)"
 
 minecraft {
-    version = "1.10.2-12.18.1.2065"
+    version = "1.10-12.18.0.1986-1.10.0"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.

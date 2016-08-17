@@ -19,30 +19,15 @@ public class CommonProxy {
 	public void preInit(FMLPreInitializationEvent event) {
 		ModBlocks.createBlocks();
 		ModItems.createItems();
-
-		
-
 	}
 
 	public void init(FMLInitializationEvent event) {
 		ModCrafting.initCrafting();
-	
 		GameRegistry.registerWorldGenerator(new WorldGen(), 0);
 
-		
 	}
-
-	
-		
-
-
-
-
 	private static final Logger logger = FMLLog.getLogger();
-	
-
 	public void postInit(FMLPostInitializationEvent event) {
-
 	}
 
 	public void info(String s)
@@ -50,7 +35,6 @@ public class CommonProxy {
 	{
 		logger.info(s);	
 	}
-
 	public void error(String s)
 	{
 		logger.error(s);

@@ -36,14 +36,6 @@ public final class BlockRenderRegister {
 
 		reg(ModBlocks.brickwallBlock);
 
-		
-
-		
-		
-		
-		
-		
-
 	}
 
 	public static String modid = Main.MODID;

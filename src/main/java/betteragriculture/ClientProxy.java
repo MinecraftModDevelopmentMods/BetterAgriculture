@@ -1,5 +1,6 @@
 package betteragriculture;
 
+
 import betteragriculture.client.render.blocks.BlockRenderRegister;
 import betteragriculture.client.render.items.ItemRenderRegister;
 import betteragriculture.client.render.mobs.RenderEntityMobChicken1;
@@ -84,8 +85,11 @@ import betteragriculture.entity.entitymob.EntityMobSheep6;
 import betteragriculture.entity.entitymob.EntityMobSheep7;
 import betteragriculture.entity.entitymob.EntityMobSheep8;
 import betteragriculture.entity.entitymob.EntityMobSheep9;
+import betteragriculture.items.ModItems;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.renderer.entity.RenderManager;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -154,67 +158,22 @@ public class ClientProxy extends CommonProxy {
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobChicken9.class, RenderEntityMobChicken9::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobChicken10.class, RenderEntityMobChicken10::new);
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	    ModelLoader.setCustomModelResourceLocation(ModItems.armorFarmerOutfitBoots, 0, new ModelResourceLocation(ModItems.armorFarmerOutfitBoots.getRegistryName(), "inventory"));
+	    ModelLoader.setCustomModelResourceLocation(ModItems.armorFarmerOutfitHelmet, 0, new ModelResourceLocation(ModItems.armorFarmerOutfitHelmet.getRegistryName(), "inventory"));
+	    ModelLoader.setCustomModelResourceLocation(ModItems.armorFarmerOutfitChestplate, 0, new ModelResourceLocation(ModItems.armorFarmerOutfitChestplate.getRegistryName(), "inventory"));
+	    ModelLoader.setCustomModelResourceLocation(ModItems.armorFarmerOutfitLeggings, 0, new ModelResourceLocation(ModItems.armorFarmerOutfitLeggings.getRegistryName(), "inventory"));
+
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobNpcFemale1.class, RenderEntityMobNpcFemale1::new);
-
-		
-		
-		
-		
-		
-		
-		
-		
-		//RenderingRegistry.registerEntityRenderingHandler(EntityMobDuck1.class, RenderEntityMobDuck1::new);
-	//	RenderingRegistry.registerEntityRenderingHandler(EntityMobDuck2.class, RenderEntityMobDuck2::new);
-	//	RenderingRegistry.registerEntityRenderingHandler(EntityMobDuck3.class, RenderEntityMobDuck3::new);
-	//.registerEntityRenderingHandler(EntityMobDuck4.class, RenderEntityMobDuck4::new);
-
-		
-		
-		
-		
-		
-		
-		
-		
-
-		
-		
-		// Regular Boss Mobs Render Registry, you can find the model registry inside the Render"Entityname" class
-
-
-		
-		
-		
-	}
-
-
 	
+	}
 
 	@Override
 	public void init(FMLInitializationEvent event) {
 		super.init(event);
-		
 
-
-
-		BlockRenderRegister.registerBlockRenderer();
+	   BlockRenderRegister.registerBlockRenderer();
 	   ItemRenderRegister.registerItemRenderer();
-		
-		
-		
-		
+
 	}
 
 	@Override

@@ -2,6 +2,7 @@ package betteragriculture;
 
 import java.util.LinkedList;
 
+
 import betteragriculture.entity.entitymob.EntityMobChicken1;
 import betteragriculture.entity.entitymob.EntityMobChicken10;
 import betteragriculture.entity.entitymob.EntityMobChicken2;
@@ -53,6 +54,8 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.*;
 import static net.minecraftforge.common.BiomeDictionary.Type;
+
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EnumCreatureType;
@@ -75,13 +78,13 @@ public class Main {
 
 	@Instance
 	public static Main INSTANCE = null;
-
+    public static CreativeTabs tab;
 	public static final String MODID = "betteragriculture";
 	public static final String MODNAME = "Better Agriculture";
-	public static final String VERSION = "0.16";
+	public static final String VERSION = "1.0";
 	private static int entityID = 0;
 
-//	private FarmlandBiome farmlandBiome;
+
 
 
 	
@@ -97,10 +100,10 @@ public class Main {
 
 		// load config
         ConfigHandler.startConfig(event);
-
+        tab = new CreativeTabBetterAgriculture();
 		
 		
-		//Bobregistry test
+		//Harambe 
         registerEntity(EntityMobCow1.class, "EntityMobCow1", 0x006400, 0x98FB98);
         registerEntity(EntityMobCow2.class, "EntityMobCow2", 0x006400, 0x98FB98);
         registerEntity(EntityMobCow3.class, "EntityMobCow3", 0x006400, 0x98FB98);
@@ -164,39 +167,21 @@ private void registerEntity(Class<? extends Entity> entityClass, String entityNa
 
         farmlandBiome = new FarmlandBiome();
         registerBiome(farmlandBiome,true);
-        
-        
+ 
 	}
-
-
-
-
-
 
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
-				Main.proxy.postInit(event);
+		  Main.proxy.postInit(event);
 
-				BiomeDictionary.registerAllBiomes();
-       
-       
-	
-
-		
+		  BiomeDictionary.registerAllBiomes();
 		  proxy.info("*** Checking for monitor biomes");
 	        Biome[] sheepBiomes = getBiomes(Type.HILLS,Type.FOREST);
 	        Biome[] chickenBiomes = getBiomes(Type.JUNGLE,Type.FOREST);
 	        Biome[] cowBiomes = getBiomes(Type.PLAINS,Type.SAVANNA,Type.FOREST);
 	        Biome[] pigBiomes = getBiomes(Type.SWAMP,Type.FOREST);
 
-	        
-	        
-		  
-	
-	        
 
-	    
-	    
         addSpawn(EntityMobCow1.class, ConfigHandler.getEntityMobCow1SpawnProb(), 2, 4, cowBiomes);
         addSpawn(EntityMobCow2.class, ConfigHandler.getEntityMobCow2SpawnProb(), 2, 4, cowBiomes);
         addSpawn(EntityMobCow3.class, ConfigHandler.getEntityMobCow3SpawnProb(), 2, 4, cowBiomes);
@@ -240,17 +225,8 @@ private void registerEntity(Class<? extends Entity> entityClass, String entityNa
         addSpawn(EntityMobSheep8.class, ConfigHandler.getEntityMobSheep8SpawnProb(), 2, 4, sheepBiomes);
         addSpawn(EntityMobSheep9.class, ConfigHandler.getEntityMobSheep9SpawnProb(), 2, 4, sheepBiomes);
         addSpawn(EntityMobSheep10.class, ConfigHandler.getEntityMobSheep10SpawnProb(), 2, 4, sheepBiomes);
-
-        
-
-        
-       
-        
-        
+  
 	}
-
-
-
 
 		private Biome[] getBiomes(Type... types) {
             LinkedList<Biome> list = new LinkedList<Biome>();
@@ -280,14 +256,9 @@ private void registerEntity(Class<? extends Entity> entityClass, String entityNa
             if (spawnProb > 0) {
                 EntityRegistry.addSpawn(entityClass, spawnProb, min, max, EnumCreatureType.CREATURE, biomes);
             }
-		
-		
-		
-		
+	
 	}
-        
-        
-        
+
         ///biome poetinit
         public static void registerBiome(BaseBiome biome, boolean isSpawnBiome){
      	   GameRegistry.register(biome);

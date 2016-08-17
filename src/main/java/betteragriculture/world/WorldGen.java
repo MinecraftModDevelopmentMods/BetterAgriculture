@@ -16,20 +16,13 @@ import net.minecraftforge.fml.common.IWorldGenerator;
 public class WorldGen implements IWorldGenerator {
 
 	private WorldGenerator gen_slate_ore;			// Generates Coal Ore (used in Nether)
-
-
-
-
 	public WorldGen() {
 
 		// Vanilla
 		this.gen_slate_ore = new WorldGenMinable(ModBlocks.slateOre.getDefaultState(),ConfigHandler.getSlateOreSpawnProb());
 	    
 	}
-
-
-
-	private void runGenerator(WorldGenerator generator, World world, Random rand, int chunk_X, int chunk_Z, int chancesToSpawn, int minHeight, int maxHeight) {
+    private void runGenerator(WorldGenerator generator, World world, Random rand, int chunk_X, int chunk_Z, int chancesToSpawn, int minHeight, int maxHeight) {
 	    if (minHeight < 0 || maxHeight > 256 || minHeight > maxHeight)
 	        throw new IllegalArgumentException("Illegal Height Arguments for WorldGenerator");
 
@@ -52,9 +45,6 @@ public class WorldGen implements IWorldGenerator {
 		        break;
 			case -1: // Nether
 				// Vanilla
-
-
-				
 
 				break;
 			case 1: // End
