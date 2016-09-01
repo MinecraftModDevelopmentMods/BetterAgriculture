@@ -20,6 +20,11 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
+allprojects {
+    apply plugin: 'java'
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
 version = "0.17"
 group= "betteragriculture" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "BetterAgriculture_(MC-1.10)"
