@@ -47,6 +47,7 @@ Tip:
 When using Decomp workspace, the Minecraft source code is NOT added to your workspace in a editable way. Minecraft is treated like a normal Library. Sources are there for documentation and research purposes and usually can be accessed under the 'referenced libraries' section of your IDE.
 
 Forge source installation
+1
 =========================
 MinecraftForge ships with this code and installs it as part of the forge
 installation process, no further action is required on your part.
