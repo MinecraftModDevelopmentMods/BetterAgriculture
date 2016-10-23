@@ -24,6 +24,7 @@ import betteragriculture.client.render.mobs.RenderEntityMobCow7;
 import betteragriculture.client.render.mobs.RenderEntityMobCow8;
 import betteragriculture.client.render.mobs.RenderEntityMobCow9;
 import betteragriculture.client.render.mobs.RenderEntityMobNpcFemale1;
+import betteragriculture.client.render.mobs.RenderEntityMobNpcMale;
 import betteragriculture.client.render.mobs.RenderEntityMobPig1;
 import betteragriculture.client.render.mobs.RenderEntityMobPig10;
 import betteragriculture.client.render.mobs.RenderEntityMobPig2;
@@ -65,6 +66,7 @@ import betteragriculture.entity.entitymob.EntityMobCow7;
 import betteragriculture.entity.entitymob.EntityMobCow8;
 import betteragriculture.entity.entitymob.EntityMobCow9;
 import betteragriculture.entity.entitymob.EntityMobNpcFemale1;
+import betteragriculture.entity.entitymob.EntityMobNpcMale;
 import betteragriculture.entity.entitymob.EntityMobPig1;
 import betteragriculture.entity.entitymob.EntityMobPig10;
 import betteragriculture.entity.entitymob.EntityMobPig2;
@@ -164,7 +166,8 @@ public class ClientProxy extends CommonProxy {
 	    ModelLoader.setCustomModelResourceLocation(ModItems.armorFarmerOutfitLeggings, 0, new ModelResourceLocation(ModItems.armorFarmerOutfitLeggings.getRegistryName(), "inventory"));
 
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobNpcFemale1.class, RenderEntityMobNpcFemale1::new);
-	
+		RenderingRegistry.registerEntityRenderingHandler(EntityMobNpcMale.class, RenderEntityMobNpcMale::new);
+
 	}
 
 	@Override

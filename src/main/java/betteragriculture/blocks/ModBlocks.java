@@ -32,8 +32,16 @@ public final class ModBlocks {
 	
 	public static Block brickwallBlock;
 
-	
-	
+	public static Block fancytilecolorBlock;
+	public static Block largetilecolorBlock;
+	public static Block smalltilecolorBlock;
+	public static Block tinytilecolorBlock;
+
+	public static Block fancytilematerialBlock;
+	public static Block largetilematerialBlock;
+	public static Block smalltilematerialBlock;
+	public static Block tinytilematerialBlock;
+
 	
 
 	@SuppressWarnings("deprecation")
@@ -63,5 +71,24 @@ public final class ModBlocks {
         GameRegistry.registerBlock(brickwallBlock = new BasicBlock("brick_wall_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "brick_wall_block");
 
 
+        GameRegistry.registerBlock(fancytilecolorBlock = new FancyTileColorBlock("fancy_tile_color_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "fancy_tile_color_block");
+        GameRegistry.registerBlock(largetilecolorBlock = new LargeTileColorBlock("large_tile_color_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "large_tile_color_block");
+        GameRegistry.registerBlock(smalltilecolorBlock = new SmallTileColorBlock("small_tile_color_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "small_tile_color_block");
+        GameRegistry.registerBlock(tinytilecolorBlock = new TinyTileColorBlock("tiny_tile_color_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "tiny_tile_color_block");
+
+        GameRegistry.registerBlock(fancytilematerialBlock = new FancyTileMaterialBlock("fancy_tile_material_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "fancy_tile_material_block");
+        GameRegistry.registerBlock(largetilematerialBlock = new LargeTileMaterialBlock("large_tile_material_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "large_tile_material_block");
+        GameRegistry.registerBlock(smalltilematerialBlock = new SmallTileMaterialBlock("small_tile_material_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "small_tile_material_block");
+        GameRegistry.registerBlock(tinytilematerialBlock = new TinyTileMaterialBlock("tiny_tile_material_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "tiny_tile_material_block");
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
 	}
 }
