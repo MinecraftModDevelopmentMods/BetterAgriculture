@@ -1,15 +1,15 @@
 package betteragriculture.client.render.mobs;
 
-import betteragriculture.entity.entitymob.EntityMobNpcFemale1;
+import betteragriculture.entity.entitymob.EntityMobNpcMale;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.client.renderer.entity.layers.LayerHeldItem;
 import net.minecraft.util.ResourceLocation;
 
-public class RenderEntityMobNpcMale extends RenderLiving<EntityMobNpcFemale1>
+public class RenderEntityMobNpcMale extends RenderLiving<EntityMobNpcMale>
 {
-	private final ResourceLocation textures = new ResourceLocation("betteragriculture:textures/models/npcfemale1.png");
+	private final ResourceLocation textures = new ResourceLocation("betteragriculture:textures/models/npcmale.png");
 
 	public RenderEntityMobNpcMale(RenderManager renderManager)
 	{
@@ -20,7 +20,7 @@ public class RenderEntityMobNpcMale extends RenderLiving<EntityMobNpcFemale1>
 	
 
 	@Override
-	protected ResourceLocation getEntityTexture(EntityMobNpcFemale1 entity)
+	protected ResourceLocation getEntityTexture(EntityMobNpcMale entity)
 	{
 		return textures;
 	}

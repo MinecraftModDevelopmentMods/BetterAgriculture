@@ -115,6 +115,7 @@ public class Main {
         registerEntity(EntityMobCow9.class, "EntityMobCow9", 0x006400, 0x98FB98);
         registerEntity(EntityMobCow10.class, "EntityMobCow10", 0x006400, 0x98FB98);
         registerEntity(EntityMobNpcFemale1.class, "EntityMobNpcFemale1", 0x006460, 0x98FB98);
+        registerEntity(EntityMobNpcFemale1.class, "EntityMobNpcMale", 0x006460, 0x98FB98);
         registerEntity(EntityMobSheep1.class, "EntityMobSheep1", 0x008500, 0x98FB98);
         registerEntity(EntityMobSheep2.class, "EntityMobSheep2", 0x008500, 0x98FB98);
         registerEntity(EntityMobSheep3.class, "EntityMobSheep3", 0x008500, 0x98FB98);
