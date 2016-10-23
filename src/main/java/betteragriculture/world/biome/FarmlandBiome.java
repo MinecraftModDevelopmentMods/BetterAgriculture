@@ -12,6 +12,7 @@ import betteragriculture.entity.entitymob.EntityMobChicken8;
 import betteragriculture.entity.entitymob.EntityMobChicken9;
 import betteragriculture.entity.entitymob.EntityMobCow1;
 import betteragriculture.entity.entitymob.EntityMobNpcFemale1;
+import betteragriculture.entity.entitymob.EntityMobNpcMale;
 import betteragriculture.entity.entitymob.EntityMobPig1;
 import betteragriculture.entity.entitymob.EntityMobPig10;
 import betteragriculture.entity.entitymob.EntityMobPig2;
@@ -43,8 +44,8 @@ public class FarmlandBiome extends BaseBiome {
 		super("FarmlandBiome");
         topBlock = Blocks.GRASS.getDefaultState();
         fillerBlock = Blocks.GRASS.getDefaultState();
-        this.spawnableCreatureList.add(new BaseBiome.SpawnListEntry(EntityMobNpcFemale1.class, 4, 1, 5));
-        
+        this.spawnableCreatureList.add(new BaseBiome.SpawnListEntry(EntityMobNpcFemale1.class, 8, 1, 2));
+        this.spawnableCreatureList.add(new BaseBiome.SpawnListEntry(EntityMobNpcMale.class, 8, 1, 2));
         this.spawnableCreatureList.add(new BaseBiome.SpawnListEntry(EntityMobCow1.class, 4, 1, 5));
         this.spawnableCreatureList.add(new BaseBiome.SpawnListEntry(EntityMobCow1.class, 4, 1, 5));
         this.spawnableCreatureList.add(new BaseBiome.SpawnListEntry(EntityMobCow1.class, 4, 1, 5));
