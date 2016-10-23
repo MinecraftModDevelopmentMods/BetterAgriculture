@@ -17,6 +17,15 @@ public final class ModCrafting {
 		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.rooftileBlock, 2), new Object[] {ModItems.slateItem, ModItems.slateItem,ModItems.slateItem,ModItems.slateItem});
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.wireItem, 6), new Object[] {Items.GOLD_NUGGET});
 		
+		
+		//armor
+
+		
+		
+		
+		
+		
+		
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.redsidingBlock, 8), new Object[] {"###", "#B#", "###", '#', Blocks.PLANKS, 'B', new ItemStack(Items.DYE, 1, 1)});
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.whitesidingBlock, 8), new Object[] {"###", "#B#", "###", '#', Blocks.PLANKS, 'B', new ItemStack(Items.DYE, 1, 15)});
 
