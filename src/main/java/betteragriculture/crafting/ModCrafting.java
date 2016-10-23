@@ -19,6 +19,10 @@ public final class ModCrafting {
 		
 		
 		//armor
+		GameRegistry.addRecipe(new ItemStack(ModItems.armorFarmerOutfitHelmet, 1), new Object[] {"#B#", "# #", "   ", '#', new ItemStack(Blocks.WOOL, 1, 0), 'B', Items.LEATHER});
+		GameRegistry.addRecipe(new ItemStack(ModItems.armorFarmerOutfitChestplate, 1), new Object[] {"# #", "#B#", "###", '#', new ItemStack(Blocks.WOOL, 1, 0), 'B', Items.LEATHER});
+		GameRegistry.addRecipe(new ItemStack(ModItems.armorFarmerOutfitLeggings, 1), new Object[] {"#B#", "# #", "# #", '#', new ItemStack(Blocks.WOOL, 1, 0), 'B', Items.LEATHER});
+		GameRegistry.addRecipe(new ItemStack(ModItems.armorFarmerOutfitBoots, 1), new Object[] {"   ", "# #", "#B#", '#', new ItemStack(Blocks.WOOL, 1, 0), 'B', Items.LEATHER});
 
 		
 		
