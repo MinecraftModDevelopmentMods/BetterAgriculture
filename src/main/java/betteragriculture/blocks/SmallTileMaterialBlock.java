@@ -1,5 +1,6 @@
 package betteragriculture.blocks;
 
+import betteragriculture.Main;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -9,7 +10,7 @@ public class SmallTileMaterialBlock extends Block {
 	public SmallTileMaterialBlock(String unlocalizedName, Material material, float hardness, float resistance) {
 		super(material);
 		this.setUnlocalizedName(unlocalizedName);
-		this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+	    this.setCreativeTab(Main.tab);
 		this.setHardness(hardness);
 		this.setResistance(resistance);
 	}

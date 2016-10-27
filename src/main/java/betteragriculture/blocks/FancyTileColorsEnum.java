@@ -18,8 +18,8 @@ public enum FancyTileColorsEnum implements IStringSerializable {
 	PINK(10, "pink"),
 	PURPLE(11, "purple"),
 	RED(12, "red"),
-	WHITE(11, "white"),
-	YELLOW(11, "yellow");
+	WHITE(13, "white"),
+	YELLOW(14, "yellow");
 
 
     private int ID;

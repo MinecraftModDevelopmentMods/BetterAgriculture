@@ -70,8 +70,9 @@ public final class ModBlocks {
 
         GameRegistry.registerBlock(brickwallBlock = new BasicBlock("brick_wall_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "brick_wall_block");
 
+        GameRegistry.registerBlock(fancytilecolorBlock = new FancyTileColorBlock<Object>("fancy_tile_color_block", 1, 1), ItemBlockMeta.class, "fancy_tile_color_block");
 
-        GameRegistry.registerBlock(fancytilecolorBlock = new FancyTileColorBlock("fancy_tile_color_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "fancy_tile_color_block");
+        //GameRegistry.registerBlock(fancytilecolorBlock2 = new FancyTileColorBlock("fancy_tile_color_block", Material.ROCK, ItemBlockMeta.class, ModBlocks.brickwallBlock, 1, 1), "fancy_tile_color_block");
         GameRegistry.registerBlock(largetilecolorBlock = new LargeTileColorBlock("large_tile_color_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "large_tile_color_block");
         GameRegistry.registerBlock(smalltilecolorBlock = new SmallTileColorBlock("small_tile_color_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "small_tile_color_block");
         GameRegistry.registerBlock(tinytilecolorBlock = new TinyTileColorBlock("tiny_tile_color_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "tiny_tile_color_block");
