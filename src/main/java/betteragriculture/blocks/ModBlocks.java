@@ -70,17 +70,39 @@ public final class ModBlocks {
 
         GameRegistry.registerBlock(brickwallBlock = new BasicBlock("brick_wall_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "brick_wall_block");
 
-        GameRegistry.registerBlock(fancytilecolorBlock = new FancyTileColorBlock<Object>("fancy_tile_color_block", 1, 1), ItemBlockMeta.class, "fancy_tile_color_block");
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        GameRegistry.registerBlock(fancytilecolorBlock = new TileColorBlock<Object>("fancy_tile_color_block", 1, 1), ItemBlockMeta.class, "fancy_tile_color_block");
+        GameRegistry.registerBlock(largetilecolorBlock = new TileColorBlock<Object>("large_tile_color_block", 1, 1), ItemBlockMeta.class, "large_tile_color_block");
+        GameRegistry.registerBlock(smalltilecolorBlock = new TileColorBlock<Object>("small_tile_color_block", 1, 1), ItemBlockMeta.class, "small_tile_color_block");
+        GameRegistry.registerBlock(tinytilecolorBlock = new TileColorBlock<Object>("tiny_tile_color_block", 1, 1), ItemBlockMeta.class, "tiny_tile_color_block");
+
+        
+        GameRegistry.registerBlock(fancytilematerialBlock = new TileMaterialBlock<Object>("fancy_tile_material_block", 1, 1), ItemBlockMeta.class, "fancy_tile_material_block");
+        GameRegistry.registerBlock(largetilematerialBlock = new TileMaterialBlock<Object>("large_tile_material_block", 1, 1), ItemBlockMeta.class, "large_tile_material_block");
+        GameRegistry.registerBlock(smalltilematerialBlock = new TileMaterialBlock<Object>("small_tile_material_block", 1, 1), ItemBlockMeta.class, "small_tile_material_block");
+        GameRegistry.registerBlock(tinytilematerialBlock = new TileMaterialBlock<Object>("tiny_tile_material_block", 1, 1), ItemBlockMeta.class, "tiny_tile_material_block");
+
+        
+        
+        
 
         //GameRegistry.registerBlock(fancytilecolorBlock2 = new FancyTileColorBlock("fancy_tile_color_block", Material.ROCK, ItemBlockMeta.class, ModBlocks.brickwallBlock, 1, 1), "fancy_tile_color_block");
-        GameRegistry.registerBlock(largetilecolorBlock = new LargeTileColorBlock("large_tile_color_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "large_tile_color_block");
-        GameRegistry.registerBlock(smalltilecolorBlock = new SmallTileColorBlock("small_tile_color_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "small_tile_color_block");
-        GameRegistry.registerBlock(tinytilecolorBlock = new TinyTileColorBlock("tiny_tile_color_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "tiny_tile_color_block");
+        //GameRegistry.registerBlock(largetilecolorBlock = new LargeTileColorBlock("large_tile_color_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "large_tile_color_block");
+        //GameRegistry.registerBlock(smalltilecolorBlock = new SmallTileColorBlock("small_tile_color_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "small_tile_color_block");
+       // GameRegistry.registerBlock(tinytilecolorBlock = new TinyTileColorBlock("tiny_tile_color_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "tiny_tile_color_block");
 
-        GameRegistry.registerBlock(fancytilematerialBlock = new FancyTileMaterialBlock("fancy_tile_material_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "fancy_tile_material_block");
-        GameRegistry.registerBlock(largetilematerialBlock = new LargeTileMaterialBlock("large_tile_material_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "large_tile_material_block");
-        GameRegistry.registerBlock(smalltilematerialBlock = new SmallTileMaterialBlock("small_tile_material_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "small_tile_material_block");
-        GameRegistry.registerBlock(tinytilematerialBlock = new TinyTileMaterialBlock("tiny_tile_material_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "tiny_tile_material_block");
+       // GameRegistry.registerBlock(fancytilematerialBlock = new FancyTileMaterialBlock("fancy_tile_material_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "fancy_tile_material_block");
+       // GameRegistry.registerBlock(largetilematerialBlock = new LargeTileMaterialBlock("large_tile_material_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "large_tile_material_block");
+        //GameRegistry.registerBlock(smalltilematerialBlock = new SmallTileMaterialBlock("small_tile_material_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "small_tile_material_block");
+       // GameRegistry.registerBlock(tinytilematerialBlock = new TinyTileMaterialBlock("tiny_tile_material_block", Material.ROCK, ModBlocks.brickwallBlock, 1, 1), "tiny_tile_material_block");
 
         
         

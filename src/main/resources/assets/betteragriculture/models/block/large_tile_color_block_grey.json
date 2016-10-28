@@ -1,0 +1,6 @@
+{
+    "parent":"block/cube_all",
+    "textures": {
+        "all": "betteragriculture:blocks/large_tile_color_block_grey"
+    }
+}

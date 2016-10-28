@@ -1,0 +1,17 @@
+{
+    "variants": {
+        "color=blue": { "model":"betteragriculture:large_tile_color_block_blue" },
+        "color=brown": { "model":"betteragriculture:large_tile_color_block_brown" },
+        "color=cyan": { "model":"betteragriculture:large_tile_color_block_cyan" },
+        "color=green": { "model":"betteragriculture:large_tile_color_block_green" },
+        "color=grey": { "model":"betteragriculture:large_tile_color_block_grey" },
+        "color=lightgrey": { "model":"betteragriculture:large_tile_color_block_lightgrey" },
+        "color=lime": { "model":"betteragriculture:large_tile_color_block_lime" },
+        "color=magenta": { "model":"betteragriculture:large_tile_color_block_magenta" },
+        "color=orange": { "model":"betteragriculture:large_tile_color_block_orange" },
+        "color=pink": { "model":"betteragriculture:large_tile_color_block_pink" },
+        "color=purple": { "model":"betteragriculture:large_tile_color_block_purple" },
+        "color=red": { "model":"betteragriculture:large_tile_color_block_red" },
+        "color=yellow": { "model":"betteragriculture:large_tile_color_block_yellow" }
+    }
+}

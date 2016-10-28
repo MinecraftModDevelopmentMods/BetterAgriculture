@@ -1,0 +1,6 @@
+{
+    "parent":"block/cube_all",
+    "textures": {
+        "all": "betteragriculture:blocks/tiny_tile_color_block_pink"
+    }
+}
