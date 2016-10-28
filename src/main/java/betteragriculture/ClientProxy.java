@@ -5,6 +5,7 @@ import betteragriculture.client.render.blocks.BlockRenderRegister;
 import betteragriculture.client.render.items.ItemRenderRegister;
 import betteragriculture.client.render.mobs.RenderEntityMobChicken1;
 import betteragriculture.client.render.mobs.RenderEntityMobChicken10;
+import betteragriculture.client.render.mobs.RenderEntityMobChicken11;
 import betteragriculture.client.render.mobs.RenderEntityMobChicken2;
 import betteragriculture.client.render.mobs.RenderEntityMobChicken3;
 import betteragriculture.client.render.mobs.RenderEntityMobChicken4;
@@ -47,6 +48,7 @@ import betteragriculture.client.render.mobs.RenderEntityMobSheep8;
 import betteragriculture.client.render.mobs.RenderEntityMobSheep9;
 import betteragriculture.entity.entitymob.EntityMobChicken1;
 import betteragriculture.entity.entitymob.EntityMobChicken10;
+import betteragriculture.entity.entitymob.EntityMobChicken11;
 import betteragriculture.entity.entitymob.EntityMobChicken2;
 import betteragriculture.entity.entitymob.EntityMobChicken3;
 import betteragriculture.entity.entitymob.EntityMobChicken4;
@@ -115,6 +117,8 @@ public class ClientProxy extends CommonProxy {
 		
 		
 		// Regular Mobs Render Registry, you can find the model registry inside the Render"Entityname" class
+		RenderingRegistry.registerEntityRenderingHandler(EntityMobChicken11.class, RenderEntityMobChicken11::new);
+
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobCow1.class, RenderEntityMobCow1::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobCow2.class, RenderEntityMobCow2::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobCow3.class, RenderEntityMobCow3::new);

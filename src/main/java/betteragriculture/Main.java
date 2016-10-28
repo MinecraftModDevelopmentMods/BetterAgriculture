@@ -5,6 +5,7 @@ import java.util.LinkedList;
 
 import betteragriculture.entity.entitymob.EntityMobChicken1;
 import betteragriculture.entity.entitymob.EntityMobChicken10;
+import betteragriculture.entity.entitymob.EntityMobChicken11;
 import betteragriculture.entity.entitymob.EntityMobChicken2;
 import betteragriculture.entity.entitymob.EntityMobChicken3;
 import betteragriculture.entity.entitymob.EntityMobChicken4;
@@ -147,6 +148,8 @@ public class Main {
         registerEntity(EntityMobChicken8.class, "EntityMobChicken8", 0xac9271, 0x98FB98);
         registerEntity(EntityMobChicken9.class, "EntityMobChicken9", 0xac9271, 0x98FB98);
         registerEntity(EntityMobChicken10.class, "EntityMobChicken10", 0xac9271, 0x98FB98);
+        registerEntity(EntityMobChicken11.class, "EntityMobChicken11", 0xac9271, 0x98FB98);
+
 Main.proxy.preInit(event);
 	
 	}
