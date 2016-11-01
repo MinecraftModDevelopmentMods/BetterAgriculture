@@ -2,7 +2,6 @@ package betteragriculture.entity.entitymob;
 
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.passive.EntityChicken;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 
 
