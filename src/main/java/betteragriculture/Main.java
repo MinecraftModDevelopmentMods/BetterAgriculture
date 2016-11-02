@@ -2,7 +2,6 @@ package betteragriculture;
 
 import java.util.LinkedList;
 
-
 import betteragriculture.entity.entitymob.EntityMobChicken1;
 import betteragriculture.entity.entitymob.EntityMobChicken10;
 import betteragriculture.entity.entitymob.EntityMobChicken11;
@@ -77,6 +76,7 @@ import net.minecraftforge.fml.common.Mod.Instance;
 		updateJSON = "https://raw.githubusercontent.com/nfinit-gaming/BetterAgriculture/master/update.json")
 
 public class Main {
+	public static VillagerRegistry.VillagerProfession villagerProfession_farmhand;
 
 	@Instance
 	public static Main INSTANCE = null;
@@ -96,14 +96,20 @@ public class Main {
 	
 	
     public static FarmlandBiome farmlandBiome;
-	@EventHandler
+
+//	private VillagerRegistry villageRegistry;
+    @EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		INSTANCE = this;
 
 		// load config
         ConfigHandler.startConfig(event);
         tab = new CreativeTabBetterAgriculture();
-		
+    //	for (int i = 0; i < 5; ++i) {
+    	//	VillagerRegistry.instance().registerVillageCreationHandler(new TradeHandler());
+    //	}
+    	
+
 		
 		//Harambe 
         registerEntity(EntityMobCow1.class, "EntityMobCow1", 0x006400, 0x98FB98);
@@ -172,7 +178,17 @@ private void registerEntity(Class<? extends Entity> entityClass, String entityNa
 
         farmlandBiome = new FarmlandBiome();
         registerBiome(farmlandBiome,true);
- 
+		
+		//villagerProfession_farmhand = new VillagerRegistry.VillagerProfession("betteragriculture:farmhand", "betteragriculture:textures/models/villager_farmhand.png", "betteragriculture:textures/models/villager_farmhand_zombie.png");
+		//villageRegistry.register(villagerProfession_farmhand);
+
+		//VillagerRegistry.VillagerCareer career_farmhand = new VillagerRegistry.VillagerCareer(villagerProfession_farmhand, "betteragriculture:farmhand");
+		//career_farmhand.addTrade(1,
+				//new BAVillagerTrades.EmeraldForItemstack(new ItemStack(ModItems.slateItem), new EntityVillager.PriceInfo(8, 16)),
+				//new BAVillagerTrades.ItemstackForEmerald(new ItemStack(ModItems.wireItem), new EntityVillager.PriceInfo(-10, -6))
+		//);
+
+	
 	}
 
 	@EventHandler

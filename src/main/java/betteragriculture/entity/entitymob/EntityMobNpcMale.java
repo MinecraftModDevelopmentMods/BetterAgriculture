@@ -2,14 +2,21 @@ package betteragriculture.entity.entitymob;
 
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.*;
-import net.minecraft.entity.monster.EntityMob;
+import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.network.datasync.DataParameter;
+import net.minecraft.network.datasync.DataSerializers;
+import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.world.World;
 
 
 
-public class EntityMobNpcMale extends EntityMob {
-
+public class EntityMobNpcMale extends EntityVillager {
+	
+    private static final DataParameter<Integer> PROFESSION = EntityDataManager.<Integer>createKey(EntityMobNpcMale.class, DataSerializers.VARINT);
+    private static final DataParameter<String> PROFESSION_STR = EntityDataManager.<String>createKey(EntityMobNpcMale.class, DataSerializers.STRING);
+    
+    
 	public EntityMobNpcMale(World worldIn)
 	{
 		super(worldIn);
@@ -37,12 +44,5 @@ public class EntityMobNpcMale extends EntityMob {
 		this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.5D);
 	}
 
-
-
-
-
-
-			
-		
 	
 }

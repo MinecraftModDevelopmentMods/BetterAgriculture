@@ -4,6 +4,7 @@ import java.util.List;
 
 import betteragriculture.CreativeTabBetterAgriculture;
 import betteragriculture.Main;
+import betteragriculture.items.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -33,14 +34,6 @@ public class TileColorBlock<MovingObjectPosition> extends Block implements IMeta
 		this.setResistance(resistance);
 	    this.setDefaultState(this.blockState.getBaseState().withProperty(COLOR, ColorEnum.WHITE));
 
-	}
-
-	public TileColorBlock(String unlocalizedName, float hardness, float resistance) {
-		this(unlocalizedName, Material.ROCK, hardness, resistance);
-	}
-
-	public TileColorBlock(String unlocalizedName, Material rock,Class<ItemBlockMeta> class1, Block whitesidingBlock, int i, int j) {
-		this(unlocalizedName, 2.0f, 10.0f);
 	}
 
 
@@ -146,6 +139,10 @@ public String getSpecialName(ItemStack stack) {
 public ItemStack getPickBlock(MovingObjectPosition target, World world, BlockPos pos) {
     return new ItemStack(Item.getItemFromBlock(this), 1, this.getMetaFromState(world.getBlockState(pos)));
 }
+
+
+
+
 @SideOnly(Side.CLIENT)
 public void initModel() {
     ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
@@ -160,6 +157,10 @@ public void initModel() {
     ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 9, new ModelResourceLocation(getRegistryName(), "inventory"));
     ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 10, new ModelResourceLocation(getRegistryName(), "inventory"));
     ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 11, new ModelResourceLocation(getRegistryName(), "inventory"));
+    ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 12, new ModelResourceLocation(getRegistryName(), "inventory"));
+    ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 13, new ModelResourceLocation(getRegistryName(), "inventory"));
+    ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 14, new ModelResourceLocation(getRegistryName(), "inventory"));
+
 
 
 }

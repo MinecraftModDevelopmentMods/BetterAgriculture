@@ -100,11 +100,7 @@ public final class BlockRenderRegister {
 		reg(ModBlocks.tinytilecolorBlock, 12, "tiny_tile_color_block_red");
 		reg(ModBlocks.tinytilecolorBlock, 13, "tiny_tile_color_block_white");
 		reg(ModBlocks.tinytilecolorBlock, 14, "tiny_tile_color_block_yellow");
-		
-		
-		
-		
-		
+
 		reg(ModBlocks.fancytilematerialBlock, 0, "fancy_tile_material_block_blue");
 		reg(ModBlocks.fancytilematerialBlock, 1, "fancy_tile_material_block_brown");
 		reg(ModBlocks.fancytilematerialBlock, 2, "fancy_tile_material_block_cyan");
@@ -128,42 +124,26 @@ public final class BlockRenderRegister {
 		reg(ModBlocks.tinytilematerialBlock, 2, "tiny_tile_material_block_cyan");
 		reg(ModBlocks.tinytilematerialBlock, 3, "tiny_tile_material_block_green");
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 
+	
 
-	}
+	// ModelBakery.registerItemVariants(Item.getItemFromBlock(ModBlocks.fancytilecolorBlock), new ModelResourceLocation(new ModelResourceLocation("betteragriculture:fancy_tile_color_block_blue"), "betteragriculture:fancy_tile_color_block_brown"));
 
+}
+	
 	public static void reg(Block block, int meta, String file) {
 	    Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
 	    .register(Item.getItemFromBlock(block), meta, new ModelResourceLocation(modid + ":" + file, "inventory"));
 	}
 	
-	
-	
-	
+
 	public static String modid = Main.MODID;
 
 	public static void reg(Block block) {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(modid + ":" + block.getUnlocalizedName().substring(5), "inventory"));
 	}
 	
+	
+
 	
 }

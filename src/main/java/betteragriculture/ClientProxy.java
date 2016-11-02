@@ -109,7 +109,7 @@ public class ClientProxy extends CommonProxy {
 	public void preInit(FMLPreInitializationEvent event) {
 		super.preInit(event);
 //Render mobs
-		
+	   // BlockRenderRegister.preInit();
 		
 		// Render Manager
 		@SuppressWarnings("unused")
