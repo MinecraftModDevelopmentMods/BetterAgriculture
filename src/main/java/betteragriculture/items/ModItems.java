@@ -45,8 +45,8 @@ public class ModItems {
 	public static void createItems() {
 
 		// Vanilla
-		GameRegistry.registerItem(goatmilkItem = new BasicItem("goat_milk"), "goat_milk");
-		GameRegistry.registerItem(sheepmilkItem = new BasicItem("sheep_milk"), "sheep_milk");
+		GameRegistry.registerItem(goatmilkItem = new ItemMilk("goat_milk", "goat_milk"));
+		GameRegistry.registerItem(sheepmilkItem = new ItemMilk("sheep_milk","sheep_milk"));
 		GameRegistry.registerItem(whitesheepskinItem = new BasicItem("white_sheep_skin"), "white_sheep_skin");
 		GameRegistry.registerItem(pigleatherItem = new BasicItem("pig_leather"), "pig_leather");
 		GameRegistry.registerItem(greysheepskinItem = new BasicItem("grey_sheep_skin"), "grey_sheep_skin");

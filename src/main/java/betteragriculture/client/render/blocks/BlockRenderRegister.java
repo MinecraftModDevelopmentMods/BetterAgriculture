@@ -20,21 +20,21 @@ public final class BlockRenderRegister {
 		reg(ModBlocks.slateOre);
 		reg(ModBlocks.whitesidingBlock);
 		reg(ModBlocks.barnroofBlock);
-		reg(ModBlocks.barnroofstairBlock);
+		//reg(ModBlocks.barnroofstairBlock);
 		reg(ModBlocks.rooftileBlock);
 
-		reg(ModBlocks.rooftilestairBlock);
+		//reg(ModBlocks.rooftilestairBlock);
 		reg(ModBlocks.thatchroofBlock);
-        reg(ModBlocks.thatchroofstairBlock);
+      //  reg(ModBlocks.thatchroofstairBlock);
 		
-		reg(ModBlocks.accaciatroughBlock);
-		reg(ModBlocks.birchroughBlock);
-		reg(ModBlocks.darkoaktroughBlock);
-		reg(ModBlocks.jungletroughBlock);
-		reg(ModBlocks.oaktroughBlock);
-		reg(ModBlocks.sprucetroughBlock);
-		reg(ModBlocks.stonetroughBlock);
-		reg(ModBlocks.brickwallBlock);
+		//reg(ModBlocks.accaciatroughBlock);
+		//reg(ModBlocks.birchroughBlock);
+		//reg(ModBlocks.darkoaktroughBlock);
+		//reg(ModBlocks.jungletroughBlock);
+		//reg(ModBlocks.oaktroughBlock);
+		//reg(ModBlocks.sprucetroughBlock);
+		//reg(ModBlocks.stonetroughBlock);
+		//reg(ModBlocks.brickwallBlock);
 		
 		
 		reg(ModBlocks.fancytilecolorBlock, 0, "fancy_tile_color_block_blue");

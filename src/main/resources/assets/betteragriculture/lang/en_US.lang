@@ -4,10 +4,22 @@ tile.white_siding_block.name=White Siding
 tile.slate_ore.name=Slate Ore
 item.slate_item.name=Slate
 item.wire_item.name=Wire
-item.helmet_item.name=Straw Hat
-item.chestplate_item.name=Red Shirt
-item.boots_item.name=Wellies
-item.leggings_item.name=Overalls
+item.goat_milk.name=Goat Milk
+item.sheep_milk.name=Sheep Milk
+item.white_sheep_skin.name=White Sheep Skin
+item.pig_leather.name=Pig Leather
+item.grey_sheep_skin.name=Grey Sheep Skin
+item.duck_feather.name=Duck feather
+item.duck_egg.name=Duck Egg
+item.duck_breat.name=Duck Breat
+item.diced_goat.name=Diced Goat
+item.goat_curry.name=Goat Curry
+item.roast_duck_breast.name=Roast Duck Breast
+item.betteragriculture.armorfarmeroutfit.helmet.name=Straw Hat
+item.betteragriculture.armorfarmeroutfit.chestplate.name=Red Shirt
+item.betteragriculture.armorfarmeroutfit.leggings.name=Overalls
+item.betteragriculture.armorfarmeroutfit.boots.name=Wellies
+
 entity.betteragriculture.EntityMobCow1.name=Holstein Friesian 
 entity.betteragriculture.EntityMobCow2.name=Black Angus   
 entity.betteragriculture.EntityMobCow3.name=Highland
@@ -65,6 +77,24 @@ tile.oak_trough_block.name=Oak Stock Tank
 tile.spruce_trough_block.name=Spruce Stock Tank
 tile.stone_trough_block.name=Stone Stock Tank
 tile.brick_wall_block.name=Brick Wall
+tile.fancy_tile_color_block.blue.name=Fancy Tile Blue
+tile.fancy_tile_color_block.red.name=Fancy Tile Red
+tile.fancy_tile_color_block.green.name=Fancy Tile Green
+tile.fancy_tile_color_block.yellow.name=Fancy Tile Yellow
+tile.large_tile_color_block.blue.name=Large Tile Blue
+tile.large_tile_color_block.red.name=Large Tile Red
+tile.large_tile_color_block.green.name=Large Tile Green
+tile.large_tile_color_block.yellow.name=Large Tile Yellow
+tile.small_tile_color_block.blue.name=Small Tile Blue
+tile.small_tile_color_block.red.name=Small Tile Red
+tile.small_tile_color_block.green.name=Small Tile Green
+tile.small_tile_color_block.yellow.name=Small Tile Yellow
+tile.Tiny_tile_color_block.blue.name=Tiny Tile Blue
+tile.Tiny_tile_color_block.red.name=Tiny Tile Red
+tile.Tiny_tile_color_block.green.name=Tiny Tile Green
+tile.Tiny_tile_color_block.yellow.name=Tiny Tile Yellow
+
+
 
 
 

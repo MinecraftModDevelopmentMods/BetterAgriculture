@@ -13,12 +13,62 @@ import betteragriculture.blocks.ModBlocks;
 import betteragriculture.crafting.ModCrafting;
 import betteragriculture.items.ModItems;
 import betteragriculture.world.WorldGen;
-import drops.DropHandler;
+
 public class CommonProxy {
 
-
+	  public static TileColorBlock2 tilecolorBlock;  
+	  public static ItemTileColorBlock2 itemtilecolorBlock; 
+	  public static TileColorBlock2 largetilecolorBlock;  
+	  public static ItemTileColorBlock2 largeitemtilecolorBlock; 
+	  public static TileColorBlock2 smalltilecolorBlock;  
+	  public static ItemTileColorBlock2 smallitemtilecolorBlock;  
+	  public static TileColorBlock2 tinytilecolorBlock;  
+	  public static ItemTileColorBlock2 tinyitemtilecolorBlock;  
 
 	public void preInit(FMLPreInitializationEvent event) {
+
+	   
+	   tilecolorBlock = (TileColorBlock2)(new TileColorBlock2().setUnlocalizedName("fancy_tile_color_block"));
+	   tilecolorBlock.setRegistryName("fancy_tile_color_block");
+	   GameRegistry.register(tilecolorBlock);
+	   
+	   itemtilecolorBlock = new ItemTileColorBlock2(tilecolorBlock);
+	   itemtilecolorBlock.setRegistryName(tilecolorBlock.getRegistryName());
+	   GameRegistry.register(itemtilecolorBlock);
+	   
+	   //
+	   
+	   
+	   largetilecolorBlock = (TileColorBlock2)(new TileColorBlock2().setUnlocalizedName("large_tile_color_block"));
+	   largetilecolorBlock.setRegistryName("large_tile_color_block");
+	   GameRegistry.register(largetilecolorBlock);
+	   
+	   largeitemtilecolorBlock = new ItemTileColorBlock2(largetilecolorBlock);
+	   largeitemtilecolorBlock.setRegistryName(largetilecolorBlock.getRegistryName());
+	   GameRegistry.register(largeitemtilecolorBlock);
+	   
+	   //
+	   
+	   smalltilecolorBlock = (TileColorBlock2)(new TileColorBlock2().setUnlocalizedName("small_tile_color_block"));
+	   smalltilecolorBlock.setRegistryName("small_tile_color_block");
+	   GameRegistry.register(smalltilecolorBlock);
+	   
+	   smallitemtilecolorBlock = new ItemTileColorBlock2(smalltilecolorBlock);
+	   smallitemtilecolorBlock.setRegistryName(smalltilecolorBlock.getRegistryName());
+	   GameRegistry.register(smallitemtilecolorBlock);
+	   
+	   //
+	   
+	   tinytilecolorBlock = (TileColorBlock2)(new TileColorBlock2().setUnlocalizedName("tiny_tile_color_block"));
+	   tinytilecolorBlock.setRegistryName("tiny_tile_color_block");
+	   GameRegistry.register(tinytilecolorBlock);
+	   
+	   tinyitemtilecolorBlock = new ItemTileColorBlock2(tinytilecolorBlock);
+	   tinyitemtilecolorBlock.setRegistryName(tinytilecolorBlock.getRegistryName());
+	   GameRegistry.register(tinyitemtilecolorBlock);
+
+		
+		
 		ModBlocks.createBlocks();
 		ModItems.createItems();
 	}

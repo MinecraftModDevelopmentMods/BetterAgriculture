@@ -1,17 +1,22 @@
 {
-    "variants": {
-        "color=blue": { "model":"betteragriculture:tiny_tile_color_block_blue" },
-        "color=brown": { "model":"betteragriculture:tiny_tile_color_block_brown" },
-        "color=cyan": { "model":"betteragriculture:tiny_tile_color_block_cyan" },
-        "color=green": { "model":"betteragriculture:tiny_tile_color_block_green" },
-        "color=grey": { "model":"betteragriculture:tiny_tile_color_block_grey" },
-        "color=lightgrey": { "model":"betteragriculture:tiny_tile_color_block_lightgrey" },
-        "color=lime": { "model":"betteragriculture:tiny_tile_color_block_lime" },
-        "color=magenta": { "model":"betteragriculture:tiny_tile_color_block_magenta" },
-        "color=orange": { "model":"betteragriculture:tiny_tile_color_block_orange" },
-        "color=pink": { "model":"betteragriculture:tiny_tile_color_block_pink" },
-        "color=purple": { "model":"betteragriculture:tiny_tile_color_block_purple" },
-        "color=red": { "model":"betteragriculture:tiny_tile_color_block_red" },
-        "color=yellow": { "model":"betteragriculture:tiny_tile_color_block_yellow" }
-    }
+        "variants": {
+           "colour=red,facing=north": { "model": "betteragriculture:tiny_tile_color_block_red"},
+            "colour=red,facing=east": { "model": "betteragriculture:tiny_tile_color_block_red", "y": 90 },
+           "colour=red,facing=south": { "model": "betteragriculture:tiny_tile_color_block_red", "y": 180 },
+            "colour=red,facing=west": { "model": "betteragriculture:tiny_tile_color_block_red", "y": 270 },
+         "colour=green,facing=north": { "model": "betteragriculture:tiny_tile_color_block_green" },
+          "colour=green,facing=east": { "model": "betteragriculture:tiny_tile_color_block_green", "y": 90 },
+         "colour=green,facing=south": { "model": "betteragriculture:tiny_tile_color_block_green", "y": 180 },
+          "colour=green,facing=west": { "model": "betteragriculture:tiny_tile_color_block_green", "y": 270 },
+        "colour=yellow,facing=north": { "model": "betteragriculture:tiny_tile_color_block_yellow" },
+         "colour=yellow,facing=east": { "model": "betteragriculture:tiny_tile_color_block_yellow", "y": 90 },
+        "colour=yellow,facing=south": { "model": "betteragriculture:tiny_tile_color_block_yellow", "y": 180 },
+         "colour=yellow,facing=west": { "model": "betteragriculture:tiny_tile_color_block_yellow", "y": 270 },
+          "colour=blue,facing=north": { "model": "betteragriculture:tiny_tile_color_block_blue" },
+           "colour=blue,facing=east": { "model": "betteragriculture:tiny_tile_color_block_blue", "y": 90 },
+          "colour=blue,facing=south": { "model": "betteragriculture:tiny_tile_color_block_blue", "y": 180 },
+           "colour=blue,facing=west": { "model": "betteragriculture:tiny_tile_color_block_blue", "y": 270 }
+
+    }  
+    
 }

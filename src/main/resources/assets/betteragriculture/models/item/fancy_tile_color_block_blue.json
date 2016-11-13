@@ -1,5 +1,5 @@
 {
-    "parent":"betteragriculture:blocks/fancy_tile_color_block_blue",
+    "parent":"betteragriculture:block/fancy_tile_color_block_blue",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],

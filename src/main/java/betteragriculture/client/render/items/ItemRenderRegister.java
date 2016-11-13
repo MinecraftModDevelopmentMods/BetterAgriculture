@@ -62,7 +62,7 @@ public final class ItemRenderRegister {
  
         
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-        .register(ModItems.dicedgoatItem, 0, new ModelResourceLocation("betteragriculture:diced_goat_breast", "inventory"));
+        .register(ModItems.dicedgoatItem, 0, new ModelResourceLocation("betteragriculture:diced_goat", "inventory"));
  
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
         .register(ModItems.roastduckbreastItem, 0, new ModelResourceLocation("betteragriculture:roast_duck_breast", "inventory"));
