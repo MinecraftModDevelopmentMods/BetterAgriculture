@@ -71,7 +71,7 @@ import net.minecraftforge.fml.common.Mod.Instance;
 		modid = Main.MODID,
 		name = Main.MODNAME,
 		version = Main.VERSION,
-		dependencies = "required-after:Forge",
+		dependencies = "",
 		acceptedMinecraftVersions = "1.8.9,)",
 		updateJSON = "https://raw.githubusercontent.com/nfinit-gaming/BetterAgriculture/master/update.json")
 
@@ -108,68 +108,8 @@ public class Main {
     //	for (int i = 0; i < 5; ++i) {
     	//	VillagerRegistry.instance().registerVillageCreationHandler(new TradeHandler());
     //	}
-    	
 
-		
-		//Harambe 
-        registerEntity(EntityMobCow1.class, "EntityMobCow1", 0x006400, 0x98FB98);
-        registerEntity(EntityMobCow2.class, "EntityMobCow2", 0x006400, 0x98FB98);
-        registerEntity(EntityMobCow3.class, "EntityMobCow3", 0x006400, 0x98FB98);
-        registerEntity(EntityMobCow4.class, "EntityMobCow4", 0x006400, 0x98FB98);
-        registerEntity(EntityMobCow5.class, "EntityMobCow5", 0x006400, 0x98FB98);
-        registerEntity(EntityMobCow6.class, "EntityMobCow6", 0x006400, 0x98FB98);
-        registerEntity(EntityMobCow7.class, "EntityMobCow7", 0x006400, 0x98FB98);
-        registerEntity(EntityMobCow8.class, "EntityMobCow8", 0x006400, 0x98FB98);
-        registerEntity(EntityMobCow9.class, "EntityMobCow9", 0x006400, 0x98FB98);
-        registerEntity(EntityMobCow10.class, "EntityMobCow10", 0x006400, 0x98FB98);
-        registerEntity(EntityMobNpcFemale1.class, "EntityMobNpcFemale1", 0x006460, 0x98FB98);
-        registerEntity(EntityMobNpcMale.class, "EntityMobNpcMale", 0x006460, 0x98FB98);
-        registerEntity(EntityMobSheep1.class, "EntityMobSheep1", 0x008500, 0x98FB98);
-        registerEntity(EntityMobSheep2.class, "EntityMobSheep2", 0x008500, 0x98FB98);
-        registerEntity(EntityMobSheep3.class, "EntityMobSheep3", 0x008500, 0x98FB98);
-        registerEntity(EntityMobSheep4.class, "EntityMobSheep4", 0x008500, 0x98FB98);
-        registerEntity(EntityMobSheep5.class, "EntityMobSheep5", 0x008500, 0x98FB98);
-        registerEntity(EntityMobSheep6.class, "EntityMobSheep6", 0x008500, 0x98FB98);
-        registerEntity(EntityMobSheep7.class, "EntityMobSheep7", 0x008500, 0x98FB98);
-        registerEntity(EntityMobSheep8.class, "EntityMobSheep8", 0x008500, 0x98FB98);
-        registerEntity(EntityMobSheep9.class, "EntityMobSheep9", 0x008500, 0x98FB98);
-        registerEntity(EntityMobSheep10.class, "EntityMobSheep10", 0x008500, 0x98FB98);
-        registerEntity(EntityMobPig1.class, "EntityMobPig1", 0x008500, 0x98FB98);
-        registerEntity(EntityMobPig2.class, "EntityMobPig2", 0x008500, 0x98FB98);
-        registerEntity(EntityMobPig3.class, "EntityMobPig3", 0x008500, 0x98FB98);
-        registerEntity(EntityMobPig4.class, "EntityMobPig4", 0x008500, 0x98FB98);
-        registerEntity(EntityMobPig5.class, "EntityMobPig5", 0x008500, 0x98FB98);
-        registerEntity(EntityMobPig6.class, "EntityMobPig6", 0x009500, 0x98FB98);
-        registerEntity(EntityMobPig7.class, "EntityMobPig7", 0x008500, 0x98FB98);
-        registerEntity(EntityMobPig8.class, "EntityMobPig8", 0x008500, 0x98FB98);
-        registerEntity(EntityMobPig9.class, "EntityMobPig9", 0x008500, 0x98FB98);
-        registerEntity(EntityMobPig10.class, "EntityMobPig10", 0x008500, 0x98FB98);
-        registerEntity(EntityMobChicken1.class, "EntityMobChicken1", 0xac9271, 0x98FB98);
-        registerEntity(EntityMobChicken2.class, "EntityMobChicken2", 0xac9271, 0x98FB98);
-        registerEntity(EntityMobChicken3.class, "EntityMobChicken3", 0xac9271, 0x98FB98);
-        registerEntity(EntityMobChicken4.class, "EntityMobChicken4", 0xac9271, 0x98FB98);
-        registerEntity(EntityMobChicken5.class, "EntityMobChicken5", 0xac9271, 0x98FB98);
-        registerEntity(EntityMobChicken6.class, "EntityMobChicken6", 0xac9271, 0x98FB98);
-        registerEntity(EntityMobChicken7.class, "EntityMobChicken7", 0xac9271, 0x98FB98);
-        registerEntity(EntityMobChicken8.class, "EntityMobChicken8", 0xac9271, 0x98FB98);
-        registerEntity(EntityMobChicken9.class, "EntityMobChicken9", 0xac9271, 0x98FB98);
-        registerEntity(EntityMobChicken10.class, "EntityMobChicken10", 0xac9271, 0x98FB98);
-        registerEntity(EntityMobChicken11.class, "EntityMobChicken11", 0xac9271, 0x98FB98);
-
-Main.proxy.preInit(event);
-	
-	}
-
-private void registerEntity(Class<? extends Entity> entityClass, String entityName, int bkEggColor, int fgEggColor) {
-       EntityRegistry.registerModEntity(entityClass, entityName, entityID++, Main.INSTANCE, 80, 3, true, bkEggColor, fgEggColor);
-   }
-
-
-
-  
-     
-
-
+Main.proxy.preInit(event);}
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) {

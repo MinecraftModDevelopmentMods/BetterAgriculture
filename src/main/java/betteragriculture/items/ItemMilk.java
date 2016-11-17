@@ -19,25 +19,6 @@ public class ItemMilk extends ItemBucketMilk {
 	    this.setRegistryName(name);
 	}
 
-    @Nullable
-    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityLivingBase entityLiving)
-    {
-        if (entityLiving instanceof EntityPlayer && !((EntityPlayer)entityLiving).capabilities.isCreativeMode)
-        {
-            --stack.stackSize;
-        }
-
-        if (!worldIn.isRemote)
-        {
-            entityLiving.curePotionEffects(stack);
-        }
-
-        if (entityLiving instanceof EntityPlayer)
-        {
-            ((EntityPlayer)entityLiving).addStat(StatList.getObjectUseStats(this));
-        }
-
-        return stack.stackSize <= 0 ? new ItemStack(Items.GLASS_BOTTLE) : stack;
-    }
+   
 
 }

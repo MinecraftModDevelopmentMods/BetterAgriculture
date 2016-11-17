@@ -44,7 +44,7 @@ public class TileColorBlock2 extends Block
     return EnumBlockRenderType.MODEL;
   }
 
-  @Override
+  
   public AxisAlignedBB getCollisionBoundingBox(IBlockState state, World worldIn, BlockPos pos)
   {
     return NULL_AABB;
@@ -60,7 +60,7 @@ public class TileColorBlock2 extends Block
     return enumColour.getMetadata();
   }
 
-  @Override
+  
   @SideOnly(Side.CLIENT)
   public void getSubBlocks(Item itemIn, CreativeTabs tab, List list)
   {

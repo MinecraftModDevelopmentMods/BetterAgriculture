@@ -7,6 +7,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -39,7 +40,8 @@ public class ModItems {
 	public static Item leggingsItem;
 	public static Item bootsItem;
 	public static CommonProxy proxy;
-	public static Item armorFarmerOutfitHelmet, armorFarmerOutfitChestplate, armorFarmerOutfitLeggings, armorFarmerOutfitBoots;
+	public static Item armorFarmerOutfitHelmet;
+	public static Item armorFarmerOutfitChestplate, armorFarmerOutfitLeggings, armorFarmerOutfitBoots;
 
 	@SuppressWarnings("deprecation")
 	public static void createItems() {
