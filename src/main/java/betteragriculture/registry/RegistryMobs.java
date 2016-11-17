@@ -45,13 +45,17 @@ import betteragriculture.entity.entitymob.EntityMobSheep7;
 import betteragriculture.entity.entitymob.EntityMobSheep8;
 import betteragriculture.entity.entitymob.EntityMobSheep9;
 import net.minecraft.entity.Entity;
+import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 
 public class RegistryMobs {
 	private static int entityID = 0;
-
-	public void preInit(FMLPreInitializationEvent event) {
+	
+	
+	
+	@EventHandler
+	public static void preInit(FMLPreInitializationEvent event) {
 		registerEntity(EntityMobCow1.class, "EntityMobCow1", 0x006400, 0x98FB98);
 		registerEntity(EntityMobCow2.class, "EntityMobCow2", 0x006400, 0x98FB98);
 		registerEntity(EntityMobCow3.class, "EntityMobCow3", 0x006400, 0x98FB98);
@@ -96,7 +100,7 @@ public class RegistryMobs {
 		registerEntity(EntityMobChicken10.class, "EntityMobChicken10", 0xac9271, 0x98FB98);
 		registerEntity(EntityMobChicken11.class, "EntityMobChicken11", 0xac9271, 0x98FB98);
 	}
-	private void registerEntity(Class<? extends Entity> entityClass, String entityName, int bkEggColor, int fgEggColor) {
+	private static void registerEntity(Class<? extends Entity> entityClass, String entityName, int bkEggColor, int fgEggColor) {
 	       EntityRegistry.registerModEntity(entityClass, entityName, entityID++, Main.INSTANCE, 80, 3, true, bkEggColor, fgEggColor);
 	   }
 }
