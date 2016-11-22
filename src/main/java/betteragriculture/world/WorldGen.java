@@ -41,7 +41,7 @@ public class WorldGen implements IWorldGenerator {
 		// TODO Auto-generated method stub
 		  switch (world.provider.getDimension()) {
 		    case 0: //Overworld
-		        this.runGenerator(this.gen_slate_ore, world, random, chunkX, chunkZ, 20, 0, 64);
+		       this.runGenerator(this.gen_slate_ore, world, random, chunkX, chunkZ, 20, 0, 64);
 		        break;
 			case -1: // Nether
 				// Vanilla

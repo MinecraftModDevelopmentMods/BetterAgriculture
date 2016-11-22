@@ -31,7 +31,7 @@ public class ModBlockOre extends Block {
 	private int most_quantity;
 	private EntityPlayer player;
 
-	protected ModBlockOre(String unlocalizedName, Material mat, Item nethernickelOre, int meta, int least_quantity, int most_quantity) {
+	protected ModBlockOre(String unlocalizedName, Material mat, Block block, int meta, int least_quantity, int most_quantity) {
 		super(mat);
 		this.meta = meta;
 		this.least_quantity = least_quantity;
@@ -43,12 +43,12 @@ public class ModBlockOre extends Block {
 	    this.setCreativeTab(Main.tab);
 	}
 
-	protected ModBlockOre(String unlocalizedName, Material mat, Item nethernickelOre, int least_quantity, int most_quantity) {
-		this(unlocalizedName, mat, nethernickelOre, 0, least_quantity, most_quantity);
+	protected ModBlockOre(String unlocalizedName, Material mat, Block block, int least_quantity, int most_quantity) {
+		this(unlocalizedName, mat, block, 0, least_quantity, most_quantity);
 	}
 
-	protected ModBlockOre(String unlocalizedName, Material mat, Item drop) {
-		this(unlocalizedName, mat, drop, 1, 1);
+	protected ModBlockOre(String unlocalizedName, Material mat, Block block) {
+		this(unlocalizedName, mat, block, 1, 1);
 	}
 
 	@Override

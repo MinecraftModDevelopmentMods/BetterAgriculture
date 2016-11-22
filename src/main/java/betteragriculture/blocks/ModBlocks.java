@@ -2,9 +2,17 @@ package betteragriculture.blocks;
 
 
 
+import betteragriculture.ItemTileColorBlock2;
+import betteragriculture.Main;
+import betteragriculture.TileColorBlock2;
 import betteragriculture.items.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -44,22 +52,40 @@ public final class ModBlocks {
 	public static Block smalltilematerialBlock;
 	public static Block tinytilematerialBlock;
 
-	
+	  public static ItemTileColorBlock2 itemtilecolorBlock; 
 
-	@SuppressWarnings({ "deprecation" })
+
 	public static void createBlocks() {
+	
+		concreteBlock = new BasicBlock("concrete_block", Material.ROCK, ModBlocks.concreteBlock, 1, 1);
+		slateOre = new ModBlockOre("slate_ore", Material.ROCK, ModBlocks.slateOre, 1, 1);
 
-		// Vanilla
-		GameRegistry.registerBlock(concreteBlock = new BasicBlock("concrete_block", Material.ROCK, ModBlocks.concreteBlock, 1, 1), "concrete_block");
-		GameRegistry.registerBlock(redsidingBlock = new BasicBlock("red_siding_block", Material.ROCK, ModBlocks.redsidingBlock, 1, 1), "red_siding_block");
-		GameRegistry.registerBlock(slateOre = new ModBlockOre("slate_ore", Material.ROCK, ModItems.slateItem, 1, 1), "slate_ore");
-		GameRegistry.registerBlock(whitesidingBlock = new BasicBlock("white_siding_block", Material.ROCK, ModBlocks.whitesidingBlock, 1, 1), "white_siding_block");
 		
-		GameRegistry.registerBlock(barnroofBlock = new BasicBlock("barn_roof_block", Material.ROCK, ModBlocks.barnroofBlock, 1, 1), "barn_roof_block");
+		registerBlocks();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		// Vanilla
+		//GameRegistry.register(concreteBlock = new BasicBlock("concrete_block", Material.ROCK, ModBlocks.concreteBlock, 1, 1), "concrete_block");
+		//GameRegistry.register(redsidingBlock = new BasicBlock("red_siding_block", Material.ROCK, ModBlocks.redsidingBlock, 1, 1), "red_siding_block");
+		//GameRegistry.register(slateOre = new ModBlockOre("slate_ore", Material.ROCK, ModItems.slateItem, 1, 1), "slate_ore");
+		//GameRegistry.register(whitesidingBlock = new BasicBlock("white_siding_block", Material.ROCK, ModBlocks.whitesidingBlock, 1, 1), "white_siding_block");
+		
+		//GameRegistry.register(barnroofBlock = new BasicBlock("barn_roof_block", Material.ROCK, ModBlocks.barnroofBlock, 1, 1), "barn_roof_block");
 		//GameRegistry.registerBlock(barnroofstairBlock = new BasicBlock("barn_roof_stair_block", Material.ROCK, ModBlocks.barnroofstairBlock, 1, 1), "barn_roof_stair_block");
-		GameRegistry.registerBlock(rooftileBlock = new BasicBlock("roof_tile_block", Material.ROCK, ModBlocks.rooftileBlock, 1, 1), "roof_tile_block");
+		//GameRegistry.register(rooftileBlock = new BasicBlock("roof_tile_block", Material.ROCK, ModBlocks.rooftileBlock, 1, 1), "roof_tile_block");
 		//GameRegistry.registerBlock(rooftilestairBlock = new BasicBlock("roof_tile_stair_block", Material.ROCK, ModBlocks.rooftilestairBlock, 1, 1), "roof_tile_stair_block");
-        GameRegistry.registerBlock(thatchroofBlock = new BasicBlock("thatch_roof_block", Material.ROCK, ModBlocks.thatchroofBlock, 1, 1), "thatch_roof_block");
+      //  GameRegistry.register(thatchroofBlock = new BasicBlock("thatch_roof_block", Material.ROCK, ModBlocks.thatchroofBlock, 1, 1), "thatch_roof_block");
         //GameRegistry.registerBlock(thatchroofstairBlock = new BasicBlock("thatch_roof_stair_block", Material.ROCK, ModBlocks.thatchroofstairBlock, 1, 1), "thatch_roof_stair_block");
 
         //GameRegistry.registerBlock(accaciatroughBlock = new BasicBlock("accacia_trough_block", Material.ROCK, ModBlocks.accaciatroughBlock, 1, 1), "accacia_trough_block");
@@ -84,6 +110,42 @@ public final class ModBlocks {
        // GameRegistry.registerBlock(tinytilematerialBlock = new TileMaterialBlock("tiny_tile_material_block", 1, 1), ItemBlockMeta.class, "tiny_tile_material_block");
 
         
+	}
+	
+	public static void registerBlocks()  {
+		
+		registerBlock(concreteBlock,"concrete_block");
+		registerBlock(slateOre,"slate_ore");
+
+		
+		
+		
+		
+		
+		
+	}
+
+	private static void registerBlock(Block block, String name) {
+
+		GameRegistry.register(block, new ResourceLocation(Main.MODID,name));
+		GameRegistry.register(new ItemBlock(block), new ResourceLocation(Main.MODID,name));
+
+		
+		
+	}
+	private static void registerRenders() {
+
+    registerRender(concreteBlock);
+    registerRender(slateOre);
+		
+		
+	}
+
+	private static void registerRender(Block block) {
+		Item item = Item.getItemFromBlock(block);
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Main.MODID + ":" + item.getUnlocalizedName().substring(5),"inventory"));
+		
+		
 	}
 
 }

@@ -16,15 +16,15 @@ public final class BlockRenderRegister {
 		// Vanilla
 
 		reg(ModBlocks.concreteBlock);
-		reg(ModBlocks.redsidingBlock);
+		//reg(ModBlocks.redsidingBlock);
 		reg(ModBlocks.slateOre);
-		reg(ModBlocks.whitesidingBlock);
-		reg(ModBlocks.barnroofBlock);
+		//reg(ModBlocks.whitesidingBlock);
+		//reg(ModBlocks.barnroofBlock);
 		//reg(ModBlocks.barnroofstairBlock);
-		reg(ModBlocks.rooftileBlock);
+		//reg(ModBlocks.rooftileBlock);
 
 		//reg(ModBlocks.rooftilestairBlock);
-		reg(ModBlocks.thatchroofBlock);
+		//reg(ModBlocks.thatchroofBlock);
       //  reg(ModBlocks.thatchroofstairBlock);
 		
 		//reg(ModBlocks.accaciatroughBlock);
@@ -101,28 +101,28 @@ public final class BlockRenderRegister {
 		reg(ModBlocks.tinytilecolorBlock, 13, "tiny_tile_color_block_white");
 		reg(ModBlocks.tinytilecolorBlock, 14, "tiny_tile_color_block_yellow");
 
-		reg(ModBlocks.fancytilematerialBlock, 0, "fancy_tile_material_block_blue");
-		reg(ModBlocks.fancytilematerialBlock, 1, "fancy_tile_material_block_brown");
-		reg(ModBlocks.fancytilematerialBlock, 2, "fancy_tile_material_block_cyan");
-		reg(ModBlocks.fancytilematerialBlock, 3, "fancy_tile_material_block_green");
+		//reg(ModBlocks.fancytilematerialBlock, 0, "fancy_tile_material_block_blue");
+		//reg(ModBlocks.fancytilematerialBlock, 1, "fancy_tile_material_block_brown");
+		//reg(ModBlocks.fancytilematerialBlock, 2, "fancy_tile_material_block_cyan");
+		//reg(ModBlocks.fancytilematerialBlock, 3, "fancy_tile_material_block_green");
 
 
-		reg(ModBlocks.largetilematerialBlock, 0, "large_tile_material_block_blue");
-		reg(ModBlocks.largetilematerialBlock, 1, "large_tile_material_block_brown");
-		reg(ModBlocks.largetilematerialBlock, 2, "large_tile_material_block_cyan");
-		reg(ModBlocks.largetilematerialBlock, 3, "large_tile_material_block_green");
-
-		
-		reg(ModBlocks.smalltilematerialBlock, 0, "small_tile_material_block_blue");
-		reg(ModBlocks.smalltilematerialBlock, 1, "small_tile_material_block_brown");
-		reg(ModBlocks.smalltilematerialBlock, 2, "small_tile_material_block_cyan");
-		reg(ModBlocks.smalltilematerialBlock, 3, "small_tile_material_block_green");
+		//reg(ModBlocks.largetilematerialBlock, 0, "large_tile_material_block_blue");
+		//reg(ModBlocks.largetilematerialBlock, 1, "large_tile_material_block_brown");
+		//reg(ModBlocks.largetilematerialBlock, 2, "large_tile_material_block_cyan");
+		//reg(ModBlocks.largetilematerialBlock, 3, "large_tile_material_block_green");
 
 		
-		reg(ModBlocks.tinytilematerialBlock, 0, "tiny_tile_material_block_blue");
-		reg(ModBlocks.tinytilematerialBlock, 1, "tiny_tile_material_block_brown");
-		reg(ModBlocks.tinytilematerialBlock, 2, "tiny_tile_material_block_cyan");
-		reg(ModBlocks.tinytilematerialBlock, 3, "tiny_tile_material_block_green");
+		//reg(ModBlocks.smalltilematerialBlock, 0, "small_tile_material_block_blue");
+		//reg(ModBlocks.smalltilematerialBlock, 1, "small_tile_material_block_brown");
+		//reg(ModBlocks.smalltilematerialBlock, 2, "small_tile_material_block_cyan");
+		//reg(ModBlocks.smalltilematerialBlock, 3, "small_tile_material_block_green");
+
+		
+		//reg(ModBlocks.tinytilematerialBlock, 0, "tiny_tile_material_block_blue");
+		//reg(ModBlocks.tinytilematerialBlock, 1, "tiny_tile_material_block_brown");
+		//reg(ModBlocks.tinytilematerialBlock, 2, "tiny_tile_material_block_cyan");
+		//reg(ModBlocks.tinytilematerialBlock, 3, "tiny_tile_material_block_green");
 
 
 	

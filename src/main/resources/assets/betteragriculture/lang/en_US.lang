@@ -62,6 +62,7 @@ entity.betteragriculture.EntityMobChicken9.name=Brahma
 entity.betteragriculture.EntityMobChicken10.name=Lavender Pekin
 entity.betteragriculture.EntityMobNpcFemale1.name=Female Farmhand 
 entity.betteragriculture.EntityMobNpcMale.name=Male Farmhand 
+itemGroup.betteragriculture=Better Agriculture
 
 tile.barn_roof_block.name=Barn Roof
 tile.barn_roof_stair_block.name=Barn Roof Stair

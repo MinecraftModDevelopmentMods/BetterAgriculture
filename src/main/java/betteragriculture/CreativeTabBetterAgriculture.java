@@ -1,10 +1,13 @@
 package betteragriculture;
 
 
+
 import betteragriculture.items.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class CreativeTabBetterAgriculture extends CreativeTabs {
     
@@ -12,11 +15,18 @@ public class CreativeTabBetterAgriculture extends CreativeTabs {
         
         super("betteragriculture");
     }
-
+    
 	@Override
-	public ItemStack getTabIconItem() {
-		
-		return ItemStack.field_190927_a;
-	
+	public ItemStack getIconItemStack() {
+	     return new ItemStack(CommonProxy.itemtilecolorBlock);	}
+    
 
-}}
+	
+	
+    @Override
+    @SideOnly(Side.CLIENT)
+    public ItemStack getTabIconItem() {
+        return getIconItemStack();
+    }
+	
+}

@@ -10,24 +10,26 @@ public final class ItemRenderRegister {
 
     public static void registerItemRenderer() {
     	
-        reg(ModItems.slateItem);
-        reg(ModItems.wireItem);
+       reg(ModItems.slateItem);
+      reg(ModItems.wireItem);
         
-        reg(ModItems.goatmilkItem);
-        reg(ModItems.sheepmilkItem);
+     reg(ModItems.goatmilkItem);
+      reg(ModItems.sheepmilkItem);
         reg(ModItems.whitesheepskinItem);
-        reg(ModItems.pigleatherItem);
-        reg(ModItems.greysheepskinItem);
-        reg(ModItems.duckfeatherItem);
-        reg(ModItems.duckeggItem);
-        reg(ModItems.duckbreatItem);
-        reg(ModItems.dicedgoatItem);
-        reg(ModItems.roastduckbreastItem);
-        reg(ModItems.goatcurryItem);
+       reg(ModItems.pigleatherItem);
+       reg(ModItems.greysheepskinItem);
+      reg(ModItems.duckfeatherItem);
+      reg(ModItems.duckeggItem);
+      reg(ModItems.duckbreastItem);
+      reg(ModItems.dicedgoatItem);
+      reg(ModItems.roastduckbreastItem);
+      reg(ModItems.goatcurryItem);
 
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+        .register(ModItems.whitesheepskinItem, 0, new ModelResourceLocation("betteragriculture:white_sheep_skin", "inventory"));
+ 
 	      
-	      
-	      
+	 
 	      
 	      
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
@@ -43,9 +45,6 @@ public final class ItemRenderRegister {
         .register(ModItems.sheepmilkItem, 0, new ModelResourceLocation("betteragriculture:sheep_milk", "inventory"));
  
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-        .register(ModItems.whitesheepskinItem, 0, new ModelResourceLocation("betteragriculture:white_sheep_skin", "inventory"));
- 
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
         .register(ModItems.pigleatherItem, 0, new ModelResourceLocation("betteragriculture:pig_leather", "inventory"));
  
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
@@ -58,7 +57,7 @@ public final class ItemRenderRegister {
         .register(ModItems.duckeggItem, 0, new ModelResourceLocation("betteragriculture:duck_egg", "inventory"));
  
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-        .register(ModItems.duckbreatItem, 0, new ModelResourceLocation("betteragriculture:duck_breat", "inventory"));
+        .register(ModItems.duckbreastItem, 0, new ModelResourceLocation("betteragriculture:duck_breast", "inventory"));
  
         
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
@@ -69,7 +68,7 @@ public final class ItemRenderRegister {
  
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
         .register(ModItems.goatcurryItem, 0, new ModelResourceLocation("betteragriculture:goat_curry", "inventory"));
- 
+
     }
     
     public static String modid = Main.MODID;

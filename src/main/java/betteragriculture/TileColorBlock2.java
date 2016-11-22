@@ -15,6 +15,7 @@ import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.IStringSerializable;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
@@ -44,7 +45,6 @@ public class TileColorBlock2 extends Block
     return EnumBlockRenderType.MODEL;
   }
 
-  
   public AxisAlignedBB getCollisionBoundingBox(IBlockState state, World worldIn, BlockPos pos)
   {
     return NULL_AABB;
@@ -60,15 +60,20 @@ public class TileColorBlock2 extends Block
     return enumColour.getMetadata();
   }
 
-  
-  @SideOnly(Side.CLIENT)
-  public void getSubBlocks(Item itemIn, CreativeTabs tab, List list)
-  {
-    EnumColour[] allColours = EnumColour.values();
-    for (EnumColour colour : allColours) {
-      list.add(new ItemStack(itemIn, 1, colour.getMetadata()));
+ 
+    
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void getSubBlocks(Item item, CreativeTabs tab, NonNullList list){
+        EnumColour[] allColours = EnumColour.values();
+        for (EnumColour colour : allColours) {
+          list.add(new ItemStack(item, 1, colour.getMetadata()));
+        }
     }
-  }
+    
+    
+    
+  
 
   @Override
   public IBlockState getStateFromMeta(int meta)

@@ -27,27 +27,22 @@ public class CommonProxy {
 
 	public void preInit(FMLPreInitializationEvent event) {
 
-	   
+ 
 	   tilecolorBlock = (TileColorBlock2)(new TileColorBlock2().setUnlocalizedName("fancy_tile_color_block"));
 	   tilecolorBlock.setRegistryName("fancy_tile_color_block");
 	   GameRegistry.register(tilecolorBlock);
-	   
 	   itemtilecolorBlock = new ItemTileColorBlock2(tilecolorBlock);
 	   itemtilecolorBlock.setRegistryName(tilecolorBlock.getRegistryName());
 	   GameRegistry.register(itemtilecolorBlock);
-	   
-	   //
-	   
+	
+	   	 
 	   
 	   largetilecolorBlock = (TileColorBlock2)(new TileColorBlock2().setUnlocalizedName("large_tile_color_block"));
 	   largetilecolorBlock.setRegistryName("large_tile_color_block");
 	   GameRegistry.register(largetilecolorBlock);
-	   
 	   largeitemtilecolorBlock = new ItemTileColorBlock2(largetilecolorBlock);
 	   largeitemtilecolorBlock.setRegistryName(largetilecolorBlock.getRegistryName());
 	   GameRegistry.register(largeitemtilecolorBlock);
-	   
-	   //
 	   
 	   smalltilecolorBlock = (TileColorBlock2)(new TileColorBlock2().setUnlocalizedName("small_tile_color_block"));
 	   smalltilecolorBlock.setRegistryName("small_tile_color_block");
@@ -56,8 +51,6 @@ public class CommonProxy {
 	   smallitemtilecolorBlock = new ItemTileColorBlock2(smalltilecolorBlock);
 	   smallitemtilecolorBlock.setRegistryName(smalltilecolorBlock.getRegistryName());
 	   GameRegistry.register(smallitemtilecolorBlock);
-	   
-	   //
 	   
 	   tinytilecolorBlock = (TileColorBlock2)(new TileColorBlock2().setUnlocalizedName("tiny_tile_color_block"));
 	   tinytilecolorBlock.setRegistryName("tiny_tile_color_block");

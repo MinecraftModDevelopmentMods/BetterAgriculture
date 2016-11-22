@@ -108,11 +108,11 @@ public class ClientProxy extends CommonProxy {
 	@Override
 	public void preInit(FMLPreInitializationEvent event) {
 		super.preInit(event);
-		
+	
 	  ModelResourceLocation itemModelResourceLocation = new ModelResourceLocation("betteragriculture:fancy_tile_color_block_blue", "inventory");
 	  ModelLoader.setCustomModelResourceLocation(CommonProxy.itemtilecolorBlock,
 	  TileColorBlock2.EnumColour.BLUE.getMetadata(), itemModelResourceLocation);
-
+	
 	  ModelResourceLocation itemModelResourceLocationred = new ModelResourceLocation("betteragriculture:fancy_tile_color_block_red", "inventory");
 	  ModelLoader.setCustomModelResourceLocation(CommonProxy.itemtilecolorBlock,
 	  TileColorBlock2.EnumColour.RED.getMetadata(), itemModelResourceLocationred);
@@ -180,16 +180,16 @@ public class ClientProxy extends CommonProxy {
 	  ModelLoader.setCustomModelResourceLocation(CommonProxy.tinyitemtilecolorBlock,
 	  TileColorBlock2.EnumColour.YELLOW.getMetadata(), tinyitemModelResourceLocationyellow);
 
-		
-		
+	
+	  RenderingRegistry.registerEntityRenderingHandler(EntityMobCow1.class, RenderEntityMobCow1::new);
 		
 //Render mobs
 	   // BlockRenderRegister.preInit();
 		
 		// Render Manager
-		@SuppressWarnings("unused")
+		//@SuppressWarnings("unused")
 		RenderManager rm = Minecraft.getMinecraft().getRenderManager();
-		
+	
 		
 		// Regular Mobs Render Registry, you can find the model registry inside the Render"Entityname" class
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobChicken11.class, RenderEntityMobChicken11::new);
@@ -227,7 +227,7 @@ public class ClientProxy extends CommonProxy {
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobPig8.class, RenderEntityMobPig8::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobPig9.class, RenderEntityMobPig9::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobPig10.class, RenderEntityMobPig10::new);
-
+/*
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobChicken1.class, RenderEntityMobChicken1::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobChicken2.class, RenderEntityMobChicken2::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobChicken3.class, RenderEntityMobChicken3::new);
@@ -238,15 +238,15 @@ public class ClientProxy extends CommonProxy {
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobChicken8.class, RenderEntityMobChicken8::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobChicken9.class, RenderEntityMobChicken9::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobChicken10.class, RenderEntityMobChicken10::new);
-
+*/
 	    ModelLoader.setCustomModelResourceLocation(ModItems.armorFarmerOutfitBoots, 0, new ModelResourceLocation(ModItems.armorFarmerOutfitBoots.getRegistryName(), "inventory"));
 	    ModelLoader.setCustomModelResourceLocation(ModItems.armorFarmerOutfitHelmet, 0, new ModelResourceLocation(ModItems.armorFarmerOutfitHelmet.getRegistryName(), "inventory"));
 	    ModelLoader.setCustomModelResourceLocation(ModItems.armorFarmerOutfitChestplate, 0, new ModelResourceLocation(ModItems.armorFarmerOutfitChestplate.getRegistryName(), "inventory"));
 	    ModelLoader.setCustomModelResourceLocation(ModItems.armorFarmerOutfitLeggings, 0, new ModelResourceLocation(ModItems.armorFarmerOutfitLeggings.getRegistryName(), "inventory"));
-
+	    /*
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobNpcFemale1.class, RenderEntityMobNpcFemale1::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobNpcMale.class, RenderEntityMobNpcMale::new);
-
+*/
 	}
 
 	@Override
