@@ -13,7 +13,7 @@ buildscript {
 		}
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
 		classpath 'com.matthewprenger:CurseGradle:1.0-SNAPSHOT'
     }
 }
@@ -39,10 +39,10 @@ group= "betteragriculture" // http://maven.apache.org/guides/mini/guide-naming-c
 archivesBaseName = "BetterAgriculture_1.9.4"
 
 minecraft {
-    version = "1.9.4-12.17.0.1965"
+    version = "1.9.4-12.17.0.1976"
     runDir = "run"
     
-    mappings = "snapshot_20160615"
+    mappings = "stable_26"
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
 
