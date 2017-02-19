@@ -109,78 +109,7 @@ public class ClientProxy extends CommonProxy {
 	public void preInit(FMLPreInitializationEvent event) {
 		super.preInit(event);
 		
-	  ModelResourceLocation itemModelResourceLocation = new ModelResourceLocation("betteragriculture:fancy_tile_color_block_blue", "inventory");
-	  ModelLoader.setCustomModelResourceLocation(CommonProxy.itemtilecolorBlock,
-	  TileColorBlock2.EnumColour.BLUE.getMetadata(), itemModelResourceLocation);
 
-	  ModelResourceLocation itemModelResourceLocationred = new ModelResourceLocation("betteragriculture:fancy_tile_color_block_red", "inventory");
-	  ModelLoader.setCustomModelResourceLocation(CommonProxy.itemtilecolorBlock,
-	  TileColorBlock2.EnumColour.RED.getMetadata(), itemModelResourceLocationred);
-	  
-	  ModelResourceLocation itemModelResourceLocationgreen = new ModelResourceLocation("betteragriculture:fancy_tile_color_block_green", "inventory");
-	  ModelLoader.setCustomModelResourceLocation(CommonProxy.itemtilecolorBlock,
-	  TileColorBlock2.EnumColour.GREEN.getMetadata(), itemModelResourceLocationgreen);
-	  
-	  ModelResourceLocation itemModelResourceLocationyellow = new ModelResourceLocation("betteragriculture:fancy_tile_color_block_yellow", "inventory");
-	  ModelLoader.setCustomModelResourceLocation(CommonProxy.itemtilecolorBlock,
-	  TileColorBlock2.EnumColour.YELLOW.getMetadata(), itemModelResourceLocationyellow);
-	  
-	  
-	  
-
-	  ModelResourceLocation largeitemModelResourceLocation = new ModelResourceLocation("betteragriculture:large_tile_color_block_blue", "inventory");
-	  ModelLoader.setCustomModelResourceLocation(CommonProxy.largeitemtilecolorBlock,
-	  TileColorBlock2.EnumColour.BLUE.getMetadata(), largeitemModelResourceLocation);
-
-	  ModelResourceLocation largeitemModelResourceLocationred = new ModelResourceLocation("betteragriculture:large_tile_color_block_red", "inventory");
-	  ModelLoader.setCustomModelResourceLocation(CommonProxy.largeitemtilecolorBlock,
-	  TileColorBlock2.EnumColour.RED.getMetadata(), largeitemModelResourceLocationred);
-	  
-	  ModelResourceLocation largeitemModelResourceLocationgreen = new ModelResourceLocation("betteragriculture:large_tile_color_block_green", "inventory");
-	  ModelLoader.setCustomModelResourceLocation(CommonProxy.largeitemtilecolorBlock,
-	  TileColorBlock2.EnumColour.GREEN.getMetadata(), largeitemModelResourceLocationgreen);
-	  
-	  ModelResourceLocation largeitemModelResourceLocationyellow = new ModelResourceLocation("betteragriculture:large_tile_color_block_yellow", "inventory");
-	  ModelLoader.setCustomModelResourceLocation(CommonProxy.largeitemtilecolorBlock,
-	  TileColorBlock2.EnumColour.YELLOW.getMetadata(), largeitemModelResourceLocationyellow);
-
-	  
-
-	  ModelResourceLocation smallitemModelResourceLocation = new ModelResourceLocation("betteragriculture:small_tile_color_block_blue", "inventory");
-	  ModelLoader.setCustomModelResourceLocation(CommonProxy.smallitemtilecolorBlock,
-	  TileColorBlock2.EnumColour.BLUE.getMetadata(), smallitemModelResourceLocation);
-
-	  ModelResourceLocation smallitemModelResourceLocationred = new ModelResourceLocation("betteragriculture:small_tile_color_block_red", "inventory");
-	  ModelLoader.setCustomModelResourceLocation(CommonProxy.smallitemtilecolorBlock,
-	  TileColorBlock2.EnumColour.RED.getMetadata(), smallitemModelResourceLocationred);
-	  
-	  ModelResourceLocation smallitemModelResourceLocationgreen = new ModelResourceLocation("betteragriculture:small_tile_color_block_green", "inventory");
-	  ModelLoader.setCustomModelResourceLocation(CommonProxy.smallitemtilecolorBlock,
-	  TileColorBlock2.EnumColour.GREEN.getMetadata(), smallitemModelResourceLocationgreen);
-	  
-	  ModelResourceLocation smallitemModelResourceLocationyellow = new ModelResourceLocation("betteragriculture:small_tile_color_block_yellow", "inventory");
-	  ModelLoader.setCustomModelResourceLocation(CommonProxy.smallitemtilecolorBlock,
-	  TileColorBlock2.EnumColour.YELLOW.getMetadata(), smallitemModelResourceLocationyellow);
-
-
-		
-	  ModelResourceLocation tinyitemModelResourceLocation = new ModelResourceLocation("betteragriculture:tiny_tile_color_block_blue", "inventory");
-	  ModelLoader.setCustomModelResourceLocation(CommonProxy.tinyitemtilecolorBlock,
-	  TileColorBlock2.EnumColour.BLUE.getMetadata(), tinyitemModelResourceLocation);
-
-	  ModelResourceLocation tinyitemModelResourceLocationred = new ModelResourceLocation("betteragriculture:tiny_tile_color_block_red", "inventory");
-	  ModelLoader.setCustomModelResourceLocation(CommonProxy.tinyitemtilecolorBlock,
-	  TileColorBlock2.EnumColour.RED.getMetadata(), tinyitemModelResourceLocationred);
-	  
-	  ModelResourceLocation tinyitemModelResourceLocationgreen = new ModelResourceLocation("betteragriculture:tiny_tile_color_block_green", "inventory");
-	  ModelLoader.setCustomModelResourceLocation(CommonProxy.tinyitemtilecolorBlock,
-	  TileColorBlock2.EnumColour.GREEN.getMetadata(), tinyitemModelResourceLocationgreen);
-	  
-	  ModelResourceLocation tinyitemModelResourceLocationyellow = new ModelResourceLocation("betteragriculture:tiny_tile_color_block_yellow", "inventory");
-	  ModelLoader.setCustomModelResourceLocation(CommonProxy.tinyitemtilecolorBlock,
-	  TileColorBlock2.EnumColour.YELLOW.getMetadata(), tinyitemModelResourceLocationyellow);
-
-		
 		
 		
 //Render mobs
@@ -253,7 +182,7 @@ public class ClientProxy extends CommonProxy {
 	public void init(FMLInitializationEvent event) {
 		super.init(event);
 
-	   BlockRenderRegister.registerBlockRenderer();
+	  // BlockRenderRegister.registerBlockRenderer();
 	   ItemRenderRegister.registerItemRenderer();
 
 	}

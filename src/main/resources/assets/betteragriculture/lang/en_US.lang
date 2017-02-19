@@ -68,6 +68,7 @@ tile.barn_roof_stair_block.name=Barn Roof Stair
 tile.roof_tile_block.name=Roof Tile
 tile.roof_tile_stair_block.name=Roof Tile Stair 
 tile.thatch_roof_block.name=Thatch Roof
+
 tile.thatch_roof_stair_block.name=Thatch Roof Stair
 tile.accacia_trough_block.name=Accacia Stock Tank
 tile.birch_trough_block.name=Birch Stock Tank

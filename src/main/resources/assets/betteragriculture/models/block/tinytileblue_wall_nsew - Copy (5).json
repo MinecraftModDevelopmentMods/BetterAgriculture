@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_nsew",
+    "textures": {
+        "wall": "betteragriculture:blocks/tinytile_block"
+    }
+}
