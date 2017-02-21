@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "betteragriculture:blocks/tinytileblue_block",
+        "top": "betteragriculture:blocks/tinytileblue_block",
+        "side": "betteragriculture:blocks/tinytileblue_block"
+    }
+}

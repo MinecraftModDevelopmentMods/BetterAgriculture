@@ -1,0 +1,8 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "betteragriculture:blocks/tinytilepurple_block",
+        "top": "betteragriculture:blocks/tinytilepurple_block",
+        "side": "betteragriculture:blocks/tinytilepurple_block"
+    }
+}

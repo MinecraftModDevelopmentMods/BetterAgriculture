@@ -5,6 +5,7 @@ import betteragriculture.client.render.blocks.BlockRenderRegister;
 import betteragriculture.client.render.items.ItemRenderRegister;
 import betteragriculture.client.render.mobs.RenderEntityMobChicken1;
 import betteragriculture.client.render.mobs.RenderEntityMobChicken10;
+import betteragriculture.client.render.mobs.RenderEntityMobChicken11;
 import betteragriculture.client.render.mobs.RenderEntityMobChicken2;
 import betteragriculture.client.render.mobs.RenderEntityMobChicken3;
 import betteragriculture.client.render.mobs.RenderEntityMobChicken4;
@@ -24,6 +25,7 @@ import betteragriculture.client.render.mobs.RenderEntityMobCow7;
 import betteragriculture.client.render.mobs.RenderEntityMobCow8;
 import betteragriculture.client.render.mobs.RenderEntityMobCow9;
 import betteragriculture.client.render.mobs.RenderEntityMobNpcFemale1;
+import betteragriculture.client.render.mobs.RenderEntityMobNpcMale;
 import betteragriculture.client.render.mobs.RenderEntityMobPig1;
 import betteragriculture.client.render.mobs.RenderEntityMobPig10;
 import betteragriculture.client.render.mobs.RenderEntityMobPig2;
@@ -46,6 +48,7 @@ import betteragriculture.client.render.mobs.RenderEntityMobSheep8;
 import betteragriculture.client.render.mobs.RenderEntityMobSheep9;
 import betteragriculture.entity.entitymob.EntityMobChicken1;
 import betteragriculture.entity.entitymob.EntityMobChicken10;
+import betteragriculture.entity.entitymob.EntityMobChicken11;
 import betteragriculture.entity.entitymob.EntityMobChicken2;
 import betteragriculture.entity.entitymob.EntityMobChicken3;
 import betteragriculture.entity.entitymob.EntityMobChicken4;
@@ -65,6 +68,7 @@ import betteragriculture.entity.entitymob.EntityMobCow7;
 import betteragriculture.entity.entitymob.EntityMobCow8;
 import betteragriculture.entity.entitymob.EntityMobCow9;
 import betteragriculture.entity.entitymob.EntityMobNpcFemale1;
+import betteragriculture.entity.entitymob.EntityMobNpcMale;
 import betteragriculture.entity.entitymob.EntityMobPig1;
 import betteragriculture.entity.entitymob.EntityMobPig10;
 import betteragriculture.entity.entitymob.EntityMobPig2;
@@ -104,8 +108,12 @@ public class ClientProxy extends CommonProxy {
 	@Override
 	public void preInit(FMLPreInitializationEvent event) {
 		super.preInit(event);
-//Render mobs
 		
+
+		
+		
+//Render mobs
+	   // BlockRenderRegister.preInit();
 		
 		// Render Manager
 		@SuppressWarnings("unused")
@@ -113,6 +121,8 @@ public class ClientProxy extends CommonProxy {
 		
 		
 		// Regular Mobs Render Registry, you can find the model registry inside the Render"Entityname" class
+		RenderingRegistry.registerEntityRenderingHandler(EntityMobChicken11.class, RenderEntityMobChicken11::new);
+
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobCow1.class, RenderEntityMobCow1::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobCow2.class, RenderEntityMobCow2::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobCow3.class, RenderEntityMobCow3::new);
@@ -164,14 +174,15 @@ public class ClientProxy extends CommonProxy {
 	    ModelLoader.setCustomModelResourceLocation(ModItems.armorFarmerOutfitLeggings, 0, new ModelResourceLocation(ModItems.armorFarmerOutfitLeggings.getRegistryName(), "inventory"));
 
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobNpcFemale1.class, RenderEntityMobNpcFemale1::new);
-	
+		RenderingRegistry.registerEntityRenderingHandler(EntityMobNpcMale.class, RenderEntityMobNpcMale::new);
+
 	}
 
 	@Override
 	public void init(FMLInitializationEvent event) {
 		super.init(event);
 
-	   BlockRenderRegister.registerBlockRenderer();
+	  // BlockRenderRegister.registerBlockRenderer();
 	   ItemRenderRegister.registerItemRenderer();
 
 	}

@@ -1,0 +1,14 @@
+{
+	"name": "TinyTileBlue",
+	"id": "betteragriculture:tinytileblue_block",
+	"type": "metal",
+	"hardness": 0.5,
+	"resistance": 0.8333333,
+	"textures": "betteragriculture:blocks/tinytileblue_block",
+	"blocks": {
+		"full": "betteragriculture:tinytileblue_block",
+		"stairs": "betteragriculture:tinytileblue_stairs",
+		"slab": { "id": "betteragriculture:tinytileblue_slab", "meta": 0 },
+		"wall": { "id": "betteragriculture:tinytileblue_wall", "meta": 0 }
+	}
+}

@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "color=blue": { "model":"betteragriculture:fancy_tile_color_block_blue" },
+        "color=brown": { "model":""betteragriculture:fancy_tile_color_block_brown" }
+    }
+}

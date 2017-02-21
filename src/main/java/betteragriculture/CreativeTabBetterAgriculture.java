@@ -15,6 +15,6 @@ public class CreativeTabBetterAgriculture extends CreativeTabs {
     @Override
     public Item getTabIconItem () {
         
-        return ModItems.slateItem ;
+        return ModItems.armorFarmerOutfitHelmet ;
     }
 }

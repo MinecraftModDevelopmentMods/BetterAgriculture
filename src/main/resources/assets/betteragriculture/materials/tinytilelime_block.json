@@ -1,0 +1,14 @@
+{
+	"name": "TinyTileLime",
+	"id": "betteragriculture:tinytilelime_block",
+	"type": "metal",
+	"hardness": 0.5,
+	"resistance": 0.8333333,
+	"textures": "betteragriculture:blocks/tinytilelime_block",
+	"blocks": {
+		"full": "betteragriculture:tinytilelime_block",
+		"stairs": "betteragriculture:tinytilelime_stairs",
+		"slab": { "id": "betteragriculture:tinytilelime_slab", "meta": 0 },
+		"wall": { "id": "betteragriculture:tinytilelime_wall", "meta": 0 }
+	}
+}

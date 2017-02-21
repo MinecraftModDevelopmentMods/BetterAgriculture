@@ -2,9 +2,9 @@ package betteragriculture;
 
 import java.util.LinkedList;
 
-
 import betteragriculture.entity.entitymob.EntityMobChicken1;
 import betteragriculture.entity.entitymob.EntityMobChicken10;
+import betteragriculture.entity.entitymob.EntityMobChicken11;
 import betteragriculture.entity.entitymob.EntityMobChicken2;
 import betteragriculture.entity.entitymob.EntityMobChicken3;
 import betteragriculture.entity.entitymob.EntityMobChicken4;
@@ -24,6 +24,7 @@ import betteragriculture.entity.entitymob.EntityMobCow7;
 import betteragriculture.entity.entitymob.EntityMobCow8;
 import betteragriculture.entity.entitymob.EntityMobCow9;
 import betteragriculture.entity.entitymob.EntityMobNpcFemale1;
+import betteragriculture.entity.entitymob.EntityMobNpcMale;
 import betteragriculture.entity.entitymob.EntityMobPig1;
 import betteragriculture.entity.entitymob.EntityMobPig10;
 import betteragriculture.entity.entitymob.EntityMobPig2;
@@ -75,13 +76,14 @@ import net.minecraftforge.fml.common.Mod.Instance;
 		updateJSON = "https://raw.githubusercontent.com/nfinit-gaming/BetterAgriculture/master/update.json")
 
 public class Main {
+	public static VillagerRegistry.VillagerProfession villagerProfession_farmhand;
 
 	@Instance
 	public static Main INSTANCE = null;
     public static CreativeTabs tab;
 	public static final String MODID = "betteragriculture";
 	public static final String MODNAME = "Better Agriculture";
-	public static final String VERSION = "1.0";
+	public static final String VERSION = "1.0.1";
 	private static int entityID = 0;
 
 
@@ -94,14 +96,20 @@ public class Main {
 	
 	
     public static FarmlandBiome farmlandBiome;
-	@EventHandler
+
+//	private VillagerRegistry villageRegistry;
+    @EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		INSTANCE = this;
 
 		// load config
         ConfigHandler.startConfig(event);
         tab = new CreativeTabBetterAgriculture();
-		
+    //	for (int i = 0; i < 5; ++i) {
+    	//	VillagerRegistry.instance().registerVillageCreationHandler(new TradeHandler());
+    //	}
+    	
+
 		
 		//Harambe 
         registerEntity(EntityMobCow1.class, "EntityMobCow1", 0x006400, 0x98FB98);
@@ -115,6 +123,7 @@ public class Main {
         registerEntity(EntityMobCow9.class, "EntityMobCow9", 0x006400, 0x98FB98);
         registerEntity(EntityMobCow10.class, "EntityMobCow10", 0x006400, 0x98FB98);
         registerEntity(EntityMobNpcFemale1.class, "EntityMobNpcFemale1", 0x006460, 0x98FB98);
+        registerEntity(EntityMobNpcMale.class, "EntityMobNpcMale", 0x006460, 0x98FB98);
         registerEntity(EntityMobSheep1.class, "EntityMobSheep1", 0x008500, 0x98FB98);
         registerEntity(EntityMobSheep2.class, "EntityMobSheep2", 0x008500, 0x98FB98);
         registerEntity(EntityMobSheep3.class, "EntityMobSheep3", 0x008500, 0x98FB98);
@@ -145,6 +154,8 @@ public class Main {
         registerEntity(EntityMobChicken8.class, "EntityMobChicken8", 0xac9271, 0x98FB98);
         registerEntity(EntityMobChicken9.class, "EntityMobChicken9", 0xac9271, 0x98FB98);
         registerEntity(EntityMobChicken10.class, "EntityMobChicken10", 0xac9271, 0x98FB98);
+        registerEntity(EntityMobChicken11.class, "EntityMobChicken11", 0xac9271, 0x98FB98);
+
 Main.proxy.preInit(event);
 	
 	}
@@ -167,7 +178,17 @@ private void registerEntity(Class<? extends Entity> entityClass, String entityNa
 
         farmlandBiome = new FarmlandBiome();
         registerBiome(farmlandBiome,true);
- 
+		
+		//villagerProfession_farmhand = new VillagerRegistry.VillagerProfession("betteragriculture:farmhand", "betteragriculture:textures/models/villager_farmhand.png", "betteragriculture:textures/models/villager_farmhand_zombie.png");
+		//villageRegistry.register(villagerProfession_farmhand);
+
+		//VillagerRegistry.VillagerCareer career_farmhand = new VillagerRegistry.VillagerCareer(villagerProfession_farmhand, "betteragriculture:farmhand");
+		//career_farmhand.addTrade(1,
+				//new BAVillagerTrades.EmeraldForItemstack(new ItemStack(ModItems.slateItem), new EntityVillager.PriceInfo(8, 16)),
+				//new BAVillagerTrades.ItemstackForEmerald(new ItemStack(ModItems.wireItem), new EntityVillager.PriceInfo(-10, -6))
+		//);
+
+	
 	}
 
 	@EventHandler

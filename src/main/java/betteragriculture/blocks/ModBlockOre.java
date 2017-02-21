@@ -6,6 +6,7 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
+import betteragriculture.Main;
 import betteragriculture.items.ModItems;
 import net.minecraft.block.Block;
 
@@ -39,7 +40,7 @@ public class ModBlockOre extends Block {
 		this.setHardness(4.0f);
 		this.setResistance(15.0f);
 		this.setUnlocalizedName(unlocalizedName);
-		this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+	    this.setCreativeTab(Main.tab);
 	}
 
 	protected ModBlockOre(String unlocalizedName, Material mat, Item nethernickelOre, int least_quantity, int most_quantity) {

@@ -1,0 +1,14 @@
+{
+	"name": "TinyTilePink",
+	"id": "betteragriculture:tinytilepink_block",
+	"type": "metal",
+	"hardness": 0.5,
+	"resistance": 0.8333333,
+	"textures": "betteragriculture:blocks/tinytilepink_block",
+	"blocks": {
+		"full": "betteragriculture:tinytilepink_block",
+		"stairs": "betteragriculture:tinytilepink_stairs",
+		"slab": { "id": "betteragriculture:tinytilepink_slab", "meta": 0 },
+		"wall": { "id": "betteragriculture:tinytilepink_wall", "meta": 0 }
+	}
+}

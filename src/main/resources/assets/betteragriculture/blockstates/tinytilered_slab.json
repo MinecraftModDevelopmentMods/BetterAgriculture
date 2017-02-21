@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "half=bottom,variant=default": { "model": "betteragriculture:half_slab_tinytilered" },
+        "half=top,variant=default": { "model": "betteragriculture:upper_slab_tinytilered" }
+    }
+}

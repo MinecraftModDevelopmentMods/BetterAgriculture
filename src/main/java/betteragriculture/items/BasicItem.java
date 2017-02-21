@@ -1,5 +1,6 @@
 package betteragriculture.items;
 
+import betteragriculture.Main;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
@@ -9,7 +10,7 @@ public class BasicItem extends Item {
 	    super();
 
 	    this.setUnlocalizedName(unlocalizedName);
-	    this.setCreativeTab(CreativeTabs.MATERIALS);
+	    this.setCreativeTab(Main.tab);
 	}
 
 }

@@ -2,9 +2,18 @@ package betteragriculture;
 
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-
+import com.google.common.collect.Maps;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+import java.lang.reflect.Field;
+import java.util.HashMap;
+import java.util.Map;
 public class ConfigHandler {
+	
 
+	
 	public static Configuration config;
 	private static int GhastlySpawnProb;
 	static private boolean despawn;
@@ -561,17 +570,23 @@ public class ConfigHandler {
 
 	
 	
+		
+		public static class BAConfig
+		{
+		
+
+
+		public static boolean enableMaleFarmhandVillager = true;
 	
 	
 	
 	
 	
+		}
 	
 	
 	
-	
-	
-	
+	}
 	
 	
 	
@@ -585,4 +600,3 @@ public class ConfigHandler {
 	
 	
 
-}

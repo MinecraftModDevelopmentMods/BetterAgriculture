@@ -25,9 +25,9 @@ allprojects {
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
 }
-version = "0.17"
+version = "1.0.1"
 group= "betteragriculture" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "BetterAgriculture_(MC-1.10)"
+archivesBaseName = "BetterAgriculture-1.10.2"
 
 minecraft {
     version = "1.10.2-12.18.2.2099"

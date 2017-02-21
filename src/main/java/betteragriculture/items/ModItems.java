@@ -17,6 +17,21 @@ public class ModItems {
 
 	public static ToolMaterial toolmaterial;
 	public static ArmorMaterial armormaterial;
+	
+	public static Item goatmilkItem;
+	public static Item sheepmilkItem;
+	public static Item whitesheepskinItem;
+	public static Item pigleatherItem;
+	public static Item greysheepskinItem;
+	public static Item duckfeatherItem;
+	public static Item duckeggItem;
+	public static Item duckbreatItem;
+	public static Item dicedgoatItem;
+	public static Item roastduckbreastItem;
+	public static Item goatcurryItem;
+	
+	
+	
 	public static Item slateItem;
 	public static Item wireItem;
 	public static Item helmetItem;
@@ -30,6 +45,20 @@ public class ModItems {
 	public static void createItems() {
 
 		// Vanilla
+		GameRegistry.registerItem(goatmilkItem = new ItemMilk("goat_milk", "goat_milk"));
+		GameRegistry.registerItem(sheepmilkItem = new ItemMilk("sheep_milk","sheep_milk"));
+		GameRegistry.registerItem(whitesheepskinItem = new BasicItem("white_sheep_skin"), "white_sheep_skin");
+		GameRegistry.registerItem(pigleatherItem = new BasicItem("pig_leather"), "pig_leather");
+		GameRegistry.registerItem(greysheepskinItem = new BasicItem("grey_sheep_skin"), "grey_sheep_skin");
+		GameRegistry.registerItem(duckfeatherItem = new BasicItem("duck_feather"), "duck_feather");
+		GameRegistry.registerItem(duckeggItem = new BasicItem("duck_egg"), "duck_egg");
+		GameRegistry.registerItem(duckbreatItem = new BasicItem("duck_breat"), "duck_breat");
+		GameRegistry.registerItem(dicedgoatItem = new BasicItem("diced_goat"), "diced_goat");
+		GameRegistry.registerItem(roastduckbreastItem = new BasicItem("roast_duck_breast"), "roast_duck_breast");
+		GameRegistry.registerItem(goatcurryItem = new BasicItem("goat_curry"), "goat_curry");
+		
+		
+		
 		GameRegistry.registerItem(slateItem = new BasicItem("slate_item"), "slate_item");
 		GameRegistry.registerItem(wireItem = new BasicItem("wire_item"), "wire_item");
 
