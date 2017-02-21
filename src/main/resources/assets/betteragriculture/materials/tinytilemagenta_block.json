@@ -1,0 +1,14 @@
+{
+	"name": "TinyTileMagenta",
+	"id": "betteragriculture:tinytilemagenta_block",
+	"type": "metal",
+	"hardness": 0.5,
+	"resistance": 0.8333333,
+	"textures": "betteragriculture:blocks/tinytilemagenta_block",
+	"blocks": {
+		"full": "betteragriculture:tinytilemagenta_block",
+		"stairs": "betteragriculture:tinytilemagenta_stairs",
+		"slab": { "id": "betteragriculture:tinytilemagenta_slab", "meta": 0 },
+		"wall": { "id": "betteragriculture:tinytilemagenta_wall", "meta": 0 }
+	}
+}

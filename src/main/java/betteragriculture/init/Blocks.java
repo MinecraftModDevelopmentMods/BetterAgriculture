@@ -148,8 +148,8 @@ public class Blocks extends com.mcmoddev.lib.init.Blocks {
 			createStairs (Materials.largeTileConcrete);
 			createStairs (Materials.largeTileQuartz);
 			createStairs (Materials.largeTileSlate);
-
 		}
+		
 		if (Options.enableSlate) {
 			createBlock(Materials.slate);
 			createSlab(Materials.slate);
@@ -158,14 +158,13 @@ public class Blocks extends com.mcmoddev.lib.init.Blocks {
 			createWall(Materials.slate);
 			createOre(Materials.slate);
 		}
+		
 		if (Options.enableSlate) {
 			createBlock(Materials.concrete);
 			createSlab(Materials.concrete);
 			createDoubleSlab(Materials.concrete);
 			createStairs(Materials.concrete);
 			createWall(Materials.concrete);
-
-
 		}		
 
 

@@ -1,0 +1,14 @@
+{
+	"name": "TinyTilePurple",
+	"id": "betteragriculture:tinytilepurple_block",
+	"type": "metal",
+	"hardness": 0.5,
+	"resistance": 0.8333333,
+	"textures": "betteragriculture:blocks/tinytilepurple_block",
+	"blocks": {
+		"full": "betteragriculture:tinytilepurple_block",
+		"stairs": "betteragriculture:tinytilepurple_stairs",
+		"slab": { "id": "betteragriculture:tinytilepurple_slab", "meta": 0 },
+		"wall": { "id": "betteragriculture:tinytilepurple_wall", "meta": 0 }
+	}
+}

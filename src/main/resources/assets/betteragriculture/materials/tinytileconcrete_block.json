@@ -1,0 +1,14 @@
+{
+	"name": "TinyTileConcrete",
+	"id": "betteragriculture:tinytileconcrete_block",
+	"type": "metal",
+	"hardness": 0.5,
+	"resistance": 0.8333333,
+	"textures": "betteragriculture:blocks/tinytileconcrete_block",
+	"blocks": {
+		"full": "betteragriculture:tinytileconcrete_block",
+		"stairs": "betteragriculture:tinytileconcrete_stairs",
+		"slab": { "id": "betteragriculture:tinytileconcrete_slab", "meta": 0 },
+		"wall": { "id": "betteragriculture:tinytileconcrete_wall", "meta": 0 }
+	}
+}

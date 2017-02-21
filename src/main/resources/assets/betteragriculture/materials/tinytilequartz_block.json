@@ -1,0 +1,14 @@
+{
+	"name": "TinyTileQuartz",
+	"id": "betteragriculture:tinytilequartz_block",
+	"type": "metal",
+	"hardness": 0.5,
+	"resistance": 0.8333333,
+	"textures": "betteragriculture:blocks/tinytilequartz_block",
+	"blocks": {
+		"full": "betteragriculture:tinytilequartz_block",
+		"stairs": "betteragriculture:tinytilequartz_stairs",
+		"slab": { "id": "betteragriculture:tinytilequartz_slab", "meta": 0 },
+		"wall": { "id": "betteragriculture:tinytilequartz_wall", "meta": 0 }
+	}
+}

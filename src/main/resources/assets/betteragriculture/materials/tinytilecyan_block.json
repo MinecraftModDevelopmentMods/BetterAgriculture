@@ -1,0 +1,14 @@
+{
+	"name": "TinyTileCyan",
+	"id": "betteragriculture:tinytilecyan_block",
+	"type": "metal",
+	"hardness": 0.5,
+	"resistance": 0.8333333,
+	"textures": "betteragriculture:blocks/tinytilecyan_block",
+	"blocks": {
+		"full": "betteragriculture:tinytilecyan_block",
+		"stairs": "betteragriculture:tinytilecyan_stairs",
+		"slab": { "id": "betteragriculture:tinytilecyan_slab", "meta": 0 },
+		"wall": { "id": "betteragriculture:tinytilecyan_wall", "meta": 0 }
+	}
+}

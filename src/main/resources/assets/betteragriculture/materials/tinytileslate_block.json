@@ -1,0 +1,14 @@
+{
+	"name": "TinyTileSlate",
+	"id": "betteragriculture:tinytileslate_block",
+	"type": "metal",
+	"hardness": 0.5,
+	"resistance": 0.8333333,
+	"textures": "betteragriculture:blocks/tinytileslate_block",
+	"blocks": {
+		"full": "betteragriculture:tinytileslate_block",
+		"stairs": "betteragriculture:tinytileslate_stairs",
+		"slab": { "id": "betteragriculture:tinytileslate_slab", "meta": 0 },
+		"wall": { "id": "betteragriculture:tinytileslate_wall", "meta": 0 }
+	}
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "betteragriculture:blocks/slate_block",
+        "top": "betteragriculture:blocks/slate_block",
+        "side": "betteragriculture:blocks/slate_block"
+    }
+}

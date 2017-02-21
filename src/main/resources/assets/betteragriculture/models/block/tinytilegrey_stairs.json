@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "betteragriculture:blocks/tinytilegrey_block",
+        "top": "betteragriculture:blocks/tinytilegrey_block",
+        "side": "betteragriculture:blocks/tinytilegrey_block"
+    }
+}

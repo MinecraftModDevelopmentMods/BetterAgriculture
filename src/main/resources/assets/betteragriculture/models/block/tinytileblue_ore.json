@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "betteragriculture:blocks/tinytile_block"
+        "all": "betteragriculture:blocks/tinytileblue_block"
     }
 }
