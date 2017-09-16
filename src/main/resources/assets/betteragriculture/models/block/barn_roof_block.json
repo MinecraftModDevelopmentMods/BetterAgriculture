@@ -1,7 +1,0 @@
-{
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "betteragriculture:blocks/barn_roof_top",
-        "side": "betteragriculture:blocks/barn_roof_side_1"
-    }
-}

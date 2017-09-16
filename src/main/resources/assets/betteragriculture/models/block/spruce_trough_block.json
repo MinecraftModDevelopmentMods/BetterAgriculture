@@ -1,7 +1,0 @@
-{
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "betteragriculture:blocks/spruce_trough_top",
-        "side": "blocks/planks_spruce"
-    }
-}
