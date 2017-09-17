@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class SlateBlock extends Block {
     public SlateBlock () {
-        super(Material.ROCK);
+        super(Material.IRON);
         setUnlocalizedName(Main.MODID + ".slate");
         setRegistryName("slate");   
         setCreativeTab(Main.creativeTab);

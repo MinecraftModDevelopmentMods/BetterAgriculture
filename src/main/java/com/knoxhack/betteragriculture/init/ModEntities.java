@@ -108,16 +108,16 @@ public class ModEntities {
         EntityRegistry.registerModEntity (new ResourceLocation(Main.MODID, "Chicken10"), EntityMobChicken10.class, "Chicken10", id++, Main.instance, 64, 3, true, 0x996600, 0x00ff00);
 
         //Spawning Registry Chicken
-        EntityRegistry.addSpawn(EntityMobChicken1.class, Config.chickensSpawnRate, Config.chickensSpawnMinGroup, Config.chickensSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobChicken2.class, Config.chickensSpawnRate, Config.chickensSpawnMinGroup, Config.chickensSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobChicken3.class, Config.chickensSpawnRate, Config.chickensSpawnMinGroup, Config.chickensSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobChicken4.class, Config.chickensSpawnRate, Config.chickensSpawnMinGroup, Config.chickensSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobChicken5.class, Config.chickensSpawnRate, Config.chickensSpawnMinGroup, Config.chickensSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobChicken6.class, Config.chickensSpawnRate, Config.chickensSpawnMinGroup, Config.chickensSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobChicken7.class, Config.chickensSpawnRate, Config.chickensSpawnMinGroup, Config.chickensSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobChicken8.class, Config.chickensSpawnRate, Config.chickensSpawnMinGroup, Config.chickensSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobChicken9.class, Config.chickensSpawnRate, Config.chickensSpawnMinGroup, Config.chickensSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobChicken10.class, Config.chickensSpawnRate, Config.chickensSpawnMinGroup, Config.chickensSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
+        EntityRegistry.addSpawn(EntityMobChicken1.class, Config.chickensSpawnRate, Config.chickensSpawnMinGroup, Config.chickensSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST, Biomes.JUNGLE);
+        EntityRegistry.addSpawn(EntityMobChicken2.class, Config.chickensSpawnRate, Config.chickensSpawnMinGroup, Config.chickensSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST, Biomes.JUNGLE);
+        EntityRegistry.addSpawn(EntityMobChicken3.class, Config.chickensSpawnRate, Config.chickensSpawnMinGroup, Config.chickensSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST, Biomes.JUNGLE);
+        EntityRegistry.addSpawn(EntityMobChicken4.class, Config.chickensSpawnRate, Config.chickensSpawnMinGroup, Config.chickensSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST, Biomes.JUNGLE);
+        EntityRegistry.addSpawn(EntityMobChicken5.class, Config.chickensSpawnRate, Config.chickensSpawnMinGroup, Config.chickensSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST, Biomes.JUNGLE);
+        EntityRegistry.addSpawn(EntityMobChicken6.class, Config.chickensSpawnRate, Config.chickensSpawnMinGroup, Config.chickensSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST, Biomes.JUNGLE);
+        EntityRegistry.addSpawn(EntityMobChicken7.class, Config.chickensSpawnRate, Config.chickensSpawnMinGroup, Config.chickensSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST, Biomes.JUNGLE);
+        EntityRegistry.addSpawn(EntityMobChicken8.class, Config.chickensSpawnRate, Config.chickensSpawnMinGroup, Config.chickensSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST, Biomes.JUNGLE);
+        EntityRegistry.addSpawn(EntityMobChicken9.class, Config.chickensSpawnRate, Config.chickensSpawnMinGroup, Config.chickensSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST, Biomes.JUNGLE);
+        EntityRegistry.addSpawn(EntityMobChicken10.class, Config.chickensSpawnRate, Config.chickensSpawnMinGroup, Config.chickensSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST, Biomes.JUNGLE);
         }
         
         if (Config.enabledCows) {
@@ -133,16 +133,16 @@ public class ModEntities {
         EntityRegistry.registerModEntity (new ResourceLocation(Main.MODID, "Cow10"), EntityMobCow10.class, "Cow10", id++, Main.instance, 64, 3, true, 0x996600, 0x00ff00);
         
         //Spawning Registry Cow
-        EntityRegistry.addSpawn(EntityMobCow1.class, Config.cowsSpawnRate, Config.cowsSpawnMinGroup,Config.cowsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobCow2.class, Config.cowsSpawnRate, Config.cowsSpawnMinGroup,Config.cowsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobCow3.class, Config.cowsSpawnRate, Config.cowsSpawnMinGroup,Config.cowsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobCow4.class, Config.cowsSpawnRate, Config.cowsSpawnMinGroup,Config.cowsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobCow5.class, Config.cowsSpawnRate, Config.cowsSpawnMinGroup,Config.cowsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobCow6.class, Config.cowsSpawnRate, Config.cowsSpawnMinGroup,Config.cowsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobCow7.class, Config.cowsSpawnRate, Config.cowsSpawnMinGroup,Config.cowsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobCow8.class, Config.cowsSpawnRate, Config.cowsSpawnMinGroup,Config.cowsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobCow9.class, Config.cowsSpawnRate, Config.cowsSpawnMinGroup,Config.cowsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobCow10.class, Config.cowsSpawnRate, Config.cowsSpawnMinGroup,Config.cowsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
+        EntityRegistry.addSpawn(EntityMobCow1.class, Config.cowsSpawnRate, Config.cowsSpawnMinGroup,Config.cowsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST);
+        EntityRegistry.addSpawn(EntityMobCow2.class, Config.cowsSpawnRate, Config.cowsSpawnMinGroup,Config.cowsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST);
+        EntityRegistry.addSpawn(EntityMobCow3.class, Config.cowsSpawnRate, Config.cowsSpawnMinGroup,Config.cowsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST);
+        EntityRegistry.addSpawn(EntityMobCow4.class, Config.cowsSpawnRate, Config.cowsSpawnMinGroup,Config.cowsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST);
+        EntityRegistry.addSpawn(EntityMobCow5.class, Config.cowsSpawnRate, Config.cowsSpawnMinGroup,Config.cowsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST);
+        EntityRegistry.addSpawn(EntityMobCow6.class, Config.cowsSpawnRate, Config.cowsSpawnMinGroup,Config.cowsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST);
+        EntityRegistry.addSpawn(EntityMobCow7.class, Config.cowsSpawnRate, Config.cowsSpawnMinGroup,Config.cowsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST);
+        EntityRegistry.addSpawn(EntityMobCow8.class, Config.cowsSpawnRate, Config.cowsSpawnMinGroup,Config.cowsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST);
+        EntityRegistry.addSpawn(EntityMobCow9.class, Config.cowsSpawnRate, Config.cowsSpawnMinGroup,Config.cowsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST);
+        EntityRegistry.addSpawn(EntityMobCow10.class, Config.cowsSpawnRate, Config.cowsSpawnMinGroup,Config.cowsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST);
         }
         
         //Registry Sheep
@@ -159,16 +159,16 @@ public class ModEntities {
         EntityRegistry.registerModEntity (new ResourceLocation(Main.MODID, "Sheep10"), EntityMobSheep10.class, "Sheep10", id++, Main.instance, 64, 3, true, 0x996600, 0x00ff00);
 
         //Spawning Registry Sheep
-        EntityRegistry.addSpawn(EntityMobSheep1.class, Config.sheepSpawnRate, Config.sheepSpawnMinGroup, Config.sheepSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobSheep2.class, Config.sheepSpawnRate, Config.sheepSpawnMinGroup, Config.sheepSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobSheep3.class, Config.sheepSpawnRate, Config.sheepSpawnMinGroup, Config.sheepSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobSheep4.class, Config.sheepSpawnRate, Config.sheepSpawnMinGroup, Config.sheepSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);;
-        EntityRegistry.addSpawn(EntityMobSheep5.class, Config.sheepSpawnRate, Config.sheepSpawnMinGroup, Config.sheepSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobSheep6.class, Config.sheepSpawnRate, Config.sheepSpawnMinGroup, Config.sheepSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobSheep7.class, Config.sheepSpawnRate, Config.sheepSpawnMinGroup, Config.sheepSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobSheep8.class, Config.sheepSpawnRate, Config.sheepSpawnMinGroup, Config.sheepSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobSheep9.class, Config.sheepSpawnRate, Config.sheepSpawnMinGroup, Config.sheepSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobSheep10.class, Config.sheepSpawnRate, Config.sheepSpawnMinGroup, Config.sheepSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
+        EntityRegistry.addSpawn(EntityMobSheep1.class, Config.sheepSpawnRate, Config.sheepSpawnMinGroup, Config.sheepSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST);
+        EntityRegistry.addSpawn(EntityMobSheep2.class, Config.sheepSpawnRate, Config.sheepSpawnMinGroup, Config.sheepSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST);
+        EntityRegistry.addSpawn(EntityMobSheep3.class, Config.sheepSpawnRate, Config.sheepSpawnMinGroup, Config.sheepSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST);
+        EntityRegistry.addSpawn(EntityMobSheep4.class, Config.sheepSpawnRate, Config.sheepSpawnMinGroup, Config.sheepSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST);
+        EntityRegistry.addSpawn(EntityMobSheep5.class, Config.sheepSpawnRate, Config.sheepSpawnMinGroup, Config.sheepSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST);
+        EntityRegistry.addSpawn(EntityMobSheep6.class, Config.sheepSpawnRate, Config.sheepSpawnMinGroup, Config.sheepSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST);
+        EntityRegistry.addSpawn(EntityMobSheep7.class, Config.sheepSpawnRate, Config.sheepSpawnMinGroup, Config.sheepSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST);
+        EntityRegistry.addSpawn(EntityMobSheep8.class, Config.sheepSpawnRate, Config.sheepSpawnMinGroup, Config.sheepSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST);
+        EntityRegistry.addSpawn(EntityMobSheep9.class, Config.sheepSpawnRate, Config.sheepSpawnMinGroup, Config.sheepSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST);
+        EntityRegistry.addSpawn(EntityMobSheep10.class, Config.sheepSpawnRate, Config.sheepSpawnMinGroup, Config.sheepSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST);
 
         }
         //Registry Pig
@@ -185,16 +185,16 @@ public class ModEntities {
         EntityRegistry.registerModEntity (new ResourceLocation(Main.MODID, "Pig10"), EntityMobPig10.class, "Pig 10", id++, Main.instance, 64, 3, true, 0x996600, 0x00ff00);
        
         //Spawning Registry Pig
-        EntityRegistry.addSpawn(EntityMobPig1.class, Config.pigsSpawnRate, Config.pigsSpawnMinGroup, Config.pigsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS, Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobPig2.class, Config.pigsSpawnRate, Config.pigsSpawnMinGroup, Config.pigsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobPig3.class, Config.pigsSpawnRate, Config.pigsSpawnMinGroup, Config.pigsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobPig4.class, Config.pigsSpawnRate, Config.pigsSpawnMinGroup, Config.pigsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobPig5.class, Config.pigsSpawnRate, Config.pigsSpawnMinGroup, Config.pigsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobPig6.class, Config.pigsSpawnRate, Config.pigsSpawnMinGroup, Config.pigsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobPig7.class, Config.pigsSpawnRate, Config.pigsSpawnMinGroup, Config.pigsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobPig8.class, Config.pigsSpawnRate, Config.pigsSpawnMinGroup, Config.pigsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobPig9.class, Config.pigsSpawnRate, Config.pigsSpawnMinGroup, Config.pigsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
-        EntityRegistry.addSpawn(EntityMobPig10.class, Config.pigsSpawnRate, Config.pigsSpawnMinGroup, Config.pigsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.ICE_PLAINS,Biomes.BIRCH_FOREST,Biomes.FOREST,Biomes.FOREST_HILLS,Biomes.DEFAULT);
+        EntityRegistry.addSpawn(EntityMobPig1.class, Config.pigsSpawnRate, Config.pigsSpawnMinGroup, Config.pigsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST, Biomes.SWAMPLAND);
+        EntityRegistry.addSpawn(EntityMobPig2.class, Config.pigsSpawnRate, Config.pigsSpawnMinGroup, Config.pigsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST, Biomes.SWAMPLAND);
+        EntityRegistry.addSpawn(EntityMobPig3.class, Config.pigsSpawnRate, Config.pigsSpawnMinGroup, Config.pigsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST, Biomes.SWAMPLAND);
+        EntityRegistry.addSpawn(EntityMobPig4.class, Config.pigsSpawnRate, Config.pigsSpawnMinGroup, Config.pigsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST, Biomes.SWAMPLAND);
+        EntityRegistry.addSpawn(EntityMobPig5.class, Config.pigsSpawnRate, Config.pigsSpawnMinGroup, Config.pigsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST, Biomes.SWAMPLAND);
+        EntityRegistry.addSpawn(EntityMobPig6.class, Config.pigsSpawnRate, Config.pigsSpawnMinGroup, Config.pigsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST, Biomes.SWAMPLAND);
+        EntityRegistry.addSpawn(EntityMobPig7.class, Config.pigsSpawnRate, Config.pigsSpawnMinGroup, Config.pigsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST, Biomes.SWAMPLAND);
+        EntityRegistry.addSpawn(EntityMobPig8.class, Config.pigsSpawnRate, Config.pigsSpawnMinGroup, Config.pigsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST, Biomes.SWAMPLAND);
+        EntityRegistry.addSpawn(EntityMobPig9.class, Config.pigsSpawnRate, Config.pigsSpawnMinGroup, Config.pigsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST, Biomes.SWAMPLAND);
+        EntityRegistry.addSpawn(EntityMobPig10.class, Config.pigsSpawnRate, Config.pigsSpawnMinGroup, Config.pigsSpawnMaxGroup, EnumCreatureType.CREATURE, Biomes.PLAINS, Biomes.FOREST, Biomes.SWAMPLAND);
         }
     }
         public static void initModels() {

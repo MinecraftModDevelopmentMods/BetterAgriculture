@@ -2,6 +2,7 @@ package com.knoxhack.betteragriculture.proxy;
 
 import java.io.File;
 import com.knoxhack.betteragriculture.Config;
+import com.knoxhack.betteragriculture.init.ModBiomes;
 import com.knoxhack.betteragriculture.init.ModEntities;
 import com.knoxhack.betteragriculture.world.WorldGen;
 import net.minecraftforge.common.config.Configuration;
@@ -24,6 +25,10 @@ public class CommonProxy {
     }
     public void init(FMLInitializationEvent e) {
         GameRegistry.registerWorldGenerator(new WorldGen(), 0);
+        ModBiomes.initBiomes();
+
+        
+        
     }
     public void postInit(FMLPostInitializationEvent e) {
     }

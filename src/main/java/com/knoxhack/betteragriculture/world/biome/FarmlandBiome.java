@@ -2,12 +2,13 @@ package com.knoxhack.betteragriculture.world.biome;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.biome.Biome;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class FarmlandBiome extends BaseBiome {
 
-	public FarmlandBiome() {
+	public FarmlandBiome(String registryName, Biome.BiomeProperties properties) {
 		super("FarmlandBiome");
         topBlock = Blocks.GRASS.getDefaultState();
         fillerBlock = Blocks.GRASS.getDefaultState();
