@@ -1,8 +1,0 @@
-{
-    "parent": "block/stairs",
-    "textures": {
-        "bottom": "betteragriculture:blocks/thatch_roof_block_top",
-        "top": "betteragriculture:blocks/thatch_roof_block_top",
-        "side": "betteragriculture:blocks/thatch_roof_block_side"
-    }
-}

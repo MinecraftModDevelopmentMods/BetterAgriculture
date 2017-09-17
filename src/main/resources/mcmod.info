@@ -1,16 +1,16 @@
 [
- {
-   "modid": "betteragriculture",
-   "name": "Better Agriculture",
-   "description": "Better Agriculture is a companion mod of Forestry and Pam's Harvestcraft, it adds 40 new animals to Minecraft, 10 each of cows, pigs, sheep and chickens, all different breeds and colours. Also included is farming based blocks, armor and decor so now you can build your perfect farm!",
-   "version": "${version}",
-   "mcversion": "${mcversion}",
-   "url": "http://nfinit-gaming.com/",
-   "updateUrl": "",
-   "authorList": ["Knoxhack"],
-   "credits": "The Forge and FML guys, for making this example",
-   "logoFile": "",
-   "screenshots": [],
-   "dependencies": []
- }
+{
+  "modid": "betteragriculture",
+  "name": "Better Agriculture",
+  "description": "Better Agriculture Info",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Knoxhack"],
+  "credits": "The Forge and FML guys, for making Forge Possible",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
 ]
