@@ -2,7 +2,6 @@ package com.knoxhack.betteragriculture.proxy;
 
 import com.knoxhack.betteragriculture.init.ModBlocks;
 import com.knoxhack.betteragriculture.init.ModEntities;
-import com.knoxhack.betteragriculture.init.ModItems;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
