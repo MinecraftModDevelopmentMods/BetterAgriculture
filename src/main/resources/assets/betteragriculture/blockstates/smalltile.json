@@ -1,0 +1,74 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"model": "minecraft:cube_all"
+	},
+	"variants": {
+		"variant": {
+			"white": {
+				"textures": {
+					"all": "betteragriculture:blocks/smalltile.white"
+				}
+			},
+			"red": {
+				"textures": {
+					"all": "betteragriculture:blocks/smalltile.red"
+				}
+			},
+					
+					"purple": {
+				"textures": {
+					"all": "betteragriculture:blocks/smalltile.purple"
+				}
+			},			"pink": {
+				"textures": {
+					"all": "betteragriculture:blocks/smalltile.pink"
+				}
+			},			"orange": {
+				"textures": {
+					"all": "betteragriculture:blocks/smalltile.orange"
+				}
+			},			"magenta": {
+				"textures": {
+					"all": "betteragriculture:blocks/smalltile.magenta"
+				}
+			},			"lime": {
+				"textures": {
+					"all": "betteragriculture:blocks/smalltile.lime"
+				}
+			},			"lightgrey": {
+				"textures": {
+					"all": "betteragriculture:blocks/smalltile.lightgrey"
+				}
+			},			"lightblue": {
+				"textures": {
+					"all": "betteragriculture:blocks/smalltile.lightblue"
+				}
+			},			"grey": {
+				"textures": {
+					"all": "betteragriculture:blocks/smalltile.grey"
+				}
+			},			"green": {
+				"textures": {
+					"all": "betteragriculture:blocks/smalltile.green"
+				}
+			},			"cyan": {
+				"textures": {
+					"all": "betteragriculture:blocks/smalltile.cyan"
+				}
+			},			"brown": {
+				"textures": {
+					"all": "betteragriculture:blocks/smalltile.brown"
+				}
+			},			"blue": {
+				"textures": {
+					"all": "betteragriculture:blocks/smalltile.blue"
+				}
+			},			"yellow": {
+				"textures": {
+					"all": "betteragriculture:blocks/smalltile.yellow"
+				}
+			}
+		}
+	}
+}

@@ -17,11 +17,20 @@ public class CommonProxy {
 
     public static Configuration config;
     public void preInit(FMLPreInitializationEvent e) {
+
     	
         File directory = e.getModConfigurationDirectory();
         config = new Configuration(new File(directory.getPath(), "betteragriculture.cfg"));
         Config.readConfig();
         ModEntities.init();  
+  
+        
+        
+        
+        
+        
+        
+        
     }
     public void init(FMLInitializationEvent e) {
         GameRegistry.registerWorldGenerator(new WorldGen(), 0);

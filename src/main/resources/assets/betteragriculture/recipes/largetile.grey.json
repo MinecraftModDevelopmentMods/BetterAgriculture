@@ -1,0 +1,29 @@
+{
+  "result": {
+    "item": "betteragriculture:largetile",
+          "data": 9,
+          "count": 8
+  },
+  "pattern": [
+    "ded",
+    "ire",
+    "ded"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "i": {
+      "type": "forge:ore_dict",
+      "ore": "dyeGrey"
+    },
+    "r": {
+      "item": "betteragriculture:slate"
+    },
+    "d": {
+      "item": "minecraft:concrete",
+      "data": 0
+    },
+    "e": {
+      "item": "betteragriculture:slate"
+    }
+  }
+}

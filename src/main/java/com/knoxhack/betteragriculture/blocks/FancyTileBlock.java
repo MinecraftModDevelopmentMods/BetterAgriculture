@@ -113,7 +113,9 @@ public class FancyTileBlock extends BlockBase {
 
     @SideOnly(Side.CLIENT)
     public void initModel() {
-        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
+      ModelResourceLocation itemModelResourceLocation = new ModelResourceLocation("betteragriculture:tinytile.blue", "inventory");
+  	  ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this),
+  	  FancyTileBlock.EnumType.VARIANT_BLUE.getMeta(), itemModelResourceLocation);
     } 
 		
 }
