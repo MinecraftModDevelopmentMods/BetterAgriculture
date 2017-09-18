@@ -82,12 +82,5 @@ public class ModBlocks {
  }
 }
 	
-    @SideOnly(Side.CLIENT)
-    public static void initModels() {
-    SLATE.initModel();
-    TINYTILEBLOCK.initModel();
 
-    
-    
-    }
 }
