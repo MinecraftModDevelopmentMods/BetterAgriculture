@@ -11,6 +11,9 @@ public class BlockBase extends Block {
 		super(material, mapColor);
 		setBlockName(this, blockName);
 		setCreativeTab(Main.creativeTab);
+		this.setHarvestLevel("pickaxe", 1);
+		this.setHardness(1.0f);
+		this.setResistance(15.0f);
 	}
 
 	public BlockBase(final Material materialIn, final String blockName) {

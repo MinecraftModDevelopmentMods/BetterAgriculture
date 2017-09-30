@@ -2,28 +2,21 @@
   "result": {
     "item": "betteragriculture:smalltile",
           "data": 3,
-          "count": 7
+          "count": 9
   },
   "pattern": [
-    "ded",
-    "ere",
-    "did"
+    "ddd",
+    "rrr",
+    "ddd"
   ],
   "type": "forge:ore_shaped",
   "key": {
-    "i": {
-      "type": "forge:ore_dict",
-      "ore": "dyePink"
-    },
     "r": {
       "item": "betteragriculture:slate"
     },
     "d": {
-      "item": "minecraft:concrete",
-      "data": 0
-    },
-    "e": {
-      "item": "betteragriculture:slate"
+      "item": "minecraft:concrete_powder",
+      "data": 6
     }
   }
 }

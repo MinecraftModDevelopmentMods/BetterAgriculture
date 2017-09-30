@@ -16,6 +16,9 @@ public class SlateBlock extends Block {
         setUnlocalizedName(Main.MODID + ".slate");
         setRegistryName("slate");   
         setCreativeTab(Main.creativeTab);
+		this.setHarvestLevel("pickaxe", 1);
+		this.setHardness(1.0f);
+		this.setResistance(14.0f);
     }
     
     @SideOnly(Side.CLIENT)

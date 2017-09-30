@@ -15,7 +15,7 @@ public class Main {
 
     public static final String MODID = "betteragriculture";
     public static final String MODNAME = "Better Agriculture";
-    public static final String MODVERSION = "1.2.0";
+    public static final String MODVERSION = "1.2.1";
 	public static final CreativeTabMain creativeTab = new CreativeTabMain();
 
     @SidedProxy(clientSide = "com.knoxhack.betteragriculture.proxy.ClientProxy", serverSide = "com.knoxhack.betteragriculture.proxy.ServerProxy")

@@ -26,9 +26,10 @@ public class EntityMobSheep1 extends EntitySheep
 
 
     @Nullable
+    @Override
     protected ResourceLocation getLootTable()
     {
-        return LootTableList.ENTITIES_SHEEP;
+        return LootTableList.ENTITIES_SHEEP_WHITE;
     }
 
 

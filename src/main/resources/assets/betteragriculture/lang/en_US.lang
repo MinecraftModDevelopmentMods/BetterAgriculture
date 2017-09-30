@@ -28,10 +28,10 @@ entity.Cow5.name=Ayrshire
 entity.Cow6.name=Belted Galloway
 entity.Cow7.name=Charolais
 entity.Cow8.name=Hereford
-entity.Cow9.name=British white
+entity.Cow9.name=British White
 entity.Cow10.name=Norfolk
-entity.Sheep1.name=Dorper
-entity.Sheep2.name=Suffolk
+entity.Sheep1.name=Dorper 
+entity.Sheep2.name=Suffolk 
 entity.Sheep3.name=Jacob
 entity.Sheep4.name=East Friesian
 entity.Sheep5.name=Black welsh Mountain
@@ -77,6 +77,9 @@ tile.betteragriculture:fancytile.lightblue.name=Light Blue Fancy Tile
 tile.betteragriculture:fancytile.grey.name=Grey Fancy Tile
 tile.betteragriculture:fancytile.cyan.name=Cyan Fancy Tile
 tile.betteragriculture:fancytile.brown.name=Brown Fancy Tile
+tile.betteragriculture:fancytile.yellow.name=Yellow Fancy Tile
+
+
 
 tile.betteragriculture:tinytile.blue.name=Blue Tiny Tile
 tile.betteragriculture:tinytile.red.name=Red Tiny Tile
@@ -92,6 +95,9 @@ tile.betteragriculture:tinytile.lightblue.name=Light Blue Tiny Tile
 tile.betteragriculture:tinytile.grey.name=Grey Tiny Tile
 tile.betteragriculture:tinytile.cyan.name=Cyan Tiny Tile
 tile.betteragriculture:tinytile.brown.name=Brown Tiny Tile
+tile.betteragriculture:tinytile.yellow.name=Yellow Tiny Tile
+
+
 
 tile.betteragriculture:largetile.blue.name=Blue Large Tile
 tile.betteragriculture:largetile.red.name=Red Large Tile
@@ -107,6 +113,7 @@ tile.betteragriculture:largetile.lightblue.name=Light Blue FLargeancy Tile
 tile.betteragriculture:largetile.grey.name=Grey Large Tile
 tile.betteragriculture:largetile.cyan.name=Cyan Large Tile
 tile.betteragriculture:largetile.brown.name=Brown Large Tile
+tile.betteragriculture:largetile.yellow.name=Yellow Large Tile
 
 tile.betteragriculture:smalltile.blue.name=Blue Small Tile
 tile.betteragriculture:smalltile.red.name=Red Small Tile
@@ -122,4 +129,6 @@ tile.betteragriculture:smalltile.lightblue.name=Light Blue Small Tile
 tile.betteragriculture:smalltile.grey.name=Grey Small Tile
 tile.betteragriculture:smalltile.cyan.name=Cyan Small Tile
 tile.betteragriculture:smalltile.brown.name=Brown Small Tile
+tile.betteragriculture:smalltile.yellow.name=Yellow Small Tile
+
 tile.betteragriculture.slate.name=Slate
